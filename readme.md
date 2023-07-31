@@ -48,8 +48,8 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 
 *钱包*是进入 Web3 世界大门的钥匙，*钱包*能够很好管理你的账户信息和链上的资产。
 
-*  [Sui Wallet](https://chrome.google.com/webstore/detail/opcgpfmipidbgpenhmajoajpbobppdil) [源码]()
-*  [Suiet Wallet](https://chrome.google.com/webstore/detail/suiet-sui-wallet/khpkpbbcccdmmclmpigdgddabeilkdpd)  [源码]()
+*  [Sui Wallet](https://chrome.google.com/webstore/detail/opcgpfmipidbgpenhmajoajpbobppdil)  |    [教程-如何开始使用Sui钱包](https://mp.weixin.qq.com/s/-_hCFUO-62hv9amPzmJdeg)
+*  [Suiet Wallet](https://chrome.google.com/webstore/detail/suiet-sui-wallet/khpkpbbcccdmmclmpigdgddabeilkdpd)   |  [教程-如何获取Suiet钱包](https://suiet.app/blog/what-is-suiet-sui-wallet-how-to-use-sui-wallet)
 *  [Ethos Wallet](https://ethoswallet.xyz/)
 当你注册好钱包就可以开启 Web3 之旅了，接下来介绍参与方式。
 
