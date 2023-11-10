@@ -32,6 +32,7 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 
 
 ## 学习资料
+* 收集好的中文学习资料 [learning sui](https://github.com/movefuns/learning-sui)
 * Sui Move导论 [Book中文](https://intro-zh.sui-book.com/) [repo中文](https://github.com/RandyPen/sui-move-intro-course-zh)
   [Book英文](https://intro.sui-book.com/) [repo英文](https://github.com/sui-foundation/sui-move-intro-course)
 * [Sui Book 中文](https://sui-book.com/)
