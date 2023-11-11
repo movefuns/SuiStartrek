@@ -2,17 +2,15 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: [github](https://github.com/0xhutou)
 
 * Telegram ID: xxx
 
 * Discord ID: xx
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0x7b8e0864967427679b4e129f79dc332a885c6087ec9e187b53451a9006ee15f2
+* Sui 账号地址: 0x0ab781bee5075da0c212451059f05788a66327e5c72face351ba206c36fc919c
 
-长期从事深度学习和计算机视觉算法，训练平台开发，2021 年进入区块链领域，学习区块链基础，智能合约开发。  
-常用语言 Python, C++, JS。对区块链系统研发以及智能合约编程方向感兴趣。
 
 ### 学习日志
 
