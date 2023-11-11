@@ -28,10 +28,38 @@
 ![](./imgs/20231111/3.PNG)
 
 
-### 2. 连接Sui开发链
+### 2. 浏览器插件连接Sui开发链
 #### 1) 在Sui浏览器插件中切换到开发链
 ![](./imgs/20231111/7.PNG)
-#### 2) 请求测试用的tokens
+
+#### 2) 直接点击按钮即可获取token
+![](./imgs/20231111/12.PNG)
+
+### 3. 命令行工具连接Sui开发链
+#### 1) 连接
+```bash
+sui client envs
+```
+
+默认则是连接到开发链, 会创建钱包地址和恢复码
+```
+addr: [0x1f0663c112ee1f1a75566039d849557a972293d99f71e45e9b9b72caed9b71a2]
+Secret Recovery Phrase: [grant indicate avocado rail state minimum defense balcony pupil very attend sentence]
+```
+
+![](./imgs/20231111/8.PNG)
+
+#### 2) 在浏览器插件里尝试导入
+输入前面生成的恢复码
+![](./imgs/20231111/9.PNG)
+
+输入密码
+![](./imgs/20231111/10.PNG)
+
+可以看到成功导入
+![](./imgs/20231111/11.PNG)
+
+#### 3) 请求测试用的tokens
 ```
 curl --location --request POST 'https://faucet.devnet.sui.io/gas' \
 --header 'Content-Type: application/json' \
@@ -45,4 +73,3 @@ curl --location --request POST 'https://faucet.devnet.sui.io/gas' \
 请求一次会获取`10 SUI`
 ![](./imgs/20231111/6.PNG)
 ![](./imgs/20231111/5.PNG)
-
