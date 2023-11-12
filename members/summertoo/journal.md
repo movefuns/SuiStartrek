@@ -13,3 +13,5 @@ XXXXX指的是各自的梯子的端口,每个梯子都不同,找不到这个端�
 
 如何提交一个pull request (简称PR)
 https://www.freecodecamp.org/chinese/news/how-to-make-your-first-pull-request-on-github/
+
+PR关键点 先 add 后push origin branch
