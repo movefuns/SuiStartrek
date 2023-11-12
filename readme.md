@@ -8,6 +8,10 @@
 
 Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者未入门的Sui Move的小伙伴一起探索 Web3 宇宙。取名 StarTrek 既代表“星航计划”，同时也是向 [Star Trek](https://en.wikipedia.org/wiki/Star_Trek) 致敬。
 
+## 电报群 
+- MoveFuns Dao [MoveFuns Dao](https://t.me/movefunsdao)
+- Sui [Sui 中文](https://t.me/sui_dev_cn)
+- 微信群 先添加 jin76866
 
 ## 学习方向
 
@@ -75,7 +79,7 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 * 掌握钱包的使用和Sui 命令行的基本使用
 * 理解Token的概念并发行两个ERC20 Token，上线主网或者测试网，需要提供交易hash
 * 理解NFT概念并发行一个NFT,上线主网或者测试网，需要提供交易hash
-* 奖励 200SUI
+
 
 ### L2 毕业
 
@@ -83,7 +87,7 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 * 发布 Move 相关的教程文章或者视频（希望 Move 被更多的人了解，所以鼓励通过其他渠道传播文档教程）
 * 对 Move 生态项目 [Sui](https://github.com/MystenLabs/sui)（[move-language](https://github.com/move-language),[movefuns](https://github.com/movefuns)） 有 PR 贡献，mentor 会评估 PR 的复杂度
 * 以上三个项目需要满足二项
-* 额外奖励 200SUI
+
 
 ### 生态项目额外奖
 
