@@ -4,9 +4,9 @@
 
 * Github ID: [github](https://github.com/0xhutou)
 
-* Telegram ID: xxx
+* Telegram ID: ihutou
 
-* Discord ID: xx
+* Discord ID: hu_tou
 
 (首次如果没有，学习完毕钱包在填写)
 * Sui 账号地址: 0x0ab781bee5075da0c212451059f05788a66327e5c72face351ba206c36fc919c
