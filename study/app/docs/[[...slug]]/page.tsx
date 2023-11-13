@@ -39,7 +39,7 @@ export default async function Page({
       tableOfContent={{
         footer: (
           <a
-            href={`https://github.com/birchwork/SuiStartrek-birch/study/content/${page._raw.sourceFilePath}`}
+            href={`https://github.com/birchwork/SuiStartrek-birch/tree/main/study/content/docs/${page._raw.sourceFilePath}`}
             rel="noreferrer noopener"
             target="_blank"
             className="inline-flex items-center text-xs text-muted-foreground hover:text-accent-foreground"
