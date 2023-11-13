@@ -1,8 +1,55 @@
 ---
 title: Quick start
-description: Sui study
+description: Over view
 ---
 
-```js
-console.log('Hello sui')
+## 环境配置
+
+### Rust环境配置
+
+参考教程：[环境配置](https://lab.cs.tsinghua.edu.cn/rust/environment/#linux_1)
+
+### 科学上网
+
+此步骤是为UbunWSL配置科学上网，需要将windos的clash打开Tun模式，并且允许访问局域网：
+
+- 打开`.bashrc`文件
+
+```shell
+sudo vim ~/.bashrc
 ```
+
+输入`i`进入编辑模式将以下命令粘贴在文件最底部
+
+```shell
+hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+export https_proxy="http://${hostip}:7890"
+export http_proxy="http://${hostip}:7890"
+export all_proxy="socks5://${hostip}:7890"
+```
+
+按`esc`，进入命令模式，再输入`:wq`，执行命令加载文件
+
+```shell
+source ~/.bashrc
+```
+
+执行命令，如有返回值则配置成功
+
+```
+curl google.com
+```
+
+### SUI
+
+参考安装教程：
+
+- [官方文档](https://docs.sui.io/guides/developer/getting-started/sui-install#install-binaries)
+- [SUI Book中文版](https://intro-zh.sui-book.com/unit-one/lessons/1_%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html)
+
+#### Other
+
+完整教程请查看：[文字教程](https://docs.sui.io/guides/developer/getting-started/sui-install)，[视频教程](https://www.bilibili.com/video/BV1RY411v7YU/)
+
+
+
