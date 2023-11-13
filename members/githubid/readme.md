@@ -2,17 +2,16 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: [wanjinwoo](https://github.com/wanjinwoo)
 
 * Telegram ID: xxx
 
 * Discord ID: xx
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0x7b8e0864967427679b4e129f79dc332a885c6087ec9e187b53451a9006ee15f2
+* Sui 账号地址: 0xc9a15eb6b67b881823f50c37ae935507529a044f700d67f7ba53df0720141953
 
-长期从事深度学习和计算机视觉算法，训练平台开发，2021 年进入区块链领域，学习区块链基础，智能合约开发。  
-常用语言 Python, C++, JS。对区块链系统研发以及智能合约编程方向感兴趣。
+DeFi数据分析，之前参加过zkp和Tokenomics共学，目前自学各种语言。现在的学习进度是可以运用react搭建前端页面，短期目标是学习更多合约知识能够build一个完整的项目。
 
 ### 学习日志
 
