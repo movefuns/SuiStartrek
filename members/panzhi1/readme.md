@@ -2,17 +2,16 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: panzhi1
 
-* Telegram ID: xxx
+* Telegram ID: strangeman
 
-* Discord ID: xx
+* Discord ID: strangeman0170
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0x7b8e0864967427679b4e129f79dc332a885c6087ec9e187b53451a9006ee15f2
+* Sui 账号地址: 0x586397a8008888052d95b19d3ebf9a093d7086da94afd3f29761fe37f1939d94
 
-长期从事深度学习和计算机视觉算法，训练平台开发，2021 年进入区块链领域，学习区块链基础，智能合约开发。  
-常用语言 Python, C++, JS。对区块链系统研发以及智能合约编程方向感兴趣。
+长期从事安卓前端开发。目前对区块链系统研发以及智能合约编程方向感兴趣，想要转向web3领域
 
 ### 学习日志
 
