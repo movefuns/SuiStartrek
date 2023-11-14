@@ -18,3 +18,19 @@
 ## 学习 ERC20
 - [token 合约](https://sui-book.com/framework/02.coin.html)
 - [例子](https://examples.sui-book.com/samples/coin.html)
+  
+# roadmap2
+- 初始化一个 Sui Move Package
+  - `sui move new hello_world`
+- 完成 hello_world 代码
+- 编译 hello_world
+  - `sui move build`
+- 使用 Sui CLI 将 package 部署到 Sui 网络，选择 devnet 开发网
+  - `sui client publish --gas-budget 10000000`
+  - export PACKAGE_ID=<在先前输出信息中的 package object ID>
+- 在交易中调用 mint 函数
+  - `sui client call --function mint --module hello_world --package $PACKAGE_ID --gas-budget 10000000`
+- 使用 Sui Explorer 查看交易
+  - https://suiexplorer.com/
+  - 右上角选择 devnet 开发网
+  - 在搜索框中输入 object ID
