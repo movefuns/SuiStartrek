@@ -2,14 +2,13 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: [taramakage](https://github.com/taramakage)
 
 * Telegram ID: xxx
 
-* Discord ID: xx
+* Discord ID: xxx 
 
-(首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址:
+* Sui 账号地址: 0x5e9572b97f593399721cbc4da432900b3f20f43356c647dc193ab71a03ca0184
 
 从事区块链相关开发，对区块链技术有一定的了解。
 
