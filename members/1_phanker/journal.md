@@ -23,20 +23,25 @@ sui --version  ##查看sui 的版本信息
 sui 1.13.0-64fe2b6 ##显示结果表示安装成功
 ```
 
+
+
+
 ## 2) 前端与sui的交互
-### [demo地址](https://github.com/phanker/interact_sui_react_demo)
-### 已实现功能
+### 1.[demo地址](https://github.com/phanker/interact_sui_react_demo)
+### 2.已实现功能
 #### ①.选择安装的钱包，完成钱包的连接
 #### ②.根据当前连接的钱包，获取钱包的所属信息
 #### ③.展示效果
 ![img.png](img.png)
 
-### 遇到的问题
+### 3.遇到的问题
 #### ①. [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) node版本问题导致pnpm安装dapp template失败
 ##### 解决：升级node到最新版本
 
 #### ②.集成的@mysten/dapp-kit库版本问题，导致点击页面connect wallet按钮失效
 ##### 解决： @mysten/dapp-kit版本降到"0.0.0-experimental-20231110195743"
+
+
 
 
 ## 3) 发布ERC20合约
