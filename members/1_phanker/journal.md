@@ -2,9 +2,8 @@
 # Roadmap 1
 
 ## sui 环境的搭建
+因为设备资源问题，我选择二进制安装。
 
-``因为设备资源问题，我选择二进制安装。
-二进制安装和源码安装的优缺点
 
 ### 二进制安装：
 #### 优点
@@ -27,16 +26,17 @@ sui 1.13.0-64fe2b6 ##显示结果表示安装成功
 ## 前端与sui的交互
 ### [demo地址](https://github.com/phanker/interact_sui_react_demo)
 ### 已实现功能
-#### 选择安装的钱包，完成钱包的连接
-#### 根据当前连接的钱包，获取钱包的所属信息
+#### 1.选择安装的钱包，完成钱包的连接
+#### 2.根据当前连接的钱包，获取钱包的所属信息
 
-### 展示效果
+#### 3.展示效果
 ![img.png](img.png)
+
 ### 遇到的问题
-#### 问题1： [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) node版本问题导致pnpm安装dapp template失败
+#### 1. [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) node版本问题导致pnpm安装dapp template失败
 ##### 解决：升级node到最新版本
 
-#### 问题2：集成的@mysten/dapp-kit库版本问题，导致点击页面connect wallet按钮失效
+#### 2.集成的@mysten/dapp-kit库版本问题，导致点击页面connect wallet按钮失效
 ##### 解决： @mysten/dapp-kit版本降到"0.0.0-experimental-20231110195743"
 
 
@@ -51,7 +51,8 @@ name = "move_coin"
 version = "0.0.1"
 
 [dependencies]
-//注意rev的版本一定要和发布到的环境版本一直，比如dev环境对应的devnet版本
+//注意rev的版本一定要和发布到的环境版本一直，比如dev环境对应的devnet版本  
+
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/devnet" }
 
 [addresses]
@@ -63,7 +64,7 @@ move_coin = "0x0"
 ### 部署合约
 ```shell
 sui client publish --gas-budget 100000000 ##gas-budget 参数表示部署合约预估的gas费
-###部署成功后将是如下展示
+###部署成功后将是如下展示如何信息
 UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
 INCLUDING DEPENDENCY Sui
 INCLUDING DEPENDENCY MoveStdlib
