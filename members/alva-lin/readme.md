@@ -8,8 +8,7 @@
 
 * Discord ID:
 
-(首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 暂无
+* Sui 账号地址: 0xd60835fb4affcf98f861c4e32d0d376cdcd39fbb5b3f016b77cd4afc04a0c85e
 
 从事 .NET 后端开发，对区块链领域感兴趣，想要有所发展。
 常用语言 C#, JS。
