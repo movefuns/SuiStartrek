@@ -13,3 +13,5 @@
 - [学习总结](summary.md)
 
 ### 学习成果
+
+ERC20 package ID: https://suiexplorer.com/object/0xb402aa9b14ee67ae76db0d32e4573b626286934db3037378b83bf133f36c4500?network=devnet
