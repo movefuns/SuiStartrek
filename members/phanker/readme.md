@@ -1,0 +1,28 @@
+# 星航计划加入申请表
+
+### 个人介绍
+
+* Github ID: [github](https://github.com/phanker)
+
+* Telegram ID: https://t.me/flixpam
+
+* Discord ID: flix6629
+
+* Sui 账号地址: 0x5cca2192331ca9db87a6adfc756f809150aad3f8a2bf7eb3b68dd46ea03989f7
+
+拥有7年多的Java开发经验，所涉及的行业包括互联网系统和物联网系统，并对分布式系统，微服务架构有深刻的了解，熟悉对云平台的应用与操作。
+2023 年进入区块链领域，被区块链的技术所吸引，学习了区块链基础，智能合约合约开发，并构建了多个dapp应用。
+常用语言 JAVA,JS,SQL,Solidity,Move
+
+### 学习日志
+
+- [学习日志](journal.md)
+- [学习总结](summary.md)
+
+### 学习成果
+
+Roadmap  1  
+- 项目源码:https://github.com/phanker/SuiStartrek/tree/main/members/phanker
+- 发布的ERC20
+package1: 0x802c8ce75e897048b24cbbf73d669428b63015dafddc1d67b9ada532fcecc0de
+
