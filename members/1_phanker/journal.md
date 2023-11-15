@@ -1,51 +1,50 @@
 # 学习日志
 # Roadmap 1
 
-## sui 环境的搭建
+## 1) sui 环境的搭建
 因为设备资源问题，我选择二进制安装。
 
 
-### 二进制安装：
+### 1.二进制安装：
 #### 优点
 二进制安装不需要依赖 rust 环境，只需要下载[sui的二进制](https://github.com/MystenLabs/sui/releases)，然后配置到宿主机的环境变量即可，对系统资源不强的设备友好
 #### 缺点：
 因为 sui 的版本更新频繁，所有需要频繁下载二进制文件，比较繁琐
 
-### 源码安装: 
-#### 1.优点
+### 2.源码安装: 
+#### 优点
 通过 rust 的工具链，可以随时更新最新的 sui 版本
-#### 2.缺点
+#### 缺点
 需要依赖 rust 环境，配置 rust 的环境非常消耗系统资源，设备性能不强的可能导致各种问题，而且操作起来繁琐，但是只要配置好之后，后面就比较方便
 
-### 测试
+### 3.测试
 ``` shell
 sui --version  ##查看sui 的版本信息
 sui 1.13.0-64fe2b6 ##显示结果表示安装成功
 ```
 
-## 前端与sui的交互
+## 2) 前端与sui的交互
 ### [demo地址](https://github.com/phanker/interact_sui_react_demo)
 ### 已实现功能
-#### 1.选择安装的钱包，完成钱包的连接
-#### 2.根据当前连接的钱包，获取钱包的所属信息
-
-#### 3.展示效果
+#### ①.选择安装的钱包，完成钱包的连接
+#### ②.根据当前连接的钱包，获取钱包的所属信息
+#### ③.展示效果
 ![img.png](img.png)
 
 ### 遇到的问题
-#### 1. [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) node版本问题导致pnpm安装dapp template失败
+#### ①. [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) node版本问题导致pnpm安装dapp template失败
 ##### 解决：升级node到最新版本
 
-#### 2.集成的@mysten/dapp-kit库版本问题，导致点击页面connect wallet按钮失效
+#### ②.集成的@mysten/dapp-kit库版本问题，导致点击页面connect wallet按钮失效
 ##### 解决： @mysten/dapp-kit版本降到"0.0.0-experimental-20231110195743"
 
 
-## 发布ERC20合约
-### 初始化move项目
+## 3) 发布ERC20合约
+### 1.初始化move项目
 ```shell
 sui move new move_project ##创建一个新的move项目
 ```
-### 修改Move.toml
+### 2.修改Move.toml
 [package]
 name = "move_coin"
 version = "0.0.1"
@@ -58,10 +57,10 @@ Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-fram
 [addresses]
 move_coin = "0x0"
 
-### 创建ERC20合约
+### 3.创建ERC20合约
 #### 根据[sui官网](https://examples.sui-book.com/samples/coin.html)的介绍，创建ERC20合约
 
-### 部署合约
+### 4.部署合约
 ```shell
 sui client publish --gas-budget 100000000 ##gas-budget 参数表示部署合约预估的gas费
 ###部署成功后将是如下展示如何信息
