@@ -6,7 +6,7 @@
 
 * Telegram ID: xxx
 
-* Discord ID: xx
+* Discord ID: carlton2844
 
 (首次如果没有，学习完毕钱包在填写)
 * Sui 账号地址: 0xeb63df9282bf47a2c721806d74f15c58aa5059c5732eab44ad92fbf69785cd0d
