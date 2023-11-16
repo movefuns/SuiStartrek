@@ -9,7 +9,7 @@
 * Discord ID: xx
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 
+* Sui 账号地址: 0xeb63df9282bf47a2c721806d74f15c58aa5059c5732eab44ad92fbf69785cd0d
 
 长期从事云计算相关开发
 常用语言 Python, JS。对区块链系统研发以及智能合约编程方向感兴趣。
@@ -22,14 +22,14 @@
 ### 学习成果
 
 Roadmap  1  
-- 项目源码:填写自己的源码地址
+- 项目源码: https://github.com/2niuhe/sui-startrek-log
 - 发布的ERC20
-package1: xx
-package2: xx
+package1: 0x0e5b150cddab505c4dde62ec97702dab876d913f14bd15eb1091104553672476
+package2: 0x383034b613a9a8bd34572430df30af61626a2809f25ebd572e2a815462f4a5a8
 
 
 2.
 
 
-3. 
+1. 
 
