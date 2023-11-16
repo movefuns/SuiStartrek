@@ -9,9 +9,9 @@
 * Discord ID: xx
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 
+* Sui 账号地址: 0xa60168aeff50181532eb335246022fb951554ba85c4af2f5cfeb5137c2886a57
 
-学习web3开发
+一名前端开发 学习web3
 
 ### 学习日志
 
@@ -27,7 +27,7 @@ package1: xx
 package2: xx
 
 
-2.
+​            2.
 
 
 3. 
