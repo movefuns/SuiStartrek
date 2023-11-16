@@ -21,7 +21,7 @@
 ### 学习成果
 
 Roadmap  1
-- 项目源码: [HelloSui](https://github.com/Himau1010)
+- 项目源码: [HelloSui](https://github.com/Himau1010/Hello_sui.git)
 - Dapp: 
 - [HelloSui Contract Publish](https://suiexplorer.com/txblock/7XoMXjJa5QvN6DxAUt23pmPBYQ22EAf72SG336K52Wji?network=devnet)
 - ![HelloSui-01.png](image/hello/01.png)
