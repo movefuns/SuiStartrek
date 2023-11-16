@@ -70,5 +70,208 @@ https://mp.weixin.qq.com/s/-_hCFUO-62hv9amPzmJdeg
 
 ## 3.学习ERC20
 
+ERC是"EthereumRequest for Comment"也就是“以太坊征求意见协议”的缩写。
+
+借助ERC-20，用户可以通过持有其中**一种储值卡（token）很方便地享受整个生态的各种服务**；商户（开发者）则节约了开发运营成本、同时提升了获取用户的效率；而物业公司（以太坊基金会和矿工）则可以通过做大生态体量实现更多的租金（ETH增值）和储值卡结算手续费（Gas费用）收入。
+
+https://docs.sui.io/guides/developer/first-app/write-package
+
+- 3.1  创建程序包,打开powershell执行以下命令
+
+~~~shell
+sui move new my_first_package
+~~~
+
+执行成功，使用vscode打开文件如下<img src="journal/image-20231117011834584.png" alt="image-20231117011834584" style="zoom: 50%;" />
+
+- 3.2 在sources下新建文件my_module.move
+
+  <img src="journal/image-20231117012015165.png" alt="image-20231117012015165" style="zoom:50%;" />
+
+- 复制一下代码到my_module.move
+
+- 以下代码分为三个部分，1.引入，2.类型定义，3.函数定义
+
+~~~rust
+module my_first_package::my_module {
+
+    // Part 1: Imports
+    use sui::object::{Self, UID};
+    use sui::transfer;
+    use sui::tx_context::{Self, TxContext};
+
+    // Part 2: Struct definitions
+    struct Sword has key, store {
+        id: UID,
+        magic: u64,
+        strength: u64,
+    }
+
+    struct Forge has key, store {
+        id: UID,
+        swords_created: u64,
+    }
+
+    // Part 3: Module initializer to be executed when this module is published
+    fun init(ctx: &mut TxContext) {
+        let admin = Forge {
+            id: object::new(ctx),
+            swords_created: 0,
+        };
+        // Transfer the forge object to the module/package publisher
+        transfer::transfer(admin, tx_context::sender(ctx));
+    }
+
+    // Part 4: Accessors required to read the struct attributes
+    public fun magic(self: &Sword): u64 {
+        self.magic
+    }
+
+    public fun strength(self: &Sword): u64 {
+        self.strength
+    }
+
+    public fun swords_created(self: &Forge): u64 {
+        self.swords_created
+    }
+
+    // Part 5: Public/entry functions (introduced later in the tutorial)
+
+    // Part 6: Private functions (if any)
+
+}
+~~~
+
+- 3.3打包
+- 执行以下命令
+
+~~~
+sui move build
+~~~
+
+- 打包成功
+
+  <img src="journal/image-20231117013249235.png" alt="image-20231117013249235" style="zoom:50%;" />
+
+<img src="journal/image-20231117013307728.png" alt="image-20231117013307728" style="zoom:50%;" />
+
+- 3.4测试打包
+
+- 执行以下命令
+
+  ~~~
+  sui move test
+  ~~~
+
+<img src="journal/image-20231117013723478.png" alt="image-20231117013723478" style="zoom:50%;" />
+
+测试通过，因为测试为0，也就没有失败。
+
+在my_module.move中加入以下代码
+
+```rust
+    #[test]
+    public fun test_sword_create() {
+    use sui::transfer;
+
+        // Create a dummy TxContext for testing
+        let ctx = tx_context::dummy();
+
+        // Create a sword
+        let sword = Sword {
+            id: object::new(&mut ctx),
+            magic: 42,
+            strength: 7,
+        };
+
+        // Check if accessor functions return correct values
+        assert!(magic(&sword) == 42 && strength(&sword) == 7, 1);
+        // Create a dummy address and transfer the sword
+        let dummy_address = @0xCAFE;
+        transfer::transfer(sword, dummy_address);
+    }
+```
+
+<img src="journal/image-20231117015155064.png" alt="image-20231117015155064" style="zoom:50%;" />
+
+单元测试通过
+
+
+
+增加以下特殊测试
+
+~~~rust
+    public entry fun sword_create(magic: u64, strength: u64, recipient: address, ctx: &mut TxContext) {
+        use sui::transfer;
+
+        // create a sword
+        let sword = Sword {
+            id: object::new(ctx),
+            magic: magic,
+            strength: strength,
+        };
+        // transfer the sword
+        transfer::transfer(sword, recipient);
+    }
+
+    public entry fun sword_transfer(sword: Sword, recipient: address, _ctx: &mut TxContext) {
+        use sui::transfer;
+        // transfer the sword
+        transfer::transfer(sword, recipient);
+    }
+~~~
+
+~~~rust
+    #[test]
+    fun test_sword_transactions() {
+        use sui::test_scenario;
+
+        // create test addresses representing users
+        let admin = @0xBABE;
+        let initial_owner = @0xCAFE;
+        let final_owner = @0xFACE;
+
+        // first transaction to emulate module initialization
+        let scenario_val = test_scenario::begin(admin);
+        let scenario = &mut scenario_val;
+        {
+            init(test_scenario::ctx(scenario));
+        };
+        // second transaction executed by admin to create the sword
+        test_scenario::next_tx(scenario, admin);
+        {
+            // create the sword and transfer it to the initial owner
+            sword_create(42, 7, initial_owner, test_scenario::ctx(scenario));
+        };
+        // third transaction executed by the initial sword owner
+        test_scenario::next_tx(scenario, initial_owner);
+        {
+            // extract the sword owned by the initial owner
+            let sword = test_scenario::take_from_sender<Sword>(scenario);
+            // transfer the sword to the final owner
+            sword_transfer(sword, final_owner, test_scenario::ctx(scenario))
+        };
+        // fourth transaction executed by the final sword owner
+        test_scenario::next_tx(scenario, final_owner);
+        {
+            // extract the sword owned by the final owner
+            let sword = test_scenario::take_from_sender<Sword>(scenario);
+            // verify that the sword has expected properties
+            assert!(magic(&sword) == 42 && strength(&sword) == 7, 1);
+            // return the sword to the object pool (it cannot be simply "dropped")
+            test_scenario::return_to_sender(scenario, sword)
+        };
+        test_scenario::end(scenario_val);
+    }
+~~~
+
+<img src="journal/image-20231117015448731.png" alt="image-20231117015448731" style="zoom:50%;" />
+
+通过测试
+
+- 3.5发布包
+
+
+
 ## 4.完成ERC20的发布
 
