@@ -10,21 +10,24 @@ https://www.runoob.com/git/git-tutorial.html
 git config --global http.proxy http://127.0.0.1:XXXXX 
 XXXXX指的是各自的梯子的端口,每个梯子都不同,找不到这个端口请联系供应商咨询
 
+星航计划链接
+https://github.com/movefuns/SuiStartrek
+
+自己的fork链接
+https://github.com/summertoo/SuiStartrek
 
 如何提交一个pull request (简称PR)
 https://www.freecodecamp.org/chinese/news/how-to-make-your-first-pull-request-on-github/
 
 PR关键点 先 add 后push origin branch
 
-
 https://www.youtube.com/watch?v=igh-wYkv2sg  
 这是zklogin的入门和介绍    
 https://docs.sui.io/concepts/cryptography/zklogin 
-这是文档 大家也可以提前预习了明天提问   ，大美女程序员给大家分享
+这是文档 大家也可以提前预习了明天提问，大美女程序员给大家分享
 
 https://docs.google.com/presentation/d/1aQNNNqVT77B6WmIIBL1b5YzcC3KzJ7mTVxmh8fBkrQY
 最早的ppt在这里
-
 
 执行 hello world 的试验 
 1.
@@ -57,9 +60,13 @@ curl -x 127.0.0.1:17890 -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/
 从知乎上找到的解决方法,做一下测试
 https://zhuanlan.zhihu.com/p/603962871
 失败
+小结:windows状态下没有运行乘成功例子,原因可能是npm的问题和wsl的问题
+
+mac环境成功执行hello world例子并成功发布合约
 
 查看当前sui地址
 sui client active-address
-0xfe82a556ac9e5aad4c9857760349548cf012852ebb742a8d141ceeaf4b056bba
+
+
 
 
