@@ -25,7 +25,7 @@
 
 Roadmap  1  
 
-* 项目源码: <https://github.com/qiaopengjun5162/SuiStartrek>
+* 项目源码: <https://github.com/qiaopengjun5162/sui-move-hello-world>
 * 发布的ERC20
 package1: xx
 package2: xx
