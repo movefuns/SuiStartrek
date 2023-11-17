@@ -63,6 +63,7 @@ https://zhuanlan.zhihu.com/p/603962871
 小结:windows状态下没有运行乘成功例子,原因可能是npm的问题和wsl的问题
 
 mac环境成功执行hello world例子并成功发布合约
+目标例子(https://sui-typescript-docs.vercel.app/dapp-kit)
 
 查看当前sui地址
 sui client active-address
