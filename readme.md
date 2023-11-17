@@ -13,6 +13,18 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 - Sui [Sui 中文](https://t.me/sui_dev_cn)
 - 微信群 先添加 jin76866
 
+## [Github Discussion](https://github.com/movefuns/SuiStartrek/discussions) 使用方法
+
+
+
+| Categories                                                   | description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [🍪Materials](https://github.com/movefuns/SuiStartrek/discussions/categories/materials) | 学习材料分享:  Sui Move 优质资料(文章/书籍/课程...)    |
+| [🙏 Q&A](https://github.com/movefuns/SuiStartrek/discussions/categories/q-a) | 提问 / 答疑                                                  |
+| [🔧Tricks & Tools](https://github.com/movefuns/SuiStartrek/discussions/categories/tricks-tools) | 值得分享的小技巧/小工具<br /> |
+| [💡Ideas](https://github.com/movefuns/SuiStartrek/discussions/categories/ideas) | 课程结尾关于 星航计划 的一些 Amazing fancy ideas, 用来<br />1. 好的想法，寻找开发伙伴 <br />2. 参与下一期星航计划 <br />3. ... |
+
+
 ## 学习方向
 
 1. Web3 以及 Sui Move 智能合约方向
@@ -69,34 +81,43 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 
 ## 毕业标准
 
-### 基础要求
+
+### Milestone & 奖励
 
 * 技术需要涉及 Move + (Web|Rust|Other Language).
 
-### L1 毕业
-* 必须完成 Sui Move导论课程的学习
-* 通过学习日志以及练习项目证明自己掌握了 Move 语言
-* 掌握钱包的使用和Sui 命令行的基本使用
-* 理解Token的概念并发行两个ERC20 Token，上线主网或者测试网，需要提供交易hash
-* 理解NFT概念并发行一个NFT,上线主网或者测试网，需要提供交易hash
-
-
-### L2 毕业
-
-* 给生态贡献了新的独立的 Move modules
-* 发布 Move 相关的教程文章或者视频（希望 Move 被更多的人了解，所以鼓励通过其他渠道传播文档教程）
-* 对 Move 生态项目 [Sui](https://github.com/MystenLabs/sui)（[move-language](https://github.com/move-language),[movefuns](https://github.com/movefuns)） 有 PR 贡献，mentor 会评估 PR 的复杂度
-* 以上三个项目需要满足二项
-
-
-### 生态项目额外奖
-
-* 对 [MystenLabs](https://github.com/MystenLabs) 下的项目有重要的 PR 贡献：额外奖励 200SUI
-* 欢迎其他项目提供奖励
-
-
-当学员认为自己达到毕业标准。可以`@导师`来审核毕业情况，至少需要**两位**导师批准 PR，当 PR 合并后说明你顺利毕业了，你会获得*毕业奖励*。
-L2 毕业生需要`@一位在你学习过程中对你帮助最大的导师`，这位导师也将获得*指导奖励*。
+- 🥉 初级 `10SUI`
+    - 完成第一个简单的Move智能合约
+    - 成功部署到测试网络
+    - 提交认证：
+ 
+      
+- 🥈 高级 `20SUI`
+    - 完成 Sui Move 导论课程的学习
+    - 掌握钱包的使用和Sui 命令行的基本使用
+    - 理解Token的概念并发行两个ERC20 Token，上线主网或者测试网，需要提供交易hash
+    - 理解NFT概念并发行一个NFT,上线主网或者测试网，需要提供交易hash
+    - 提交认证：
+ 
+      
+- 🏅 终级 `333SUI`
+    - 发布 Move 相关的学习笔记[文章或者视频]
+    - 成为 Maintainer，并主持至少一次 Office Hour [如何成为 Maintainer](https://www.notion.so/Maintainer-629b476e32d84f7da9faaeef40b3e259?pvs=21)
+    - 以上两项需要满足一项
+    
+    - 给生态贡献了新的独立的 Move modules
+    - 对 Move 生态项目 [Sui](https://github.com/MystenLabs/sui)（[move-language](https://github.com/move-language),[movefuns](https://github.com/movefuns)） 有 PR 贡献，mentor 会评估 PR 的复杂度
+    - 开发出具有创新性的Sui Move应用(团队或个人）
+    - 以上三项需要满足一项
+    - 提交认证：
+ 
+      
+- ⛳ 生态建设奖励 `200SUI`
+    - 对 [MystenLabs](https://github.com/MystenLabs) 下的项目有重要的 PR 贡献：额外奖励 200SUI
+    - 提交认证
+ 
+- 🍎 `iphone 15`
+    - 对贡献最多的团队或个人奖励苹果15一台
 
 
 ## 经济模型
