@@ -1,22 +1,24 @@
-# 安装 SUI
+# ROADMAP 1
+
+## 安装 SUI
 
 _为了安装 sui，我在 windows 电脑上新安装了 wsl2 的 ubuntu20.04 发行版，这是 sui 官方支持的 Linux 版本。_
 
-## 一、配置系统环境
+### 一、配置系统环境
 
 在一个全新的系统里，要先安装必备的软件才可以安装 sui 的二进制文件。
 
-### 1. 终端走代理
+#### 1. 终端走代理
 
 无论是 WSL ，还是任何一个系统，首先自己的保证 `terminal` 走代理，丝滑的网络是解决大多数问题的基础。
 
-### 2. 更新系统包
+#### 2. 更新系统包
 
 `sudo apt-get update`
 
 一般来说 Linux 都有预装 git ，没有的话也记得安装一下。
 
-### 3. 安装 Rust
+#### 3. 安装 Rust
 
 rust 和 cargo 是安装 Sui 必不可少的。
 
@@ -30,7 +32,7 @@ rust 和 cargo 是安装 Sui 必不可少的。
 
 例如显示 `cargo 1.73.0 (9c4383fb5 2023-08-26)` 和 rustc `1.73.0 (cc66ad468 2023-10-03)` 就说明安装成功。
 
-### 4. 安装 Node.js
+#### 4. 安装 Node.js
 
 `node.js` 和 `npm` 不是安装 `sui` 所需要的，但却是之后做 dApp 是需要的，现在可以顺便安装了。
 
@@ -49,9 +51,9 @@ corepack enable
 corepack prepare pnpm@latest --activate
 ```
 
-## 二、安装 sui 的二进制文件
+### 二、安装 sui 的二进制文件
 
-### 1. 安装所需依赖
+#### 1. 安装所需依赖
 
 ```sh
 sudo apt-get install curl git-all cmake gcc libssl-dev pkg-config libclang-dev libpq-dev build-essential
@@ -59,7 +61,7 @@ sudo apt-get install curl git-all cmake gcc libssl-dev pkg-config libclang-dev l
 
 在终端中运行这行命令，中间所有问题都输入 “y”，再耐心等一段时间，安装 sui 所需的依赖就全部安装完成了。
 
-### 2. 安装 sui 二进制文件
+#### 2. 安装 sui 二进制文件
 
 ```sh
 cargo install --locked --git https://github.com/MystenLabs/sui.git --branch testnet sui
@@ -82,7 +84,6 @@ cargo install -j4 --locked --git https://github.com/MystenLabs/sui.git --branch 
     Installing /home/user/.cargo/bin/sui
 ```
 
-
 还不放心？再确认一下
 
 ```sh
@@ -91,3 +92,49 @@ sui 1.14.0-8b46c5ed9
 ```
 
 看到版本号说明 SUI 安装成功！
+
+## 第一个 sui 的 dApp
+
+### 一、 添加 Sui client 配置文件
+
+本地安装好 sui 之后，还需要添加 Sui client 的配置文件
+
+#### 1. 添加 sui client 配置文件
+
+运行：
+
+```sh
+sui client
+```
+
+会出现一些问题，一直选默认选项就可以
+
+```sh
+Config file ["/home/moon/.sui/sui_config/client.yaml"] doesn't exist, do you want to connect to a Sui Full node server [y/N]?y #输入 y ,回车
+
+Sui Full node server URL (Defaults to Sui Devnet if not specified) : #默认直接回车
+Select key scheme to generate keypair (0 for ed25519, 1 for secp256k1, 2: for secp256r1):
+0 #输入 0 ，回车
+```
+
+#### 2. 连接到常用的 RPC
+
+先检查当前可用的环境
+
+```sh
+sui client envs
+```
+
+可以看到目前只有 `devnet` 一个网络连接
+
+```bash
+╭────────┬────────────────────────────────────┬────────╮
+│ alias  │ url                                │ active │
+├────────┼────────────────────────────────────┼────────┤
+│ devnet │ https://fullnode.devnet.sui.io:443 │ *      │
+╰────────┴────────────────────────────────────┴────────╯
+```
+
+目前只连接 `devnet` 网络足够，如果之后需要连接其他 RPC ，参考 [Connect to a custom RPC endpoint](https://docs.sui.io/guides/developer/getting-started/connect#connect-to-a-custom-rpc-endpoint)
+
+### 二、
