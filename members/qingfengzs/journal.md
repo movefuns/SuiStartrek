@@ -3,27 +3,39 @@
 ## 20231113 sui-move helloworld
 ### install tool
 windows wsl install success
-![]()
+
+![Imgur](https://i.imgur.com/HpfYW4W.png)
 
 ### init project 
 
 ```
 sui move new hello_world
 ```
-![]()
+
+![Imgur](https://i.imgur.com/1hmVa20.png)
 
 ### publish 
 ```
-sui move publish . --gas-budget 30000000
-
+sui client publish . --gas-budget 30000000
 ```
+![Imgur](https://i.imgur.com/hexvzVz.png)
+
+
+----- Transaction Digest（后补Hash） ----
+
+2nSgTTgmvRLJxHWEiq8fYKJikh9yvDqfEhr4so6YK87o
 
 ### call function 
 
 ```
-sui move call --function '' --package '' --gas-budget 30000000
+sui client call --function mint --module hello --package 0x49ca688124e75ee42133b37d12dc213bd0996f9c10685c3c7b416
+c4fcbba72ef --gas-budget 30000000
 
 ```
+----- Transaction Digest(后补Hash) ----
+EG9B5dUqCWhvct8E261kFSoRTBfQEhFrNXLrveaweQEP
+
+![Imgur](https://i.imgur.com/imsrtgB.png)
 
 
 ## 20231117 sui-move fungible-token
@@ -32,7 +44,7 @@ sui move call --function '' --package '' --gas-budget 30000000
 sui move new fungible-token
 
 ```
-![]()
+![Imgur](https://i.imgur.com/If9Oa8C.png)
 
 ### code
 ```
@@ -131,8 +143,7 @@ module fungible_tokens::managed_tests {
 sui move test
 
 ```
-
-
+![Imgur](https://i.imgur.com/HtO3UYt.png)
 
 ### publish
 ```
@@ -143,7 +154,7 @@ sui move publish . --gas-budget 30000000
 
 GFb7BS9V5giYh91D3G7mT6D5HWA3MkwrcfSndhy3fdss
 
-![]()
+![Imgur](https://i.imgur.com/zHLueBP.png)
 
 ### mint 
 ```shell
@@ -153,3 +164,4 @@ sui client call --function mint --module managed --package 0x152c5dcb44f6b858a5f
 
 8b44gfR3qZhM4jysHBiC4rBTDjBWFGuVENXRaKTj1bQg
 
+![Imgur](https://i.imgur.com/RmRShhu.png)
