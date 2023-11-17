@@ -25,4 +25,7 @@ package2: 0xde31631397be7bbc5bbd5a5a76a2fb3395bd431f03a07940d3ae3609a4c1d40f
 
 2.目前已自学尝试搭建单独move链，已生成创始文件，搭建全节点
 
-
+3.发布NFT  https://suiexplorer.com/txblock/7vKe7VegVBbhnZBNoq32ccEYthcUQKQ5sdBdxx4iwxaG?network=testnet
+https://suiexplorer.com/txblock/Box9PvC5gXt2uyzAuCdLDpaFtqUa9ozftbjCsS5TM5PW?network=testnet
+已铸造nft https://suiexplorer.com/txblock/1XSGYbS3oNGLFG9V6pDVzHztokd6x2LeT1eecUqT4GY?network=testnet
+https://suiexplorer.com/txblock/8nqd3Qo3A8xtgjzsYu5zdCQ3CpJYuqWWGzHWxk5GPo3A?network=testnet
