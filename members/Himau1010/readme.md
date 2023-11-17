@@ -18,19 +18,5 @@
 - [学习日志](journal.md)
 - [学习总结](summary.md)
 
-### 学习成果
-
-Roadmap  1
-- 项目源码: [HelloSui](https://github.com/Himau1010/Hello_sui.git)
-- Dapp: 
-- [HelloSui Contract Publish](https://suiexplorer.com/txblock/7XoMXjJa5QvN6DxAUt23pmPBYQ22EAf72SG336K52Wji?network=devnet)
-- ![HelloSui-01.png](image/hello/01.png)
-- ![HelloSui-02.png](image/hello/02.png)
-- ![HelloSui-03.png](image/hello/03.png)
-- ![HelloSui-04.png](image/hello/04.png)
-
-- 项目源码:发布的ERC20
-  package1: xx
-  package2: xx
 
   
