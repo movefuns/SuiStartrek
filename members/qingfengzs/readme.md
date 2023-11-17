@@ -2,7 +2,7 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/qingfengzs)
+* Github ID: qingfengzs
 
 * Telegram ID: xxx
 
