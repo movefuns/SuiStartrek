@@ -2,9 +2,8 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: [wanglufei123](https://github.com/wanglufei123)
 
-(首次如果没有，学习完毕钱包在填写)
 * Sui 账号地址: 0x6923e6e0d45eea4773d492e0ae2912dcc79f9cf6ea4a52c937d5c4e6b1c9d66d
 
 2019年从事PHP开发，2021 年进入区块链领域，学习区块链基础，智能合约开发。  
