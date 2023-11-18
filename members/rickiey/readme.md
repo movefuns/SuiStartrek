@@ -24,9 +24,9 @@
 
 1. 环境安装
 2. 配置 sui
-3. 第一个 move : 交互日志 start.log
-4. 学习dapp : 交互日志 dapp.log
-5. 创建 ERC20 Token : 交互日志 ft.log
+3. 第一个 move
+4. 学习dapp
+5. 创建 ERC20 Token
 
 交互过程日志见 dapp.log   start.log
 
