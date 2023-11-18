@@ -21,9 +21,9 @@
 ### 学习成果
 
 Roadmap  1  
-- 项目源码:填写自己的源码地址
+- 项目源码: https://github.com/summertoo/SuiRoot/tree/ddfd3c66e95a92b5382bbeff27ef940b2d0b8e0e/findwork
 - 发布的ERC20
-package1: xx
+package1: 0xd70a262a3b8df948eacbc1b78ceadda446aab76cf0efde4f1a5d670258c2c5c6
 package2: xx
 
 
