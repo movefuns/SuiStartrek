@@ -21,14 +21,10 @@
 ### 学习成果
 
 Roadmap  1  
-- 项目源码:填写自己的源码地址
+- 项目源码:https://github.com/panzhi1/hello_world2.git
 - 发布的ERC20
-package1: xx
-package2: xx
+package1: ERC20:     0xfb2d7eb2630c4a573617daffd6b8fdec96aae7a357eb71807a5708a91f98ca77
+package2: counter:  0x8dd91162839295d3390d07e6f47480307d98bd2c362c7c693ae2533e452fc76d
 
 
-2.
-
-
-3. 
 
