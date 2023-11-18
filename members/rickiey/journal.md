@@ -1,6 +1,6 @@
 # 学习日志
 
-### 1 安装环境 (Arch linux)
+## 1 安装环境 (Arch linux)
 
 ```bash
 # 安装依赖
@@ -31,7 +31,7 @@ cp ./target/debug/sui-proxy /usr/local/bin ;
 
 ```
 
-### 2 配置sui
+## 2 配置sui
 
 ```bash
 sui client switch --env devnet;
@@ -54,7 +54,9 @@ sui client gas ；
 
 ```
 
-### 创建 hello 模块
+## 3 sui-move 学习
+
+### 1. 根据文档学习 创建 hello move  模块
 
 ```bash
 sui move new sui_move_start ;
@@ -70,130 +72,106 @@ publish
 
 ```bash
 # sui client publish  --gas-budget 3000000000 ;
+# 遇到问题，根据提示添加如下参数解决
 sui client publish --skip-fetch-latest-git-deps --skip-dependency-verification  --gas-budget 3000000000
 
-$ sui client publish --skip-fetch-latest-git-deps --skip-dependency-verification  --gas-budget 3000000000                                                                                                                                       
-                                                                                                                                                                                                                                                
-INCLUDING DEPENDENCY Sui                                                                                                                                                                                                                        
-INCLUDING DEPENDENCY MoveStdlib                                                                                                                                                                                                                 
-BUILDING sui_move_start                                                                                                                                                                                                                         
-Total number of linter warnings suppressed: 1 (filtered categories: 1)                                                                                                                                                                          
-Skipping dependency verification                                                                                                                                                                                                                
------ Transaction Digest ----                                                                                                                                                                                                                   
-GG7e8TjMyt5A4k9gw7zmVfNp4T77seSv2L19oyR4CxvG                                                                                                                                                                                                    
-╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮                                                                                 
-│ Transaction Data                                                                                                                                            │                                                                                 
-├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤                                                                                 
-│ Sender: 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a                                                                                  │                                                                                 
-│ Gas Owner: 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a                                                                               │                                                                                 
-│ Gas Budget: 3000000000                                                                                                                                      │                                                                                 
-│ Gas Price: 1000                                                                                                                                             │                                                                                 
-│ Gas Payment:                                                                                                                                                │                                                                                 
-│  ┌──                                                                                                                                                        │                                                                                 
-│  │ ID: 0x0fdf54b59043ef81b721134b62cc24a93dca20a691deff7efd07722c38ad3c6d                                                                                   │                                                                                 
-│  │ Version: 10                                                                                                                                              │                                                                                 
-│  │ Digest: 9oVKgJbyzND4jejimb864fU6o1oNzb8v3dPoAbRW6zxy                                                                                                     │                                                                                 
-│  └──                                                                                                                                                        │                                                                                 
-│                                                                                                                                                             │                                       
-│ Transaction Kind : Programmable                                                                                                                             │                                       
-│ Inputs: [Pure(SuiPureValue { value_type: Some(Address), value: "0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a" })]                     │                                       
-│ Commands: [                                                                                                                                                 │                                       
-│   Publish(<modules>,0x0000000000000000000000000000000000000000000000000000000000000001,0x0000000000000000000000000000000000000000000000000000000000000002), │                                       
-│   TransferObjects([Result(0)],Input(0)),                                                                                                                    │                                       
-│ ]                                                                                                                                                           │                                       
-│                                                                                                                                                             │                                       
-│                                                                                                                                                             │                                       
-│ Signatures:                                                                                                                                                 │                                       
-│    /2WMCZ+c0PO00BfqXgMnBe7jq9XpxAapbroDSG/kYN21NpCNgd0AuFkHcoVk2lKXkGQ0aYzJ2rmvGn34IOxvBA==                                                                 │                                       
-│                                                                                                                                                             │                                       
-╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯             
-╭───────────────────────────────────────────────────────────────────────────────────────────────────╮                                                                                                                                           
-│ Transaction Effects                                                                               │                                                                                                                                           
-├───────────────────────────────────────────────────────────────────────────────────────────────────┤                                                                                                                                           
-│ Digest: GG7e8TjMyt5A4k9gw7zmVfNp4T77seSv2L19oyR4CxvG                                              │                                                                                                                                           
-│ Status: Success                                                                                   │                                                                                                                                           
-│ Executed Epoch: 0                                                                                 │                                                                                                                                           
-│                                                                                                   │                                                                                                                                           
-│ Created Objects:                                                                                  │                                                                                                                                           
-│  ┌──                                                                                              │                                                                                                                                           
-│  │ ID: 0x03d9bf1c531b1624be013a9b6e74571e23692bfbebb5c04ff133203a2e9a6447                         │                                                                                                                                           
-│  │ Owner: Immutable                                                                               │                                                                                                                                           
-│  │ Version: 1                                                                                     │                                                                                                                                           
-│  │ Digest: HbVRjoMXd8P5M7GTheHGq98pTmwuF6ENXTuSZbDyjH7o                                           │                                                                                                                                           
-│  └──                                                                                              │                                                                                                                                           
-│  ┌──                                                                                              │                                                                                                                                           
-│  │ ID: 0x45069b1f8998eea42559b20b27c00034f091b7eaa9925c6f6edf8719cb976e59                         │                                                                                                                                           
-│  │ Owner: Account Address ( 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a )  │                                                                                                                                           
-│  │ Version: 11                                                                                    │                                                                                                                                           
-│  │ Digest: HwHD27EuAwSnYaEtTtToM7AvyvTptAYopd1oeWRCu7Eu                                           │                                                                                                                                           
-│  └──                                                                                              │                                                                                                                                           
-│                                                                                                   │                                                                                                                                           
-│ Mutated Objects:                                                                                  │                                                                                                                                           
-│  ┌──                                                                                              │                                                                                                                                           
-│  │ ID: 0x0fdf54b59043ef81b721134b62cc24a93dca20a691deff7efd07722c38ad3c6d                         │                                                                                                                                           
-│  │ Owner: Account Address ( 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a )  │                                                                                                                                           
-│  │ Version: 11                                                                                    │                                                                                                                                           
-│  │ Digest: CC4pKizcgtM6jHm8GVQnYJ24uYwuL5kSahnxGdY42jBx                                           │                                                                                                                                           
-│  └──                                                                                              │                                                                                                                                           
-│                                                                                                   │                                                                                                                                           
-│ Gas Object:                                                                                       │                                                                                                                                           
-│  ┌──                                                                                              │                                                                                                                                           
-│  │ ID: 0x0fdf54b59043ef81b721134b62cc24a93dca20a691deff7efd07722c38ad3c6d                         │                                                                                                                                           
-│  │ Owner: Account Address ( 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a )  │                                                                                                                                           
-│  │ Version: 11                                                                                    │                                                                                                                                           
-│  │ Digest: CC4pKizcgtM6jHm8GVQnYJ24uYwuL5kSahnxGdY42jBx                                           │                                                                                                                                           
-│  └──                                                                                              │                                                                                                                                           
-│                                                                                                   │                                                                                                                                           
-│ Gas Cost Summary:                                                                                 │                                                                                                                                           
-│    Storage Cost: 7972400                                                                          │                                                                                                                                           
-│    Computation Cost: 1000000                                                                      │                                                                                                                                           
-│    Storage Rebate: 978120                                                                         │                                                                                                                                           
-│    Non-refundable Storage Fee: 9880                                                               │                                                                                                                                           
-│                                                                                                   │                                                                                                                                           
-│ Transaction Dependencies:                                                                         │                                                                                                                                           
-│    C9qLRxbSkpveKzJffpaTy5P7f6BJWymShMfEF12pGNYZ                                                   │      │    HUKvecodFjttC4143fQ7LKpCNEwswvq8QyLJHiN8bJBg                                                   │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
------ Events ----
-Array []
------ Object changes ----
-
-Created Objects: 
- ┌──
- │ ObjectID: 0x45069b1f8998eea42559b20b27c00034f091b7eaa9925c6f6edf8719cb976e59
- │ Sender: 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a 
- │ Owner: Account Address ( 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a )
- │ ObjectType: 0x2::package::UpgradeCap 
- │ Version: 11
- │ Digest: HwHD27EuAwSnYaEtTtToM7AvyvTptAYopd1oeWRCu7Eu
- └──
-
-Mutated Objects: 
- ┌──
- │ ObjectID: 0x0fdf54b59043ef81b721134b62cc24a93dca20a691deff7efd07722c38ad3c6d
- │ Sender: 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a 
- │ Owner: Account Address ( 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a )
- │ ObjectType: 0x2::coin::Coin<0x2::sui::SUI> 
- │ Version: 11
- │ Digest: CC4pKizcgtM6jHm8GVQnYJ24uYwuL5kSahnxGdY42jBx
- └──
-
-Published Objects: 
- ┌──
- │ PackageID: 0x03d9bf1c531b1624be013a9b6e74571e23692bfbebb5c04ff133203a2e9a6447 
- │ Version: 1 
- │ Digest: HbVRjoMXd8P5M7GTheHGq98pTmwuF6ENXTuSZbDyjH7o
- | Modules: hello_world
- └──
------ Balance changes ----
- ┌──
- │ Owner: Account Address ( 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a ) 
- │ CoinType: 0x2::sui::SUI 
- │ Amount: -7994280
- └──                                                                             
+# 详见
+# https://suiexplorer.com/txblock/GG7e8TjMyt5A4k9gw7zmVfNp4T77seSv2L19oyR4CxvG?network=devnet
+                                      
 ```
 
 ```bash
-export PACKAGE_ID=0x03d9bf1c531b1624be013a9b6e74571e23692bfbebb5c04ff133203a2e9a6447
+export PACKAGE_ID=0x03d9bf1c531b1624be013a9b6e74571e23692bfbebb5c04ff133203a2e9a6447 
 sui client call --function mint --module hello_world --package $PACKAGE_ID --gas-budget 300000000
 
+# 详见 https://suiexplorer.com/txblock/GbxN3RCjzg43g8AnYDFKQnhMxNqAFnZ3QHjts18ayUum?network=devnet
+
 ```
+
+### 2. 学习dapp
+
+仓库: https://github.com/rickiey/sui-move-hw
+
+```bash
+ pnpm create @mysten/create-dapp
+
+cd sui-dapp-hw;
+pnpm i ;
+
+# 工作环境切换至 xubuntu22.04 这一步没有遇到在 Arch 虚拟机里的问题
+sui client publish --gas-budget 100000000 counter ;
+
+# 见 https://suiexplorer.com/txblock/VHDEzBc2bvh7Bj5c4omVQZ8Vo9G5vmt7uhGzwVLrqDP?network=devnet
+
+```
+
+更改 src/constants.ts package id
+
+> pnpm dev
+
+浏览器导入钱包，与dapp交互
+
+## 4 创建自己 ERC20 Token
+
++ 参考
+
+> https://examples.sui-book.com/samples/coin.html
+> https://intro-zh.sui-book.com/unit-three/lessons/4_the_coin_resource_and_create_currency.html
+
+```bash
+sui move new ft ;
+cd ft;
+
+# 创建并编辑 move 文件
+...
+
+# 编译 
+sui move build ;
+# 无报错后 publish
+sui client publish --gas-budget 100000000
+
+# 见 https://suiexplorer.com/txblock/BSnFUgytpk2L6yMGJ7HogxAmxZhoGBrFZyeE9B58b9va?network=devnet
+
+
+```
+
+package id: 0x6fc7461412bd79892455d909f1f4ab86a6d17b77d4b82405acfa1b305ce1c750
+object id: 0xb3f33415ef6870de592d26d82070dfc7d69afdd989ef2be7603603099198f1d5
+
+再次编辑文件，添加 mint burn方法
+
+```rust
+     /// Manager can mint new coins
+    public entry fun mint(
+        treasury_cap: &mut TreasuryCap<MYCOIN>, amount: u64, recipient: address, ctx: &mut TxContext
+    ) {
+        coin::mint_and_transfer(treasury_cap, amount, recipient, ctx);
+    }
+
+    /// Manager can burn coins
+    public entry fun burn(treasury_cap: &mut TreasuryCap<MYCOIN>, coin: Coin<MYCOIN>) {
+        coin::burn(treasury_cap, coin);
+    }
+```
+
+ 再次 publish
+
+package id: 0x3d5fc3e0617e03460203644cb187906234768332505e4eff52da507758d8dbca
+object id: 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a
+
+> sui client publish --gas-budget 100000000
+见
+> https://suiexplorer.com/txblock/B4kAw8GXuEEL14v5jvetBSN3L6GThLKbJgUcLuwqve2p?network=devnet
+
+mint
+
+> sui client call --gas-budget 300000000   --package 0x3d5fc3e0617e03460203644cb187906234768332505e4eff52da507758d8dbca --module mycoin   --function mint --args 0xe123b4ce839fd071a42292c0c481b0070181af835bf58bd6da3515395d7dd16c  666666666 0xc6e7d97fc313de140b159e7ccf7b7479780ae704763fd4957c7fecbb7de9a89a
+见
+> https://suiexplorer.com/txblock/VkqFqfmh5ik9tpZCewoCpqMwhZRfFaQSSje4wxLQ6mF?network=devnet
+
+burn
+
+> sui client call --gas-budget 300000000   --package 0x3d5fc3e0617e03460203644cb187906234768332505e4eff52da507758d8dbca --module mycoin   --function burn --args 0xe123b4ce839fd071a42292c0c481b0070181af835bf58bd6da3515395d7dd16c  0x180489aac0b2312a192e1cb61477d1b2f9200508b5213b24f6f2a58f53143229
+
+见
+> https://suiexplorer.com/txblock/JAf1gyQsKceZor5sCi3HCDS5qsB1cXW2K6xHe8MhBQ9o?network=devnet
