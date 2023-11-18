@@ -347,7 +347,9 @@ Published Objects:
  │ Amount: -12356680
  └──
 ```
-
+## 其他吐槽
+1. https://sui-typescript-docs.vercel.app/dapp-kit 官网没有icon图标，感觉不够专业
+2. pnpm create @mysten/create-dapp 生成的项目没有.gitignore, 对于初学者来说并不知道那些是可以提交的哪些是不用提交的
 
     
 
