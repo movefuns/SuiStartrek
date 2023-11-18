@@ -20,11 +20,12 @@
 
 ### 学习成果
 
-Roadmap  1  
+Roadmap  
+1.
 - 项目源码:填写自己的源码地址
 - 发布的ERC20
-package1: xx
-package2: xx
+package1: 0x4be07bc164cea18a740839d97861976d0044010059ad2a836b558133dc41db89
+
 
 
 2.
