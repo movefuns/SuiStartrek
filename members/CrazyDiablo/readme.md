@@ -12,9 +12,7 @@
 
 -   Discord ID: xx
 
-(首次如果没有，学习完毕钱包在填写)
-
--   Sui 账号地址: 暂无
+-   Sui 账号地址: 0x8622db46bb323e3462ba51423860793888f199e16e9a9db2e799a88ffd0b308a
 
 ### 学习日志
 
@@ -25,10 +23,10 @@
 
 Roadmap 1
 
--   项目源码:填写自己的源码地址
--   发布的 ERC20
-    package1: xx
-    package2: xx
+-   项目源码: https://github.com/CrazyDiablo/hellow-sui-dapp
+-   发布的 ERC20  
+    package1: 0x68273d5e4bb4887277f27d2c7150c0baffbeeaafa14e24140d7bbb6d632ef4fc  
+    package2: 0xcab19b13fb412c5d707126bf5b5b6da0b21f71c7641b39aad5bff67c8a9117c1  
 
 2.
 
