@@ -101,3 +101,7 @@ cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devn
 
 招聘讯息
 https://www.notion.so/modifidao-060d0b29ceeb4a86bdfc1ae23978666c
+
+mac代理
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+
