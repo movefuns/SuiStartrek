@@ -24,8 +24,7 @@ Roadmap  1
 - 项目源码: https://github.com/summertoo/SuiRoot/tree/ddfd3c66e95a92b5382bbeff27ef940b2d0b8e0e/findwork
 - 发布的ERC20
 package1: 0xd70a262a3b8df948eacbc1b78ceadda446aab76cf0efde4f1a5d670258c2c5c6
-package2: xx
-
+package2: Counter 0x910e1e80bb75c9d9f7e0ed2892f14534e76cf58cbd8a7450c91fe439de6eb011
 
 2.
 
