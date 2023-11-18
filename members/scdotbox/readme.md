@@ -17,6 +17,11 @@
 ### 学习日志
 
 - [学习日志](journal.md)
+    - [第一周学习](01_step_week)
+        1. 安装环境
+        2. Sui 网络
+        3. 第一个智能合约 helloworld
+        4. 第二个智能合约 counter
 - [学习总结](summary.md)
 
 ### 学习成果
