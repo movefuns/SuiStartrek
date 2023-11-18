@@ -8,9 +8,7 @@
 
 - Discord ID: \_linyang
 
-(首次如果没有，学习完毕钱包在填写)
-
-- Sui 账号地址: 0xbb0345e0ff30d048fb18fc21b6103dcf76c85bbb14f5153441211d61dc50e5eb
+- Sui 账号地址:   0xd8fb6a5043943dfd49d5247dd534f62fa310df1d1912bae1c529a6e75321eb5b
 
 长期从事传统项目开发。  
 常用语言 Java, JS。对区块链系统研发以及智能合约编程方向感兴趣。
@@ -24,7 +22,9 @@
 
 Roadmap 1
 
-- todo
+- 配置本地的环境
+- 编写简单的 helloworld合约 counter 合约
+- 属性sui的常用命令
 
 2.
 
