@@ -1,4 +1,6 @@
 # 学习成果
 
-## Roadmap 1
-- 发布的Coin地址
+## Roadmap1
+
+- 发布 `ERC20` 合约
+
