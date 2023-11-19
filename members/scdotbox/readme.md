@@ -28,6 +28,7 @@
 - [学习总结](summary.md)
 
 ### 学习成果
++ 学习成果，存放在[个人Github](https://github.com/scdotbox/sui_move_learn)
 
 Roadmap  1  
 - 项目源码:填写自己的源码地址
