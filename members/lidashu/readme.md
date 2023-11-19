@@ -23,7 +23,7 @@
 Roadmap  1  
 - learn Sui: https://docs.sui.io/references
 - 项目源码: https://github.com/lidashu/learn_sui
-- 发布的ERC20: 0xa4711b01591c7fa25d0509f90b2dac5634df578aa1d3c5796ea4bcb5fe39b289
+- 发布的ERC20: 0x86fdfec8e82161d5331a86e671e2615d52577b4ea4ec482331718ce6d40d7e79
 
 2.
 
