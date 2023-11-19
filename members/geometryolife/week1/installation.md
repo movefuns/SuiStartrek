@@ -1,7 +1,7 @@
 # Sui 开发环境配置
 
 - 系统：Windows 10
-- Windows 包管理器 —— `winget`
+- Windows 10（及以上）系统自带的包管理器 —— `winget`
 
 ## 安装 Rust
 
@@ -191,3 +191,45 @@ cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devn
 ```
 
 这条命令表示从 Sui 的 GitHub 仓库下载 `devnet` 分支的 `sui` crate 的源码，并编译安装。安装成功后，可以在 `%USERPROFILE%\.cargo\bin` 目录下找到 `sui.exe` 二进制程序。
+
+6. 当然，也可以选择编译 `main` 分支的代码，这种方式可以最快体验 Sui 的新特性，但也意味着，比稳定的分支更容易遇到 Bug。
+
+使用 Powershell 克隆 Sui 的代码仓库：
+
+```powershell
+git clone git@github.com:MystenLabs/sui.git
+```
+
+<details>
+<summary>Output</summary>
+
+```powershell
+PS C:\Users\Joe\i> git clone git@github.com:MystenLabs/sui.git
+Cloning into 'sui'...
+Enter passphrase for key '/c/Users/Joe/.ssh/id_ed25519':
+remote: Enumerating objects: 257304, done.
+remote: Counting objects: 100% (10073/10073), done.
+remote: Compressing objects: 100% (4833/4833), done.
+remote: Total 257304 (delta 6559), reused 8013 (delta 5108), pack-reused 247231
+Receiving objects: 100% (257304/257304), 281.07 MiB | 5.75 MiB/s, done.
+Resolving deltas: 100% (171390/171390), done.
+Updating files: 100% (11359/11359), done.
+```
+
+</details>
+
+再使用 `cd` 命令切换到 `sui` crate 的根目录，并执行安装命令，等待编译安装结束，`sui.exe` 就会自动添加到 `$HOME/.cargo/bin` 目录下：
+
+```powershell
+PS C:\Users\Joe\i\sui\crates\sui> cargo install --path .
+```
+
+> 注意：安装方法 5 和 6 任选一种即可，我个人倾向于使用最新的代码。
+
+7. 检查 Sui 版本，确认是否成功安装：
+
+```powershell
+PS C:\Users\Joe\i\sui\crates\sui> sui --version
+
+sui 1.15.0-6b9461d68a
+```
