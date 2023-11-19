@@ -18,29 +18,6 @@ sui的安装
 2. chorm安装sui钱包插件并创建账户
 地址：0x0f8c0f0c599429b5d5ef728f14fd6a87b97caf256a72dd065cd57fb4c73b43f7
 
-3. 
-
-
-
-
-## 3) 发布ERC20合约
-### 1.初始化move项目
-```shell
-sui move new move_project ##创建一个新的move项目
-```
-### 2.修改Move.toml
-[package]
-name = "move_coin"
-version = "0.0.1"
-
-[dependencies]
-//注意rev的版本一定要和发布到的环境版本一直，比如dev环境对应的devnet版本  
-
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/devnet" }
-
-[addresses]
-move_coin = "0x0"
-
 3. 创建发布包
 
 sui move new <PACKAGE NAME> 启动 Sui 框架框架
