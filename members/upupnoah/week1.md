@@ -16,7 +16,7 @@
 - 查看gas：`sui client gas`
 - 切换网络：`sui client switch --env <network name>`
 - 默认地址（未指定时）：`sui client active address`
-- 发布合约到 sui 网络上：`sui client publish --gas-budget 10000000`
+- 发布合约到 sui 网络上：`sui client publish --gas-budget 100000000`
 
 ## 安装 move 开发环境
 
@@ -102,7 +102,7 @@
 
 - 和上面一样，初始化一个 package：erc20
 
-  - `sui move new erc20`
+  - `sui move new sui_erc20`
 
 - 完成合约代码
 
