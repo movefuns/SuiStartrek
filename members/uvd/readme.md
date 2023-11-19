@@ -2,14 +2,14 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/WhiteHare2023)
+* Github ID: [github](https://github.com/github)
 
-* Telegram ID: 
+* Telegram ID: wangtxxl
 
-* Discord ID: 
+* Discord ID: .uvd
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0xde81aa50ed9b6fa2ab34966c7e0da23204ccbc920365ecb7ba04150116ca802d
+* Sui 账号地址: 0x7b8e0864967427679b4e129f79dc332a885c6087ec9e187b53451a9006ee15f2
 
 长期从事深度学习和计算机视觉算法，训练平台开发，2021 年进入区块链领域，学习区块链基础，智能合约开发。  
 常用语言 Python, C++, JS。对区块链系统研发以及智能合约编程方向感兴趣。
