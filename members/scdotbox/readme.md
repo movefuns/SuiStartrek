@@ -18,10 +18,11 @@
 
 - [学习日志](journal.md)
     - [第一周学习](01_step_week)
-        1. 安装环境
-        2. Sui 网络
-        3. 第一个智能合约 helloworld
-        4. 第二个智能合约 counter
+        1. [安装环境](./01-step-week/01-安装环境.md)
+        2. [Sui 网络](./01-step-week/02-Sui网络.md)
+        3. [Sui 账户](./01-step-week/03-Sui账户.md)
+        4. [第一个智能合约 helloworld](./01-step-week/04-第一个智能合约-helloworld.md)
+        5. [第二个智能合约 counter](./01-step-week/05-第二个智能合约-counter.md)
 - [学习总结](summary.md)
 
 ### 学习成果
