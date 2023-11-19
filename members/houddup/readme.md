@@ -22,10 +22,9 @@
 ### 学习成果
 
 Roadmap  1  
-- 项目源码:填写自己的源码地址
+- 项目源码:https://github.com/houddup/my_first_package
 - 发布的ERC20
-package1: xx
-package2: xx
+package1: 0x1bf83ee168c3fd3c5f041810fd8ea782afe1bbd93fd3004128ff98a0410a1fc6
 
 
 2.
