@@ -1,4 +1,4 @@
-# ROADMAP 1
+# ROADMAP_1 Sui Move 开发入门
 
 ## 安装 SUI
 
@@ -137,4 +137,102 @@ sui client envs
 
 目前只连接 `devnet` 网络足够，如果之后需要连接其他 RPC ，参考 [Connect to a custom RPC endpoint](https://docs.sui.io/guides/developer/getting-started/connect#connect-to-a-custom-rpc-endpoint)
 
-### 二、
+### 二、使用脚手架工具搭建 dApp
+
+#### 1. 创建 dApp 项目
+
+在确保自己安装了 `pnpm` 之后，在终端内运行：
+
+```bash
+pnpm create @mysten/create-dapp
+```
+
+在这里我们使用了 [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) 脚手架工具创建一个新的 Sui dApp 。
+
+会有两个模板供你选择，这里选择第二个，有完整的交互代码，同时也可以给自己的项目命名：
+
+```bash
+$ pnpm create @mysten/create-dapp
+.../share/pnpm/store/v3/tmp/dlx-7538     | +108 +++++++++++
+.../share/pnpm/store/v3/tmp/dlx-7538     | Progress: resolved 108, reused 103, downloaded 5, added 108, done
+? Which starter template would you like to use? …
+  react-client-dapp React Client dApp that reads data from wallet and the blockchain
+▸ react-e2e-counter React dApp with a move smart contract that implements a distributed counter
+
+✔ Which starter template would you like to use? · react-e2e-counter
+? What is the name of your dApp? (this will be used as the directory name) ‣ my-first-sui-dapp
+```
+
+#### 2. 领取 devent 代币
+
+进入新建的 dApp 文件夹，项目自带的 `README.md` 已经将步骤写得很详细了，正常按照此步骤操作即可。
+
+不过我们之前已经做了很多工作，其中很多步骤可以忽略。
+
+由于模板默认使用 `devnet` 网络，我们先确认自己当前本地选择了 sui 的哪个网络：
+
+```bash
+$ sui client envs
+╭─────────┬─────────────────────────────────────┬────────╮
+│ alias   │ url                                 │ active │
+├─────────┼─────────────────────────────────────┼────────┤
+│ devnet  │ https://fullnode.devnet.sui.io:443  │ *      │
+│ mainnet │ https://fullnode.mainnet.sui.io:443 │        │
+│ local   │ http://127.0.0.1:9000               │        │
+╰─────────┴─────────────────────────────────────┴────────╯
+```
+
+在 `devnet` 网络则无需改变，假如不是，也可以切换一下：
+
+```bash
+sui client switch --env devnet
+```
+
+查看当前钱包地址：
+
+```bash
+$ sui client active-address
+0x4ea91b8374e431fa8a9895ee60b38fbe0adecb89b93059a9359ed329d2e6399c
+```
+
+给此钱包领取 `devnet` 上的 10sui ，将 `"recipient"` 中的内容换成自己的钱包地址：
+
+```bash
+curl --location --request POST 'https://faucet.devnet.sui.io/gas' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "FixedAmountRequest": {
+        "recipient": "<YOUR_ADDRESS>"
+    }
+}'
+```
+
+#### 3. 发布合约
+
+进入 dApp 项目的 `move` 文件夹中，发布一个合约：
+
+```bash
+$ cd move/
+move$
+
+move$ sui client publish --gas-budget 100000000 counter
+```
+
+运行以上命令后，在终端中返回信息中的 `Published Objects` 中找到 `PackageID` 的值，将这个值填入 `src/constants.ts` 中：
+
+```bash
+export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
+```
+
+#### 4. 启动 dApp
+
+到 dApp 根目录下
+
+```bash
+pnpm install
+pnpm dev
+```
+
+链接浏览器插件钱包，一定主要钱包网络要切换到 `devnet`，同时这个钱包里也要有一定测试币来支付 gas，这样第一个 sui dApp 就完成了
+
+Task1:

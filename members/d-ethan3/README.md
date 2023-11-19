@@ -8,7 +8,7 @@
 
 * Discord ID: 0x99ethan
 
-* Sui 账号地址:  
+* Sui 账号地址:  0xf420089ddcd8730b8771aa7262661103723d4cb1ec06a184d1dbcfaaa54ca9a7
 
 ## 学习日志
 
