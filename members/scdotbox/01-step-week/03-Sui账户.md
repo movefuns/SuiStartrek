@@ -26,7 +26,10 @@ sui client addresses
 sui client active-address
 # 更换当前激活账户
 sui switch --address <other address>
+# 查看地址余额
+sui client gas
 ```
+
 ### 2.2 合约发布
 ```bash
 # 发布合约
