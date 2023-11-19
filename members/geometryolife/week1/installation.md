@@ -153,6 +153,20 @@ Successfully installed
 winget install --id LLVM.LLVM
 ```
 
+添加 LLVM 到 `PATH` 环境变量，让 Rust 编译链接程序能够使用 LLVM 的相应程序。
+
+按下 `Win + R`，输入 `sysdm.cpl`，点击确定后会打开`系统属性`。
+
+![](./imgs/open-path-env-setting.png)
+
+选择`高级`->`环境变量`-> `Path` ->`编辑`
+
+![](./imgs/win-path-env-edit.png)
+
+选择`新建`->`浏览`，将 `C:\Program Files\LLVM\bin` 选择好（或者手动填写），点击`确定`保存即可。
+
+![](./imgs/add-llvm-to-path.png)
+
 <details>
 <summary>Output</summary>
 
