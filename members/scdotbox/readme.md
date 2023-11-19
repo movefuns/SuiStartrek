@@ -23,6 +23,8 @@
         3. [Sui 账户](./01-step-week/03-Sui账户.md)
         4. [第一个智能合约 helloworld](./01-step-week/04-第一个智能合约-helloworld.md)
         5. [第二个智能合约 counter](./01-step-week/05-第二个智能合约-counter.md)
+        6. [第一个dAPP](./01-step-week/06-第一个dAPP.md)
+        7. [第一个自定义币](./01-step-week/07-第一个自定义币.md)
 - [学习总结](summary.md)
 
 ### 学习成果
