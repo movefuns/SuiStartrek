@@ -6,7 +6,7 @@
 * Telegram ID: @mindfrog
 * Twitter: [@MindfrogCrypto](https://twitter.com/MindfrogCrypto)
 * **Starcoin** Address: 0xdadb1eb37a5b8194481ff221f362ee27* 
-* **Sui** Address: 0x6b0ecbf8c4454422554ef775931669194c8a2cf37abfac519ff111c18bff1517
+* **Sui** Address: 0x93c2eb3fa540066b7bff0b5e35e550dbc7d98139369f63f92991c1febd3c3de8
 
 
 5 years of scientific research project management experience
