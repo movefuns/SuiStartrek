@@ -12,4 +12,4 @@
 
 ## 实现 zkLogin demo，制作一个新手友好的分解步骤demo
 - [Sui zkLogin demo](https://sui-zklogin.vercel.app/)
-- (待整理代码后开源)
+- [Github Repo](https://github.com/jovicheng/sui-zklogin-demo)
