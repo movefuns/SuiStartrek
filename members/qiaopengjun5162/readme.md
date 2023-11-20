@@ -25,11 +25,8 @@
 
 Roadmap  1  
 
-* 项目源码: <https://github.com/qiaopengjun5162/sui-move-hello-world>
+* 项目源码:
+  * <https://github.com/qiaopengjun5162/sui-move-hello-world>
+  * <https://github.com/qiaopengjun5162/mycoin>
 * 发布的ERC20
-package1: xx
-package2: xx
-
-2.
-
-3.
+package: 0xb2ec6903d87ab9351a4472eb9bdd10d975bdee621108b4c8ba6af23ac44f34f9
