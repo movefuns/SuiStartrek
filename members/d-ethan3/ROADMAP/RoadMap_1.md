@@ -1,6 +1,6 @@
 # ROADMAP_1 Sui Move 开发入门
 
-## 安装 SUI
+## 第0步：安装 SUI
 
 _为了安装 sui，我在 windows 电脑上新安装了 wsl2 的 ubuntu20.04 发行版，这是 sui 官方支持的 Linux 版本。_
 
@@ -236,3 +236,210 @@ pnpm dev
 链接浏览器插件钱包，一定主要钱包网络要切换到 `devnet`，同时这个钱包里也要有一定测试币来支付 gas，这样第一个 sui dApp 就完成了
 
 Task1:
+
+由于 `devnet` 出现问题，暂时无法完成
+
+## 发布两个 coin 合约
+
+### 1. 创建新项目
+
+```bash
+sui move new first_coin # 项目填自己想要的名称即可
+```
+
+在 `source/` 下创建 `move` 文件，例如 `first_coin.move`
+
+示例代码在 [创建 ERC20 代币](https://examples.sui-book.com/samples/coin.html)
+
+编译合约
+
+```bash
+$ sui move build
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING first_coin
+```
+
+### 2. 发布合约
+
+ 由于  `devnet` 挂了，这个合约是在 `testnet` 上部署的
+
+编译合约之后会生成 `bulid` 文件夹，`cd build` 进入文件夹，然后部署合约
+
+```bash
+$ sui client publish --gas-budget 100000000 first_coin
+
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING first_coin
+Successfully verified dependencies on-chain against source.
+----- Transaction Digest ----
+F8SxcwRhCWH3bFcQASFeV6xbCrQEa8amYi9WGmeKnQbr
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Data
+                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Sender: 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897
+                                                  │
+│ Gas Owner: 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897
+                                                  │
+│ Gas Budget: 100000000
+                                                  │
+│ Gas Price: 1000
+                                                  │
+│ Gas Payment:
+                                                  │
+│  ┌──
+                                                  │
+│  │ ID: 0x248dfc116dcffefaab699438572b9abdc7545830e29866e7eda290540d4ff7cb
+                                                  │
+│  │ Version: 12675209
+                                                  │
+│  │ Digest: FxZuQwfARTiuQTUZtogpPo8ckXSC1thWS3QjjP12rSpx
+                                                  │
+│  └──
+                                                  │
+│
+                                                  │
+│ Transaction Kind : Programmable
+                                                  │
+│ Inputs: [Pure(SuiPureValue { value_type: Some(Address), value: "0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897" })]                     │
+│ Commands: [
+                                                  │
+│   Publish(<modules>,0x0000000000000000000000000000000000000000000000000000000000000001,0x0000000000000000000000000000000000000000000000000000000000000002), │
+│   TransferObjects([Result(0)],Input(0)),
+                                                  │
+│ ]
+                                                  │
+│
+                                                  │
+│
+                                                  │
+│ Signatures:
+                                                  │
+│    /VJCJ1VY0kxlzhaEv8gtltfnNXUjIv6aio5pyMJtFIDxszn8D/uIzMWJ7+E8LoVhyAoZJ5LDm0PADcXW1QXkBg==
+                                                  │
+│
+                                                  │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Effects                                                                               │
+├───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Digest: F8SxcwRhCWH3bFcQASFeV6xbCrQEa8amYi9WGmeKnQbr                                              │
+│ Status: Success                                                                                   │
+│ Executed Epoch: 193                                                                               │
+│                                                                                                   │
+│ Created Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x1e8048e13a749414121a971f067b72e781bced31015d722c1ed66a0ab2a8832a                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 1                                                                                     │
+│  │ Digest: BXiJK7BUByNa6tEQtBUghMeAzYWg5iLPMURFCPztC7Cn                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x56ac2b58ea219e6ffa31913c4a89cc88201354ef67ecad14eaf1e5c90ca24c1a                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 12675210                                                                              │
+│  │ Digest: 6pGSs5EnRNRtVa2bXmWsFLWDhMxQdDWyyoVdb66atfFH                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x71b4c3ce628c02c3cb3257832c36ebbcb24a0f9bfea05d3b2039f73d524fd2e6                         │
+│  │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )  │
+│  │ Version: 12675210                                                                              │
+│  │ Digest: 67AujqwzqTVfN4ayZPSrvK5n4jft4Cz5xXNUt4QEvxgx                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x94ed150b87ca6d5526ac4cca1c2ccaf16417a807bf1f009c9e6210085bc8f14a                         │
+│  │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )  │
+│  │ Version: 12675210                                                                              │
+│  │ Digest: CuTLbTmAsS6rgyBafSBE73nSGMxPysZggoFKxHBr2v5g                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Mutated Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x248dfc116dcffefaab699438572b9abdc7545830e29866e7eda290540d4ff7cb                         │
+│  │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )  │
+│  │ Version: 12675210                                                                              │
+│  │ Digest: DyTSLdrd79Ke6kSjMVMZ5AqYU3xNqCeFndUtJjUH71Me                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Object:                                                                                       │
+│  ┌──                                                                                              │
+│  │ ID: 0x248dfc116dcffefaab699438572b9abdc7545830e29866e7eda290540d4ff7cb                         │
+│  │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )  │
+│  │ Version: 12675210                                                                              │
+│  │ Digest: DyTSLdrd79Ke6kSjMVMZ5AqYU3xNqCeFndUtJjUH71Me                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Cost Summary:                                                                                 │
+│    Storage Cost: 12752800                                                                         │
+│    Computation Cost: 1000000                                                                      │
+│    Storage Rebate: 978120                                                                         │
+│    Non-refundable Storage Fee: 9880                                                               │
+│                                                                                                   │
+│ Transaction Dependencies:                                                                         │
+│    3pcBpJcaTZJstk5Ssu13zXjSaNQX2Xw1U2F66C9dajq5                                                   │
+│    B4SeBZuyptHAgjSrWBECoP5MhUMmXnkSg8pwmwBaB9hQ                                                   │
+│    Bkvb1fhqAgtZFiV16EweRNXFgutju5LV87tVA8W6c7za                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
+----- Events ----
+Array []
+----- Object changes ----
+
+Created Objects:
+ ┌──
+ │ ObjectID: 0x56ac2b58ea219e6ffa31913c4a89cc88201354ef67ecad14eaf1e5c90ca24c1a
+ │ Sender: 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897
+ │ Owner: Immutable
+ │ ObjectType: 0x2::coin::CoinMetadata<0x1e8048e13a749414121a971f067b72e781bced31015d722c1ed66a0ab2a8832a::first_coin::FIRST_COIN>
+ │ Version: 12675210
+ │ Digest: 6pGSs5EnRNRtVa2bXmWsFLWDhMxQdDWyyoVdb66atfFH
+ └──
+ ┌──
+ │ ObjectID: 0x71b4c3ce628c02c3cb3257832c36ebbcb24a0f9bfea05d3b2039f73d524fd2e6
+ │ Sender: 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897
+ │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )
+ │ ObjectType: 0x2::coin::TreasuryCap<0x1e8048e13a749414121a971f067b72e781bced31015d722c1ed66a0ab2a8832a::first_coin::FIRST_COIN>
+ │ Version: 12675210
+ │ Digest: 67AujqwzqTVfN4ayZPSrvK5n4jft4Cz5xXNUt4QEvxgx
+ └──
+ ┌──
+ │ ObjectID: 0x94ed150b87ca6d5526ac4cca1c2ccaf16417a807bf1f009c9e6210085bc8f14a
+ │ Sender: 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897
+ │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )
+ │ ObjectType: 0x2::package::UpgradeCap
+ │ Version: 12675210
+ │ Digest: CuTLbTmAsS6rgyBafSBE73nSGMxPysZggoFKxHBr2v5g
+ └──
+
+Mutated Objects:
+ ┌──
+ │ ObjectID: 0x248dfc116dcffefaab699438572b9abdc7545830e29866e7eda290540d4ff7cb
+ │ Sender: 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897
+ │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )
+ │ ObjectType: 0x2::coin::Coin<0x2::sui::SUI>
+ │ Version: 12675210
+ │ Digest: DyTSLdrd79Ke6kSjMVMZ5AqYU3xNqCeFndUtJjUH71Me
+ └──
+
+Published Objects:
+ ┌──
+ │ PackageID: 0x1e8048e13a749414121a971f067b72e781bced31015d722c1ed66a0ab2a8832a
+ │ Version: 1
+ │ Digest: BXiJK7BUByNa6tEQtBUghMeAzYWg5iLPMURFCPztC7Cn
+ | Modules: first_coin
+ └──
+----- Balance changes ----
+ ┌──
+ │ Owner: Account Address ( 0x6ae6dec21ed0f6d60022a1a17d7af806b3ee91e957a2e0135a00c78befb08897 )
+ │ CoinType: 0x2::sui::SUI
+ │ Amount: -12774680
+ └──
+```
+
+在 `testnet` 上可以查看到合约记录
+
+1. [F8SxcwRhCWH3bFcQASFeV6xbCrQEa8amYi9WGmeKnQbr](https://suiexplorer.com/txblock/F8SxcwRhCWH3bFcQASFeV6xbCrQEa8amYi9WGmeKnQbr?network=testnet)
+2. [JCdFR7kNksmf37T9eCYTSerEuNBB1KVWYRV32iPcYSK6](https://suiexplorer.com/txblock/JCdFR7kNksmf37T9eCYTSerEuNBB1KVWYRV32iPcYSK6?network=testnet)
