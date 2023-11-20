@@ -23,10 +23,10 @@
 
 Roadmap 1
 
-- 项目源码:填写自己的源码地址
+- 项目源码:[项目地址](https://github.com/NavaFee/Move-fcc.git)
 - 发布的 ERC20
-  package1: xx
-  package2: xx
+  package1: 0xe2dfe919261ecba1c9bee58ca4234b62161cecf419b17e7bc3ecb41a6bd39c99
+  package2: 0x948218ae60a03e4b14134e5c328b335ceb4d33350d69d24f1bdc135014a19174
 
 2.
 
