@@ -10,8 +10,7 @@
 
 (首次如果没有，学习完毕钱包在填写)
 
-* Sui 账号地址[Devnet]: 0x45d846bce18a45add7f21ad9814234351eca041443c557e1b3c6b72791647a39
-* Sui 账号地址[Mainnet]: 0x8dd5021df68aba187b890f4d5f5415bb5649457fc3bc996d659594a5e5ce2a1b
+* Sui 账号地址: 0x8dd5021df68aba187b890f4d5f5415bb5649457fc3bc996d659594a5e5ce2a1b
 
 5年后端开发经验，常用语言是Python，Golang。借着星航计划这个契机，接触一些区块链领域的知识。
 
