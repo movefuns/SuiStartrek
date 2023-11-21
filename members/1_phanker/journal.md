@@ -1,71 +1,92 @@
 # 学习日志
+
 # Roadmap 1
 
 ## 1) sui 环境的搭建
+
 因为设备资源问题，我选择二进制安装。
 
-
 ### 1.二进制安装：
+
 #### 优点
-二进制安装不需要依赖 rust 环境，只需要下载[sui的二进制](https://github.com/MystenLabs/sui/releases)，然后配置到宿主机的环境变量即可，对系统资源不强的设备友好
+
+二进制安装不需要依赖 rust 环境，只需要下载[sui的二进制](https://github.com/MystenLabs/sui/releases)
+，然后配置到宿主机的环境变量即可，对系统资源不强的设备友好
+
 #### 缺点：
+
 因为 sui 的版本更新频繁，所有需要频繁下载二进制文件，比较繁琐
 
-### 2.源码安装: 
+### 2.源码安装:
+
 #### 优点
+
 通过 rust 的工具链，可以随时更新最新的 sui 版本
+
 #### 缺点
+
 需要依赖 rust 环境，配置 rust 的环境非常消耗系统资源，设备性能不强的可能导致各种问题，而且操作起来繁琐，但是只要配置好之后，后面就比较方便
 
 ### 3.测试
+
 ``` shell
 sui --version  ##查看sui 的版本信息
 sui 1.13.0-64fe2b6 ##显示结果表示安装成功
 ```
 
-
-
-
 ## 2) 前端与sui的交互
+
 ### 1.[demo地址](https://github.com/phanker/interact_sui_react_demo)
+
 ### 2.已实现功能
+
 #### ①.选择安装的钱包，完成钱包的连接
+
 #### ②.根据当前连接的钱包，获取钱包的所属信息
+
 #### ③.展示效果
+
 ![img.png](img.png)
 
 ### 3.遇到的问题
+
 #### ①. [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp) node版本问题导致pnpm安装dapp template失败
+
 ##### 解决：升级node到最新版本
 
 #### ②.集成的@mysten/dapp-kit库版本问题，导致点击页面connect wallet按钮失效
+
 ##### 解决： @mysten/dapp-kit版本降到"0.0.0-experimental-20231110195743"
 
-
-
-
 ## 3) 发布ERC20合约
+
 ### 1.初始化move项目
+
 ```shell
 sui move new move_project ##创建一个新的move项目
 ```
+
 ### 2.修改Move.toml
+
 [package]
 name = "move_coin"
 version = "0.0.1"
 
 [dependencies]
-//注意rev的版本一定要和发布到的环境版本一直，比如dev环境对应的devnet版本  
+//注意rev的版本一定要和发布到的环境版本一直，比如dev环境对应的devnet版本
 
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/devnet" }
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "
+framework/devnet" }
 
 [addresses]
 move_coin = "0x0"
 
 ### 3.创建ERC20合约
+
 #### 根据[sui官网](https://examples.sui-book.com/samples/coin.html)的介绍，创建ERC20合约
 
 ### 4.部署合约
+
 ```shell
 sui client publish --gas-budget 100000000 ##gas-budget 参数表示部署合约预估的gas费
 ###部署成功后将是如下展示如何信息
@@ -173,5 +194,19 @@ Array [
 
 
 ```
+
+# Roadmap 2
+
+## NFT发布
+
+### [NFT合约地址](https://github.com/phanker/sui_ai_nft_generator/tree/master/contract/nft)  
+
+#### [sui_ai_nft_generator](https://github.com/phanker/sui_ai_nft_generator/)这是一个基于AI模型，并根据输入的描述信息生成你想要的NFT的DAPP 
+
+### NFT Object ID:[0x961f6935bfcf21d62ce0acea4cd1fcef98aba455cd7f496d3861a1841c9b5495](https://suiexplorer.com/object/0x961f6935bfcf21d62ce0acea4cd1fcef98aba455cd7f496d3861a1841c9b5495?network=mainnet)  
+
+## 游戏
+### 石头、剪刀、布 的比手势游戏
+### [源码](https://github.com/phanker/sui-game-finger-guessing)
 
 

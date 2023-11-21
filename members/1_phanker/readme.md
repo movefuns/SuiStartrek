@@ -26,3 +26,5 @@ Roadmap  1
 - 发布的ERC20
 package1: 0x802c8ce75e897048b24cbbf73d669428b63015dafddc1d67b9ada532fcecc0de
 
+Roadmap  2
+- 学习到了NFT构建与发布，并根据NFT落地的应用场景独立设计一款Dapp，[sui_ai_nft_generator](https://github.com/phanker/sui_ai_nft_generator/)这是一个基于AI模型，并根据输入的描述信息生成你想要的NFT的DAPP
