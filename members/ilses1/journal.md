@@ -275,3 +275,12 @@ sui move build
 
 ## 4.完成ERC20的发布
 
+
+
+## 5.前端方向的 Hello world
+
+- 全局安装pnpm
+- <img src="journal/image-20231120202139968.png" alt="image-20231120202139968" style="zoom:50%;" />
+- 创建项目
+
+- <img src="journal/image-20231120202305185.png" alt="image-20231120202305185" style="zoom:50%;" />
