@@ -207,6 +207,6 @@ Array [
 
 ## 游戏
 ### 石头、剪刀、布 的比手势游戏
-### [源码](https://github.com/phanker/sui-game-finger-guessing)
+### [源码&Instruction](https://github.com/phanker/sui-game-finger-guessing)
 
 
