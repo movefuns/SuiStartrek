@@ -2,43 +2,70 @@
 
 # Roadmap 1
 
-## 安装
+- [sui-cli 安装和浏览器钱包插件安装](journal/week01/install.md)
+- [基于dAPP-kit的Hello World](journal/week01/dAPP-kit.md)
+- [move合约开发与部署](journal/week01/move-contract.md)
 
-### 安装Sui命令行
 
-Sui的命令行有三种安装方式，我因为我本身对Rust有一定的了解，Sui命令行本身是rust编写的所以我选择了用
-编译安装的方式
 
-- 按照Rust官网  [get-started](https://www.rust-lang.org/learn/get-started) 的内容
-```shell
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-```
-1) Proceed with installation (default)
-2) Customize installation
-3) Cancel installation
-```
-一路选择了默认安装
 
--  clone sui 官方代码
 
-```shell
-git clone git@github.com:MystenLabs/sui.git
-```
-- 编译sui代码
-```shell
- cd sui
- # 编译指定的分支
- git checkout mainnet
- # 在 clone的sui 目录 运行 build 指令
- cargo build --relese
-```
+# Useful Commands
+## Sui Commands
 
-在漫长的等待时间过后  显示 编译完成在 `sui`的目录下面有 
+1. show sui version
 
 ```
-
+sui --version
 ```
 
+2. sui client init
+
+```
+sui client
+```
+
+3. show network info
+
+```
+sui client envs
+```
+
+4. show sui wallet address
+
+```
+sui client active-address
+```
+
+5. show sui wallet balance
+
+```
+sui client gas
+```
+
+6. add another network
+
+```
+sui client new-env --alias=mainnet --rpc https://fullnode.mainnet.sui.io:443
+```
+
+7. switch network
+
+```
+sui client switch --env mainnet
+```
+
+8. import client cli wallet private key to sui wallet
+
+```
+sui keytool convert xxxx(store in sui.keystore)
+```
+
+## pnpm commands
+
+```
+pnpm add @mysten/dapp-kit @mysten/sui.js @tanstack/react-query
+pnpm create @mysten/create-dapp
+```
 
 
