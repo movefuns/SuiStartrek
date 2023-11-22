@@ -40,5 +40,8 @@ git clone git@github.com:MystenLabs/sui.git
 
 ```
 
+sui 环境和地址切换
+
+编译项目的时候使用 --skip-fetch-latest-git-deps 命令跳过版本检查
 
 
