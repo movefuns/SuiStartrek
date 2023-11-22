@@ -496,5 +496,25 @@ Published Objects:
 - 全局安装pnpm
 - <img src="journal/image-20231120202139968.png" alt="image-20231120202139968" style="zoom:50%;" />
 - 创建项目
-
 - <img src="journal/image-20231120202305185.png" alt="image-20231120202305185" style="zoom:50%;" />
+
+  - 
+
+  - ```
+    
+    1.发布合约
+    cd move
+    sui client publish --gas-budget 100000000 counter
+    
+    2.把`src/constants.ts` 文件的PACKAGE_ID修改为发布的PACKAGE_ID
+    
+    注意devnet的放到devnet下
+    
+    3.启动项目
+    pnpm dev
+     
+    链接钱包
+    创建计数器
+    ```
+
+		- 
