@@ -2,9 +2,9 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: [github](https://github.com/extravert)
 
-* Telegram ID: 
+* Telegram ID: xdq
 
 * Discord ID:
 
