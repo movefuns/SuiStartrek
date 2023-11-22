@@ -4,15 +4,14 @@
 
 * Github ID: [github](https://github.com/github)
 
-* Telegram ID: wangtxxl
+* Telegram ID: 
 
-* Discord ID: .uvd
+* Discord ID:
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0x7b8e0864967427679b4e129f79dc332a885c6087ec9e187b53451a9006ee15f2
+* Sui 账号地址: 0x4e0f7da2aae7e0cf6801717291f667886c620c29dd8b0809585d00313bf7e781
 
-长期从事深度学习和计算机视觉算法，训练平台开发，2021 年进入区块链领域，学习区块链基础，智能合约开发。  
-常用语言 Python, C++, JS。对区块链系统研发以及智能合约编程方向感兴趣。
+研究生在读，研究方向为数据库的基数估计，熟悉python，golang，js，对web3感兴趣，希望能结识更多的朋友，一起学习。
 
 ### 学习日志
 
