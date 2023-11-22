@@ -36,9 +36,34 @@ git clone git@github.com:MystenLabs/sui.git
 
 在漫长的等待时间过后  显示 编译完成在 `sui`的目录下面有 
 
+
+
+最开始使用实验室的集群来做，发现一方面是实验室的资源是公共的，另一方面就是代理问题始终解决不了，sui放弃。
+
+然后打算使用windows，结果环境就出错，sui使用wsl，记录如下：
+
+### 安装Move 开发环境
+
+使用以下命令进行更新apt-get：
+
+```bash
+sudo apt-get update
 ```
 
+安装需要的包
+
+```bash
+sudo apt-get install curl git-all cmake gcc libssl-dev pkg-config libclang-dev libpq-dev build-essential
 ```
 
+使用以下命令在 macOS 或 Linux 上安装 Rust 和 Cargo：
 
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
+网络问题会超时，参考群友的解决方案：
+
+https://sui-startrek-birch.vercel.app/docs#%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91
+
+clash的配置
