@@ -68,7 +68,7 @@ https://mp.weixin.qq.com/s/-_hCFUO-62hv9amPzmJdeg
 
 <img src="journal/image-20231116233631022.png" alt="image-20231116233631022" style="zoom:33%;" />
 
-我的钱包：0xa60168aeff50181532eb335246022fb951554ba85c4af2f5cfeb5137c2886a57
+我的钱包：0x77cc74df936b450451825d188d1850d400351a87ab203e701dd10869d2899986
 
 ## 3.学习ERC20
 
