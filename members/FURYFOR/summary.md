@@ -1,0 +1,38 @@
+# web3开发入门
+
+## 安装Move 开发环境
+- [教程1](https://intro-zh.sui-book.com/unit-one/lessons/1_%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html) [B站视频](https://www.bilibili.com/video/BV1RY411v7YU)
+- [教程2](https://github.com/movefuns/co-learn-sui/blob/main/courses/unit-1/1-get-start/README.md)
+- [官方文档](https://docs.sui.io/guides/developer/getting-started/sui-install)
+
+## 安装web3钱包
+
+*钱包*是进入 Web3 世界大门的钥匙，*钱包*能够很好管理你的账户信息和链上的资产。
+
+* [Sui Wallet](https://chrome.google.com/webstore/detail/opcgpfmipidbgpenhmajoajpbobppdil)  |    [教程-如何开始使用Sui钱包](https://mp.weixin.qq.com/s/-_hCFUO-62hv9amPzmJdeg)
+* [Suiet Wallet](https://chrome.google.com/webstore/detail/suiet-sui-wallet/khpkpbbcccdmmclmpigdgddabeilkdpd)   |  [教程-如何获取Suiet钱包](https://suiet.app/blog/what-is-suiet-sui-wallet-how-to-use-sui-wallet)
+* [surf](https://surf.tech)
+* [Ethos Wallet](https://ethoswallet.xyz/)
+
+## 熟悉区块链浏览器
+- https://suiexplorer.com/
+- https://suivision.xyz/
+
+
+## 前端方向的 Hello world
+- [文档] (https://sui-typescript-docs.vercel.app/dapp-kit)
+
+
+## 学习ERC20
+- [token合约](https://sui-book.com/framework/02.coin.html)
+- [例子](https://examples.sui-book.com/samples/coin.html)
+
+## 完成ERC20的发布
+- [发布合约官方文档](https://docs.sui.io/guides/developer/first-app/publish)
+
+### 成功地址(testnet)
+
+```
+0xf36fbaa34aa19c08fc4b89d3215def3a93da326b9f7b1183f8292a027d3adca9
+```
+
