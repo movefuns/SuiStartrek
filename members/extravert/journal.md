@@ -36,11 +36,11 @@ https://sui-startrek-birch.vercel.app/docs#%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91
 
 clash的配置
 
-"D:\1sui\SuiStartrek\members\extravert\asserts\XQ_0]7(3K19OZ5~N4(Y(2OW.png"
+![clash](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/XQ_0%5D7(3K19OZ5~N4(Y(2OW.png)
 
 成功下载rust，cargo
 
-![image-20231122170421387](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231122170421387.png)
+![rust](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122170421387.png)
 
 
 
@@ -71,7 +71,7 @@ sui 1.14.0-8b46c5ed9
 
 vscode中安装插件
 
-![image-20231122171352702](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231122171352702.png)
+![move-analyzer](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122171352702.png)
 
 
 
@@ -110,12 +110,14 @@ Secret Recovery Phrase : [cap wheat many line human lazy few solid bored proud s
 $ sui client envs
 ```
 
+```bash 
 $ sui client envs
 ╭────────┬────────────────────────────────────┬────────╮
 │ alias  │ url                                │ active │
 ├────────┼────────────────────────────────────┼────────┤
 │ devnet │ https://fullnode.devnet.sui.io:443 │ *      │
 ╰────────┴────────────────────────────────────┴────────╯
+```
 
 切换网络
 
@@ -131,6 +133,7 @@ sui client active-address
 
 `sui client addresses`命令查看本地网络上的所有地址
 
+```bash 
 sui client addresses
 ╭───────────────┬──────────────────────────────────────────────────────────────────────────╮
 │ activeAddress │  0xef8ed60de2540e7d1b85c84d2071d744b717430888bd7ee4eeb1d73b4875391c      │
@@ -138,6 +141,7 @@ sui client addresses
 │               │ │  0xef8ed60de2540e7d1b85c84d2071d744b717430888bd7ee4eeb1d73b4875391c  │ │
 │               │ ╰──────────────────────────────────────────────────────────────────────╯ │
 ╰───────────────┴──────────────────────────────────────────────────────────────────────────╯
+```
 
 领水
 
@@ -157,6 +161,7 @@ curl --location --request POST 'https://faucet.devnet.sui.io/gas' --header 'Cont
 
 查看领取
 
+```bash 
 sui client gas
 [warn] Client/Server api version mismatch, client api version : 1.14.0, server api version : 1.14.1
 ╭────────────────────────────────────────────────────────────────────┬─────────────╮
@@ -164,18 +169,18 @@ sui client gas
 ├────────────────────────────────────────────────────────────────────┼─────────────┤
 │ 0xd2b5d5ac469bceda258cc98e27b3ec24a813e19e9ac6fa01dbdb11b1f18e3e6c │ 10000000000 │
 ╰────────────────────────────────────────────────────────────────────┴─────────────╯
-
+```
 
 
 ### 安装sui钱包
 
 sui wallet
 
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231122180049326.png" alt="image-20231122180049326" style="zoom:50%;" />
+<img src="https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122180049326.png" />
 
 surf wallet
 
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231122180154225.png" alt="image-20231122180154225" style="zoom:50%;" />
+<img src="https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122180154225.png" />
 
 ## 合约开发入门
 
@@ -189,7 +194,7 @@ sui move new my_first_package
 
 目录结构
 
-![image-20231122183032064](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231122183032064.png)
+![content](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122183032064.png)
 
 ### 构建和测试
 
