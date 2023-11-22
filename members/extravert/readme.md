@@ -2,7 +2,7 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/extravert)
+* Github ID: [extravert](https://github.com/extravert)
 
 * Telegram ID: xdq
 
