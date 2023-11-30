@@ -10,6 +10,16 @@
 - [合约地址(Mainnet)](https://suiexplorer.com/object/0xde9ba41cee014ca356a306ff2cc3211e0f7e4962fcd54b40345599e3351a6814)
 - (待整理代码后开源)
 
-## 实现 zkLogin demo，制作一个新手友好的分解步骤demo
+## 实现 zkLogin demo，制作一个新手友好的分解步骤demo (获得了 Sui 官方社区推荐)
 - [Sui zkLogin demo](https://sui-zklogin.vercel.app/)
 - [Github Repo](https://github.com/jovicheng/sui-zklogin-demo)
+
+## 在 Mainnet 发布了一款 Fully On Chain 的 NFT: Flappy Suird
+### 已经 Sold out!
+- [Flappy Suird](https://suird.app/)
+- [BlueMove Market](https://sui.bluemove.net/collection/flappy-suird--820dcdaf/)
+- (待整理代码后开源)
+
+## 完成一个链上抢红包 dapp: Sui Red Packet
+- [Sui Red Packet](https://sui-red-packet.vercel.app/)
+- (待整理代码后开源)
