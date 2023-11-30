@@ -184,6 +184,31 @@ https://suiexplorer.com/object/0x07f41eb916893616afa54e3108f2299f88f3403ca8b2efc
 
 
 
+# NFT
+NFT，全称为Non-Fungible Token，指非同质化通证，实质是区块链网络里具有唯一性特点的可信数字权益凭证，是一种可在区块链上记录和处理多维、复杂属性的数据对象
+
+NFT可以是任何数字化的东西：声音、图像、一段文字、一件游戏里的道具等等，
+
+NFT可以用来代表一幅画、一首歌、一项专利、一段影片、一张照片，帮助每一个独一无二的事物进行“版权登记”
+
+ERC721是以太坊上最早也是最基础的NFT底层协议标准，2017年9月提出，2018年制定。其作为一种非同质化代币智能合约标准接口，允许发行基于ERC721的NFT，它规定了NFT资产的最小单位为1、不可拆分且非同质化（独一无二）的特性，ERC721是目前NFT资产的主要规范标准与基础之一
+
+https://examples.sui.io/samples/nft.html
+
+- DevNetNFT 结构体定义了 NFT 的基本属性，包括唯一标识符 id，名称 name，描述 description 和 URL url。
+
+- NFTMinted 结构体定义了一个事件，当新的 NFT 被创建时，这个事件会被触发。
+
+- name，description 和 url 函数用于获取 NFT 的相应属性。
+
+- mint_to_sender 函数用于创建新的 NFT。它接收名称，描述和 URL 作为参数，并将新创建的 NFT 分配给调用此函数的地址。
+
+- transfer 函数用于将 NFT 从当前所有者转移给新的接收者。
+
+- update_description 函数用于更新 NFT 的描述。
+
+- burn 函数用于永久删除 NFT。
+
 
 
 
