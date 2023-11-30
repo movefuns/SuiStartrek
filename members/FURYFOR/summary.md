@@ -20,8 +20,7 @@
 
 
 ## 前端方向的 Hello world
-
-- [@mysten/create-dapp](https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp)
+- [文档] (https://sui-typescript-docs.vercel.app/dapp-kit)
 
 
 ## 学习ERC20
@@ -31,6 +30,9 @@
 ## 完成ERC20的发布
 - [发布合约官方文档](https://docs.sui.io/guides/developer/first-app/publish)
 
-# 本期任务
-- 完成dapp-kit Hello world 的交互
-- 完成两个 coin 合约的发布  
+### 成功地址(testnet)
+
+```
+0xf36fbaa34aa19c08fc4b89d3215def3a93da326b9f7b1183f8292a027d3adca9
+```
+
