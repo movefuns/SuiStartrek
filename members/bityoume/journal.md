@@ -10,3 +10,4 @@
 
 [1.4_创建并发布MoveERC20合约](./roadmap/week01/1.4_创建并发布MoveERC20合约.md)
 
+[1.5_NFT发行](./roadmap/week02/1.5_NFT发行.md)
