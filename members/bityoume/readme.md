@@ -22,8 +22,14 @@
 
 ### Roadmap  1  
 
-- 项目源码: https://github.com/bityoume/SuiHome/tree/main/rm01/my-first-sui-dapp
+- 项目源码: https://github.com/bityoume/Sui-Web3-StarTrek/tree/main/roadmap01/my-first-sui-dapp
 - 发布的ERC20
   - package1: `0xa230b06d8924c45e0245f744809634da806da44564465d842dc31b3d070355aa` （jscoin）
   - package2: `0xc03753a41af246d4f892a39325b1c320cb27bccf34cb90f12767e330d6c9e2ad` （bycoin）
 
+
+### Roadmap  2
+- 项目源码: https://github.com/bityoume/Sui-Web3-StarTrek/tree/main/roadmap02/js_sui_nft
+- 发布的NFT
+  - package: `0x99066b90111de39027907ef20ce934b0119327567890d8c9b99449a1d87b2408` 
+  - url: `https://suiexplorer.com/object/0x99066b90111de39027907ef20ce934b0119327567890d8c9b99449a1d87b2408?deviceId=d91bda4f-734e-4cf7-a391-0ab2fb23f9be&network=testnet`
