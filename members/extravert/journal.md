@@ -36,11 +36,11 @@ https://sui-startrek-birch.vercel.app/docs#%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91
 
 clash的配置
 
-![clash](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/XQ_0%5D7(3K19OZ5~N4(Y(2OW.png)
+![clash](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/XQ_0%5D7(3K19OZ5~N4(Y(2OW.png)
 
 成功下载rust，cargo
 
-![rust](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122170421387.png)
+![rust](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231122170421387.png)
 
 
 
@@ -71,7 +71,7 @@ sui 1.14.0-8b46c5ed9
 
 vscode中安装插件
 
-![move-analyzer](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122171352702.png)
+![move-analyzer](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231122171352702.png)
 
 
 
@@ -176,11 +176,11 @@ sui client gas
 
 sui wallet
 
-<img src="https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122180049326.png" />
+<img src="https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231122180049326.png" />
 
 surf wallet
 
-<img src="https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122180154225.png" />
+<img src="https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231122180154225.png" />
 
 ## 合约开发入门
 
@@ -194,7 +194,7 @@ sui move new my_first_package
 
 目录结构
 
-![content](https://github.com/extravert/SuiStartrek/blob/add-member/members/extravert/asserts/image-20231122183032064.png)
+![content](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231122183032064.png)
 
 ### 构建和测试
 
@@ -403,7 +403,7 @@ $ pnpm create @mysten/dapp
 
 生成前端框架
 
-![image-20231201173914458](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231201173914458.png)
+![image-20231201173914458](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231201173914458.png)
 
 ### 创建move合约
 
@@ -641,7 +641,7 @@ export const DEVNET_COUNTER_PACKAGE_ID = "<YOUR_PACKAGE_ID>";
 pnpm install
 ```
 
-![image-20231201175512136](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231201175512136.png)
+![image-20231201175512136](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231201175512136.png)
 
 dApp 启动！
 
@@ -649,17 +649,17 @@ dApp 启动！
 pnpm dev
 ```
 
-![image-20231201175624602](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231201175624602.png)
+![image-20231201175624602](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231201175624602.png)
 
 ### 前端交互
 
 创建计数器
 
-![image-20231201175928877](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231201175928877.png)
+![image-20231201175928877](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231201175928877.png)
 
 
 
-![image-20231201171011738](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231201171011738.png)
+![image-20231201171011738](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231201171011738.png)
 
 
 
@@ -871,4 +871,4 @@ Published Objects:
 
 https://suiexplorer.com/txblock/Gv3yEYsfsxqB8xkhaDy5A3HdbkTVXnjYuyGjg5XNS9U9?network=devnet
 
-![image-20231201183743579](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231201183743579.png)
+![image-20231201183743579](https://github.com/extravert/SuiStartrek/blob/sui/members/extravert/asserts/image-20231201183743579.png)
