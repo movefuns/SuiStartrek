@@ -209,6 +209,279 @@ https://examples.sui.io/samples/nft.html
 
 - burn 函数用于永久删除 NFT。
 
+https://zhuanlan.zhihu.com/p/592192310
+
+sui move build
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING dragon
+warning[Lint W01001]: non-composable transfer to sender
+
+
+sui move test
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING dragon
+warning[Lint W01001]: non-composable transfer to sender
+
+
+sui client publish --gas-budget 500000000 --skip-dependency-verification 
+[warn] Client/Server api version mismatch, client api version : 1.14.2, server api version : 1.15.0
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING dragon
+warning[Lint W01001]: non-composable transfer to sender
+
+Skipping dependency verification
+----- Transaction Digest ----
+8tbvkT8P7df1nqGKwrrC6zia7ng6pZBhkM3NxB9kpuZh
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Data                                                                                                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70                                                                                  │
+│ Gas Owner: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70                                                                               │
+│ Gas Budget: 500000000                                                                                                                                       │
+│ Gas Price: 1000                                                                                                                                             │
+│ Gas Payment:                                                                                                                                                │
+│  ┌──                                                                                                                                                        │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                                                                                   │
+│  │ Version: 7                                                                                                                                               │
+│  │ Digest: rMmoY2cRJdoQFqJBTL48YtB2F8C6aiFzYVLPrMJK5QX                                                                                                      │
+│  └──                                                                                                                                                        │
+│                                                                                                                                                             │
+│ Transaction Kind : Programmable                                                                                                                             │
+│ Inputs: [Pure(SuiPureValue { value_type: Some(Address), value: "0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70" })]                     │
+│ Commands: [                                                                                                                                                 │
+│   Publish(<modules>,0x0000000000000000000000000000000000000000000000000000000000000001,0x0000000000000000000000000000000000000000000000000000000000000002), │
+│   TransferObjects([Result(0)],Input(0)),                                                                                                                    │
+│ ]                                                                                                                                                           │
+│                                                                                                                                                             │
+│                                                                                                                                                             │
+│ Signatures:                                                                                                                                                 │
+│    hc/v4B0YB0avp+Ct788gMVH1t6DQ8WXE/HxhziATeiAd+GM7Ad0b6pr9hfKeC6gbk0VKQ4+Cpy0a3ujrJKdEDg==                                                                 │
+│                                                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Effects                                                                               │
+├───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Digest: 8tbvkT8P7df1nqGKwrrC6zia7ng6pZBhkM3NxB9kpuZh                                              │
+│ Status: Success                                                                                   │
+│ Executed Epoch: 6                                                                                 │
+│                                                                                                   │
+│ Created Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0xd820e26b431f49e8ab5eb827ee5b170a5d40632318a729b890015127d7b40bf7                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 8                                                                                     │
+│  │ Digest: BAQnPnFhNUQF7mvexGYQTMJ8MneLZGfJeCzczCfXCoe6                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 1                                                                                     │
+│  │ Digest: HuGynDdtheNE89WfqX4ErXou1VJcwwsJ51WXU7828fHE                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Mutated Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 8                                                                                     │
+│  │ Digest: 32X4FtJy4GLi7YBjayVPCDfACR6GZtJ6eBHHnUU2QWhC                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Object:                                                                                       │
+│  ┌──                                                                                              │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 8                                                                                     │
+│  │ Digest: 32X4FtJy4GLi7YBjayVPCDfACR6GZtJ6eBHHnUU2QWhC                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Cost Summary:                                                                                 │
+│    Storage Cost: 10974400                                                                         │
+│    Computation Cost: 1000000                                                                      │
+│    Storage Rebate: 978120                                                                         │
+│    Non-refundable Storage Fee: 9880                                                               │
+│                                                                                                   │
+│ Transaction Dependencies:                                                                         │
+│    7My3bWZsyA1pj721ZRqtvbUhxJqbGZQjr92FPre2zU8S                                                   │
+│    8SttpG2yACphxQfkNY7aVmaKWxHWtHczzMFRdJSb3sop                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
+----- Events ----
+Array []
+----- Object changes ----
+
+Created Objects: 
+ ┌──
+ │ ObjectID: 0xd820e26b431f49e8ab5eb827ee5b170a5d40632318a729b890015127d7b40bf7
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0x2::package::UpgradeCap 
+ │ Version: 8
+ │ Digest: BAQnPnFhNUQF7mvexGYQTMJ8MneLZGfJeCzczCfXCoe6
+ └──
+
+Mutated Objects: 
+ ┌──
+ │ ObjectID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0x2::coin::Coin<0x2::sui::SUI> 
+ │ Version: 8
+ │ Digest: 32X4FtJy4GLi7YBjayVPCDfACR6GZtJ6eBHHnUU2QWhC
+ └──
+
+Published Objects: 
+ ┌──
+ │ PackageID: 0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be 
+ │ Version: 1 
+ │ Digest: HuGynDdtheNE89WfqX4ErXou1VJcwwsJ51WXU7828fHE
+ | Modules: my_nft
+ └──
+----- Balance changes ----
+ ┌──
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 ) 
+ │ CoinType: 0x2::sui::SUI 
+ │ Amount: -10996280
+
+## mint NFT
+
+Usage: sui client call --package <PACKAGE> --module <MODULE> --function <FUNCTION> --gas-budget <GAS_BUDGET>
+
+https://suiexplorer.com/object/0xd820e26b431f49e8ab5eb827ee5b170a5d40632318a729b890015127d7b40bf7?deviceId=588402c6-eaf9-4fac-a4d9-df6c594b9032&network=devnet
+
+https://cleev.io/blog/how-to-deploy-an-nft-smart-contract-on-the-sui-blockchain
+
+sui client transfer --object-id 0xd820e26b431f49e8ab5eb827ee5b170a5d40632318a729b890015127d7b40bf7 --to 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 --gas-budget 30000000
+
+https://suiexplorer.com/address/0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70?network=devnet
+
+ sui client call --package 0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be --module my_nft --function mint_to_sender --args "DRAGONNFT" "This is dragon first NFT on the SUI Blockchain" "https://white-delicate-coral-751.mypinata.cloud/ipfs/QmZo2QH4dtav6HQUqztQz81sifqrp3jCcdc5jQ8axyurna" --gas-budget 5000000
+[warn] Client/Server api version mismatch, client api version : 1.14.2, server api version : 1.15.0
+----- Transaction Digest ----
+4aQyZRjd32wXGP6mhDTJGeXW6EvJvabsuY8a359wTuiU
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Data                                                                                                                                                                                                                                                                                                                                                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70                                                                                                                                                                                                                                                                                         │
+│ Gas Owner: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70                                                                                                                                                                                                                                                                                      │
+│ Gas Budget: 5000000                                                                                                                                                                                                                                                                                                                                                │
+│ Gas Price: 1000                                                                                                                                                                                                                                                                                                                                                    │
+│ Gas Payment:                                                                                                                                                                                                                                                                                                                                                       │
+│  ┌──                                                                                                                                                                                                                                                                                                                                                               │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                                                                                                                                                                                                                                                                                          │
+│  │ Version: 11                                                                                                                                                                                                                                                                                                                                                     │
+│  │ Digest: 5WSSZpMZZyBXiYG96oTJkyXR9jAgpWcsKDrVznYyTYBn                                                                                                                                                                                                                                                                                                            │
+│  └──                                                                                                                                                                                                                                                                                                                                                               │
+│                                                                                                                                                                                                                                                                                                                                                                    │
+│ Transaction Kind : Programmable                                                                                                                                                                                                                                                                                                                                    │
+│ Inputs: [Pure(SuiPureValue { value_type: Some(Vector(U8)), value: "DRAGONNFT" }), Pure(SuiPureValue { value_type: Some(Vector(U8)), value: "This is dragon first NFT on the SUI Blockchain" }), Pure(SuiPureValue { value_type: Some(Vector(U8)), value: "https://white-delicate-coral-751.mypinata.cloud/ipfs/QmZo2QH4dtav6HQUqztQz81sifqrp3jCcdc5jQ8axyurna" })] │
+│ Commands: [                                                                                                                                                                                                                                                                                                                                                        │
+│   MoveCall(0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be::my_nft::mint_to_sender(Input(0),Input(1),Input(2))),                                                                                                                                                                                                                                │
+│ ]                                                                                                                                                                                                                                                                                                                                                                  │
+│                                                                                                                                                                                                                                                                                                                                                                    │
+│                                                                                                                                                                                                                                                                                                                                                                    │
+│ Signatures:                                                                                                                                                                                                                                                                                                                                                        │
+│    s1gZISev6vN0OKww73k8KhDaG8ieopkelyp5xRZPsGjOasYh2auwrL1C/BFJvCMwJz/MwxEJ4ENPmLlA4eusBw==                                                                                                                                                                                                                                                                        │
+│                                                                                                                                                                                                                                                                                                                                                                    │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Effects                                                                               │
+├───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Digest: 4aQyZRjd32wXGP6mhDTJGeXW6EvJvabsuY8a359wTuiU                                              │
+│ Status: Success                                                                                   │
+│ Executed Epoch: 6                                                                                 │
+│                                                                                                   │
+│ Created Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0xa4e5139793692127cbc7556d9901c101c85a2560eeecadb215a67e82a275b79c                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 12                                                                                    │
+│  │ Digest: 4r6St1pZY5cGbaoTJKvu5GoQJDZwSMEH99PUXNQ7SP9t                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Mutated Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 12                                                                                    │
+│  │ Digest: 3yrXA65d2QRaLTeCLh8TAAqWkyrCtksfn3tUWnAEoJRP                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Object:                                                                                       │
+│  ┌──                                                                                              │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 12                                                                                    │
+│  │ Digest: 3yrXA65d2QRaLTeCLh8TAAqWkyrCtksfn3tUWnAEoJRP                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Cost Summary:                                                                                 │
+│    Storage Cost: 3488400                                                                          │
+│    Computation Cost: 1000000                                                                      │
+│    Storage Rebate: 978120                                                                         │
+│    Non-refundable Storage Fee: 9880                                                               │
+│                                                                                                   │
+│ Transaction Dependencies:                                                                         │
+│    XQfPfcymGcKYRjPVWxYsx2QUXYzNa5YeTQGd9G764mz                                                    │
+│    8tbvkT8P7df1nqGKwrrC6zia7ng6pZBhkM3NxB9kpuZh                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
+----- Events ----
+Array [
+    Object {
+        "id": Object {
+            "txDigest": String("4aQyZRjd32wXGP6mhDTJGeXW6EvJvabsuY8a359wTuiU"),
+            "eventSeq": String("0"),
+        },
+        "packageId": String("0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be"),
+        "transactionModule": String("my_nft"),
+        "sender": String("0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70"),
+        "type": String("0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be::my_nft::NFTMinted"),
+        "parsedJson": Object {
+            "creator": String("0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70"),
+            "name": String("DRAGONNFT"),
+            "object_id": String("0xa4e5139793692127cbc7556d9901c101c85a2560eeecadb215a67e82a275b79c"),
+        },
+        "bcs": String("pR8WeE6zobDaiG4PJuPLYa3F2zRMfL9HQybUAt5p286xMC1K9c3ZVvC3QKyJ9LFvuyjk5cssncSnGMftXe6emqaVWQB6QoGkRsdwR"),
+    },
+]
+----- Object changes ----
+
+Created Objects: 
+ ┌──
+ │ ObjectID: 0xa4e5139793692127cbc7556d9901c101c85a2560eeecadb215a67e82a275b79c
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0xe82f1dbf25f4527f914828851e841a81c2505de31f10ba5f49dc1152dac262be::my_nft::DevNetNFT 
+ │ Version: 12
+ │ Digest: 4r6St1pZY5cGbaoTJKvu5GoQJDZwSMEH99PUXNQ7SP9t
+ └──
+
+Mutated Objects: 
+ ┌──
+ │ ObjectID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0x2::coin::Coin<0x2::sui::SUI> 
+ │ Version: 12
+ │ Digest: 3yrXA65d2QRaLTeCLh8TAAqWkyrCtksfn3tUWnAEoJRP
+ └──
+----- Balance changes ----
+ ┌──
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 ) 
+ │ CoinType: 0x2::sui::SUI 
+ │ Amount: -3510280
+
+
+
+
+## 查看NFT
+https://suiexplorer.com/object/0xa4e5139793692127cbc7556d9901c101c85a2560eeecadb215a67e82a275b79c?network=devnet
+
 
 
 
