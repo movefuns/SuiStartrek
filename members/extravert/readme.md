@@ -24,11 +24,10 @@ Roadmap  1
 - 项目源码:填写自己的源码地址
 - 发布的ERC20
 package1: 0x69bb995c250e7e4fba77b9ca13b67f910b6a6806a308f443531c513feb8ee859
+
 package2: xx
 
-
 2.
-
 
 3. 
 
