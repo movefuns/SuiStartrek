@@ -482,6 +482,213 @@ Mutated Objects:
 ## 查看NFT
 https://suiexplorer.com/object/0xa4e5139793692127cbc7556d9901c101c85a2560eeecadb215a67e82a275b79c?network=devnet
 
+##创建 ERC20 代币（Create a Coin (ERC20)）
+
+https://examples.sui-book.com/samples/coin.html#%E5%88%9B%E5%BB%BA-erc20-%E4%BB%A3%E5%B8%81create-a-coin-erc20
+
+
+module dragoncoin::mycoin {
+    use std::option;
+    use sui::coin;
+    use sui::transfer;
+    use sui::tx_context::{Self, TxContext};
+
+    /// The type identifier of coin. The coin will have a type
+    /// tag of kind: `Coin<package_object::mycoin::MYCOIN>`
+    /// Make sure that the name of the type matches the module's name.
+    struct MYCOIN has drop {}
+
+  
+    /// Module initializer is called once on module publish. A treasury
+    /// cap is sent to the publisher, who then controls minting and burning
+    fun init(witness: MYCOIN, ctx: &mut TxContext) {
+        let (treasury, metadata) = coin::create_currency(witness, 6, b"DRAGONCOIN", b"", b"", option::none(), ctx);
+        transfer::public_freeze_object(metadata);
+        transfer::public_transfer(treasury, tx_context::sender(ctx))
+    }
+}
+
+sui move build
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING DragonCoin
+
+
+sui move test
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING DragonCoin
+warning[W09008]: unused function
+   ┌─ ./sources/mycoin.move:16:9
+   │
+16 │     fun init(witness: MYCOIN, ctx: &mut TxContext) {
+   │         ^^^^ The non-'public', non-'entry' function 'init' is never called. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_function)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+Running Move unit tests
+Test result: OK. Total tests: 0; passed: 0; failed: 0
+
+
+sui client publish --gas-budget 500000000 --skip-dependency-verification 
+[warn] Client/Server api version mismatch, client api version : 1.14.2, server api version : 1.15.0
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING DragonCoin
+Skipping dependency verification
+----- Transaction Digest ----
+9RL8NS5U9wwCAgDvx4Hvssk8efLZwGf5qfs7JQsT1HWZ
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Data                                                                                                                                            │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70                                                                                  │
+│ Gas Owner: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70                                                                               │
+│ Gas Budget: 500000000                                                                                                                                       │
+│ Gas Price: 1000                                                                                                                                             │
+│ Gas Payment:                                                                                                                                                │
+│  ┌──                                                                                                                                                        │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                                                                                   │
+│  │ Version: 12                                                                                                                                              │
+│  │ Digest: 3yrXA65d2QRaLTeCLh8TAAqWkyrCtksfn3tUWnAEoJRP                                                                                                     │
+│  └──                                                                                                                                                        │
+│                                                                                                                                                             │
+│ Transaction Kind : Programmable                                                                                                                             │
+│ Inputs: [Pure(SuiPureValue { value_type: Some(Address), value: "0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70" })]                     │
+│ Commands: [                                                                                                                                                 │
+│   Publish(<modules>,0x0000000000000000000000000000000000000000000000000000000000000001,0x0000000000000000000000000000000000000000000000000000000000000002), │
+│   TransferObjects([Result(0)],Input(0)),                                                                                                                    │
+│ ]                                                                                                                                                           │
+│                                                                                                                                                             │
+│                                                                                                                                                             │
+│ Signatures:                                                                                                                                                 │
+│    oknJTGP16rQflS+jrbj5/ZgI3J+b8hsbKyubwdbQ8RYHGZ6AaGPhH+v4xd4iplR5/YrxfMyZAR6FiR1KN46oAw==                                                                 │
+│                                                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Effects                                                                               │
+├───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Digest: 9RL8NS5U9wwCAgDvx4Hvssk8efLZwGf5qfs7JQsT1HWZ                                              │
+│ Status: Success                                                                                   │
+│ Executed Epoch: 6                                                                                 │
+│                                                                                                   │
+│ Created Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x2f80ed3d20ec6a1df811e239aa31682026996eb3f5a8f765a4b50ea3194119fa                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 13                                                                                    │
+│  │ Digest: 8PUtasV7WBagCPsDLc3F4Qffs2c7pKrgKFA6Ek7Y6pAz                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x5f1f271913b766c7f3a6a4419f39b38eb4e2fb0989b6ea06ff9a5fe136b54a20                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 1                                                                                     │
+│  │ Digest: HxFDr94RtaMg5vfheSN2tpALZ72pT9d3d51x9UvW2fAH                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x6123b126a9ec1117b9ce96b3865bbbbe1c4e28183f573b187e92cd2433dabf41                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 13                                                                                    │
+│  │ Digest: HzGdvrogdNhQdx26K8cfab2B3eRDCcXouBy9GUwqEGSi                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x6cfb1bd8c18b4f4a381303bc688a4c2b574c9105ebf3ad80d6eaf2481f9f2731                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 13                                                                                    │
+│  │ Digest: 2RVTqcG2tWbgxDToUj3y6BPrYn1kyHrgkHVwDBSZnN9S                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Mutated Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 13                                                                                    │
+│  │ Digest: 513461RtBm18sRwyBfmj6mY9EKDQ2Sx8wQz81aQHKDRz                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Object:                                                                                       │
+│  ┌──                                                                                              │
+│  │ ID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1                         │
+│  │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )  │
+│  │ Version: 13                                                                                    │
+│  │ Digest: 513461RtBm18sRwyBfmj6mY9EKDQ2Sx8wQz81aQHKDRz                                           │
+│  └──                                                                                              │
+│                                                                                                   │
+│ Gas Cost Summary:                                                                                 │
+│    Storage Cost: 12479200                                                                         │
+│    Computation Cost: 1000000                                                                      │
+│    Storage Rebate: 978120                                                                         │
+│    Non-refundable Storage Fee: 9880                                                               │
+│                                                                                                   │
+│ Transaction Dependencies:                                                                         │
+│    4aQyZRjd32wXGP6mhDTJGeXW6EvJvabsuY8a359wTuiU                                                   │
+│    8SttpG2yACphxQfkNY7aVmaKWxHWtHczzMFRdJSb3sop                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
+----- Events ----
+Array []
+----- Object changes ----
+
+Created Objects: 
+ ┌──
+ │ ObjectID: 0x2f80ed3d20ec6a1df811e239aa31682026996eb3f5a8f765a4b50ea3194119fa
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Immutable
+ │ ObjectType: 0x2::coin::CoinMetadata<0x5f1f271913b766c7f3a6a4419f39b38eb4e2fb0989b6ea06ff9a5fe136b54a20::mycoin::MYCOIN> 
+ │ Version: 13
+ │ Digest: 8PUtasV7WBagCPsDLc3F4Qffs2c7pKrgKFA6Ek7Y6pAz
+ └──
+ ┌──
+ │ ObjectID: 0x6123b126a9ec1117b9ce96b3865bbbbe1c4e28183f573b187e92cd2433dabf41
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0x2::package::UpgradeCap 
+ │ Version: 13
+ │ Digest: HzGdvrogdNhQdx26K8cfab2B3eRDCcXouBy9GUwqEGSi
+ └──
+ ┌──
+ │ ObjectID: 0x6cfb1bd8c18b4f4a381303bc688a4c2b574c9105ebf3ad80d6eaf2481f9f2731
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0x2::coin::TreasuryCap<0x5f1f271913b766c7f3a6a4419f39b38eb4e2fb0989b6ea06ff9a5fe136b54a20::mycoin::MYCOIN> 
+ │ Version: 13
+ │ Digest: 2RVTqcG2tWbgxDToUj3y6BPrYn1kyHrgkHVwDBSZnN9S
+ └──
+
+Mutated Objects: 
+ ┌──
+ │ ObjectID: 0x2943372dad0019837be726f463bc7a352c7194d096e6992422a6bcc9504045d1
+ │ Sender: 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 )
+ │ ObjectType: 0x2::coin::Coin<0x2::sui::SUI> 
+ │ Version: 13
+ │ Digest: 513461RtBm18sRwyBfmj6mY9EKDQ2Sx8wQz81aQHKDRz
+ └──
+
+Published Objects: 
+ ┌──
+ │ PackageID: 0x5f1f271913b766c7f3a6a4419f39b38eb4e2fb0989b6ea06ff9a5fe136b54a20 
+ │ Version: 1 
+ │ Digest: HxFDr94RtaMg5vfheSN2tpALZ72pT9d3d51x9UvW2fAH
+ | Modules: mycoin
+ └──
+----- Balance changes ----
+ ┌──
+ │ Owner: Account Address ( 0x22cc7748db1c0249cd6fc6c930d5a3999a5252dd9a085441ac4a1b59fd53ee70 ) 
+ │ CoinType: 0x2::sui::SUI 
+ │ Amount: -12501080
+ └──
+
+
+
+## DRAGONCOIN
+
+https://suiexplorer.com/object/0x2f80ed3d20ec6a1df811e239aa31682026996eb3f5a8f765a4b50ea3194119fa?network=devnet
+
+
+
+
 
 
 
