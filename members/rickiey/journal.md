@@ -175,3 +175,52 @@ burn
 
 见
 > https://suiexplorer.com/txblock/JAf1gyQsKceZor5sCi3HCDS5qsB1cXW2K6xHe8MhBQ9o?network=devnet
+
+
+
+## Roadmap 2
+
+### 发布 NFT
+
+主要实现 Display
+
+```rust
+let publisher = package::claim(otw, ctx);
+let displ = display::new_with_fields<RK_NFT>(&publisher, keys, values, ctx);
+
+display::update_version(&mut displ);
+transfer::public_transfer(publisher, sender);
+transfer::public_transfer(displ, sender);
+transfer::share_object(TID{
+    id:object::new(ctx),
+    NextTID: 0,
+})
+```
+
+以及几个更改的方法
+
+```rust
+public entry fun mint( tid: &mut TID, name: vector<u8>,description: vector<u8>,url: vector<u8>,ctx :&mut  TxContext);
+public entry fun transfer(nft: RK_NFT, recipient: address, ctx: &mut TxContext);
+public entry fun update_description(nft: &mut RK_NFT,new_description: vector<u8>,ctx: &mut TxContext ;
+public entry fun update_image_url(nft: &mut RK_NFT,new_url: vector<u8>,ctx: &mut TxContext)
+public entry fun burn(nft: RK_NFT, ctx: &TxContext) 
+```
+
+NFT 代码： [https://github.com/rickiey/sui-nft](https://github.com/rickiey/sui-nft)
+
+* package id: [0xe7aaa9ebea93ea4be8acd7a2ad26016dad96abf3a453b5d239f13e37ef6f6f89](https://suiexplorer.com/object/0xe7aaa9ebea93ea4be8acd7a2ad26016dad96abf3a453b5d239f13e37ef6f6f89?module=rk&network=testnet)
+
+* [发布的NFT https://suiexplorer.com/object/0xeeddf133c7ba0dd43bfff17c5e3b23e9a4d23bfa07c7def3b3aa8320bc83e610?network=testnet](https://suiexplorer.com/object/0xeeddf133c7ba0dd43bfff17c5e3b23e9a4d23bfa07c7def3b3aa8320bc83e610?network=testnet)
+
+### move 游戏
+
+猜骰子游戏
+
+输入一个数字(u64,会mod 6),和合约产生的随机数 1-6对比，有日志查看过程,猜中带走资金池一半资金(SUI), 猜中不亏资金池1/4的SUI,亏损的资金添加到资金池.
+
+实现代码: [https://github.com/rickiey/sui-move-game](https://github.com/rickiey/sui-move-game)
+
+警告：不要部署到主网，会亏SUI，第一次再测试网部署没有提取资金池方法，导致测试币提不出来，随后添加提币方法，一次提取一半;
+
+[package-id: https://suiexplorer.com/object/0xaa4f028d857942194f4d9d206e81a55925b9ca619657e6e8de8dae94222a5fcf?network=testnet](https://suiexplorer.com/object/0xaa4f028d857942194f4d9d206e81a55925b9ca619657e6e8de8dae94222a5fcf?network=testnet)

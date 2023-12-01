@@ -38,3 +38,5 @@
 * 发布的ERC20
 package1: 0x6fc7461412bd79892455d909f1f4ab86a6d17b77d4b82405acfa1b305ce1c750
 package2: 0x3d5fc3e0617e03460203644cb187906234768332505e4eff52da507758d8dbca
+
+* [发布的NFT https://suiexplorer.com/object/0xeeddf133c7ba0dd43bfff17c5e3b23e9a4d23bfa07c7def3b3aa8320bc83e610?network=testnet](https://suiexplorer.com/object/0xeeddf133c7ba0dd43bfff17c5e3b23e9a4d23bfa07c7def3b3aa8320bc83e610?network=testnet)
