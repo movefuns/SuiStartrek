@@ -2,8 +2,8 @@
 
 ## Roadmap 1
 - 项目源码:  
-  - dapp: https://github.com/klren0312/SuiStartrek/tree/main/members/klren0312/studyCode/dapp-vue3
-  - coin: https://github.com/klren0312/SuiStartrek/tree/main/members/klren0312/studyCode/zcoin
+  - dapp: https://github.com/movefuns/SuiStartrek/tree/main/members/klren0312/studyCode/dapp-vue3
+  - coin: https://github.com/movefuns/SuiStartrek/tree/main/members/klren0312/studyCode/zcoin
 
 - 发布的ERC20
 
@@ -15,7 +15,11 @@
 ## Roadmap 2
 
 - 项目源码:
-  - nft: 
+  - nft: https://github.com/klren0312/SuiStartrek/tree/klren0312/members/klren0312/studyCode/znft
+  - game: https://github.com/klren0312/sui-nft-dapp-muyu
 
 - 主链发布的nft
   - [0xa2248a0ab7713de950a0587593a7defb4997c694399957c4afca1a4930c00d22](https://suiexplorer.com/object/0xa2248a0ab7713de950a0587593a7defb4997c694399957c4afca1a4930c00d22?network=mainnet)
+
+- 游戏: 赛博功德
+  - 链接: https://klren0312.github.io/sui-nft-dapp-muyu/
