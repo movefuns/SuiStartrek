@@ -4,7 +4,17 @@
 
 - [x] Set up Sui Wallet
 - [x] Set up Move Env
-- [] Deploy an ERC-20 Contract
+- [x] Deploy an ERC-20 Contract
+
+## Week2 (23.11.20 ~ 23.11.26)
+
+- [ ] Deploy two ERC-20 Contracts
+- [ ] Deploy an ERC-721 Contract
+
+## Week3 (23.11.27 ~ 23.12.03)
+
+TODO    
+
 
 ## Reference
 
