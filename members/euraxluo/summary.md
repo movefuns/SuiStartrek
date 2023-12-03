@@ -15,3 +15,10 @@
 - 部署事务：`https://suiexplorer.com/txblock/5byCWPGPgZKdQYwcBWb7Erhf5xHMNeaXXZp3UARhFh2m?module=lib&network=testnet`
 - package：`https://suiexplorer.com/object/0x9d9431251ce33eb566a0aefe449e6f7d0882e8914338f7cdf2d8aac9a6c00a42?network=testnet`
 ![coinView2](./doc/week01/image-5.png)
+
+4. nft package
+- 源码：members/euraxluo/code/mynft
+- 部署事务：`https://suiexplorer.com/txblock/FQsKgFSnBRx5gyGyjhGZhvaVnXoGdzS8FvuEnebJVvsc?network=mainnet`
+- package：`https://suiexplorer.com/object/0x6a45ee1dbd7f8b56f2b09c99dc46e567832d3e7031939c241c7b60a90e3eb907?network=mainnet`
+- nft-object:`https://suiexplorer.com/object/0x6a45ee1dbd7f8b56f2b09c99dc46e567832d3e7031939c241c7b60a90e3eb907?network=mainnet`
+![nftView](./doc/week02/image-2.png)
