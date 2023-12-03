@@ -203,13 +203,12 @@ module tictactoe::game {
         let sender = tx_context::sender(ctx);
         state.count = state.count + 1;
         let game_nft = createNewGameNFT(state.count,ctx);
-        // new board
-        game_nft.state = GameActive;
         game_nft.round = game_nft.round+1;
-        game_nft.turn = GameAgent;
 
+        game_nft.turn = GameAgent;
         let agent_move = agent_select_move(state,&game_nft);
-        make_move(state,&mut game_nft,agent_move,ctx);
+        game_nft.board = fill_teranry(agent_move,9u64);
+        game_nft.turn = GamePlayer;
 
         emit(NewGame {
             game_id: game_nft.game_id,
@@ -551,7 +550,7 @@ module tictactoe::game {
             }
         };
 
-        if (game_nft.state == GameNoOnePlay){
+        if (game_nft.turn == GameNoOnePlay){
             emit(Outcome {
                 game_id:game_nft.game_id,
                 round:game_nft.round,
@@ -564,10 +563,12 @@ module tictactoe::game {
             let id = object::new(ctx);
             game_nft.game_id = object::uid_to_inner(&id);
             game_nft.round=game_nft.round+1;
+            // new game init turn is agent  
             game_nft.turn = GameAgent;
             game_nft.board = vector[0,0,0,0,0,0,0,0,0];
             let agent_move = agent_select_move(state,game_nft);
-            make_move(state,game_nft,agent_move,ctx);
+            game_nft.board = fill_teranry(agent_move,9u64);
+            game_nft.turn = GamePlayer;
             object::delete(id);
 
             emit(NewGame {
@@ -591,6 +592,8 @@ module tictactoe::game {
             board: player_move,
             turn: game_nft.turn,
         });
+        // player move
+        make_move(state,game_nft,player_move,ctx);
         // agent move
         if (game_nft.turn == GameAgent) {
             // agent play
@@ -605,10 +608,6 @@ module tictactoe::game {
             });
             make_move(state,game_nft,agent_move,ctx);
         };
-        // player move
-        make_move(state,game_nft,player_move,ctx);
-        
-
     }
     #[test]
     public fun test_play() {
@@ -678,11 +677,12 @@ module tictactoe::game {
         vector::reverse(&mut result);
         result
     }
+    
+    const FillTeranryError: u8 = 10u8;
     fun fill_teranry(teranry:vector<u8>,fill:u64):vector<u8>{
         use std::debug;
-        // let result:vector<u8> = vector[];
-        // vector::append(&mut result, *teranry);
         let length = vector::length(&teranry);
+        assert!(length<=fill,FillTeranryError)
         let num = fill-length;
         debug::print(&num);
         while (length>0 && num > 0) {
