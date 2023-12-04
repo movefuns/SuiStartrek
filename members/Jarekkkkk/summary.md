@@ -9,7 +9,7 @@
 
 - 完成一個主網 NFT 的發布合約 ,並 mint 一個名稱為自己 githubid 名稱或微信名稱名字的 nft 圖片用自己的 github 頭像或者微信頭像
 
-  - NFT id: 0x8b2cb53bbe95d8dd9fe93bf6e83528607a4a49621392e9e38c8eb6b0c043830d
+  - NFT id: 0x43d7fa894620849effe106f3e9b5b8feb732aa6dcf420a8d4f2f61e8a7e42c37
 
 - 完成剪刀石頭布小遊戲
 - package: 0xed9feb0814c799fc87b4657ce2a2c16bc821de9ae142930895db5534d0682e31
