@@ -26,7 +26,7 @@ module tictactoe::game {
         let i = 0;
         // 222222222 equals 19682
         while (i < 19683) {
-            vector::push_back(&mut state.state_score, 0);
+            vector::push_back(&mut state.state_score, 50);
             i = i + 1;
         };
     }
@@ -35,7 +35,7 @@ module tictactoe::game {
     fun hash(rand:&vector<u8>):u64{
         use std::debug;
         let random_bytes = blake2b256(rand);
-        debug::print(&random_bytes);
+        // debug::print(&random_bytes);
         let random_num: u64 = 0;
         let i = 0;
         while (i < vector::length(&random_bytes)) {
@@ -51,9 +51,11 @@ module tictactoe::game {
     const SelectMaxScoreIndexs: u8 = 1u8;
     const SelectMinScoreIndexs: u8 = 2u8;
     const SelectRandomScoreIndexs: u8 = 0u8;
+    const NotSelectIdxs: u64 = 0u64;
     fun state_score_select(state:&TicTacToeState,select_score_flag:u8,scores_idxs:&vector<u64>):vector<u8>{
         use std::debug;
-        debug::print(&select_score_flag);
+        assert!(vector::length(scores_idxs)>0, NotSelectIdxs);
+        // debug::print(&select_score_flag);
         let select_score = 0;
         let select_idxs:vector<u64> = vector[];
         // loop all scores_idxs
@@ -334,10 +336,10 @@ module tictactoe::game {
             let piece = *vector::borrow(&board, i);
             if (piece == 0) {
                 let can_move = board;
-                debug::print(&can_move);
+                // debug::print(&can_move);
                 vector::append(&mut can_move, vector[game_nft.turn]);
                 vector::swap_remove(&mut can_move, i);
-                debug::print(&can_move);
+                // debug::print(&can_move);
                 vector::push_back(&mut can_moves, can_move);
             };
             i = i + 1;
@@ -378,14 +380,14 @@ module tictactoe::game {
         vector::append(&mut s, bcs::to_bytes(game_nft));
         let random_value = ((hash(&s) % 127) as u8);
         let result  = vector[];
-        if ( random_value < epsilon ) {
+        if ( random_value <= epsilon ) {
             result = state_score_select(state,SelectRandomScoreIndexs,&can_moves_idxs);
         }else{
             result = state_score_select(state,SelectMaxScoreIndexs,&can_moves_idxs);
         };
-        debug::print(&result);
+        // debug::print(&result);
         let s = ternary_to_decimal(result);
-        debug::print(&s);
+        // debug::print(&s);
         result
     }
     #[test]
@@ -535,7 +537,6 @@ module tictactoe::game {
             let st_board = game_nft.board;
             // can move to next_move_state
             game_nft.board = next_board_state;
-
             let winner = check_winner(next_board_state);
             if (winner == GameAgent) {
                 game_nft.state = GamePlayerLose;
@@ -547,16 +548,16 @@ module tictactoe::game {
                 game_nft.wins=game_nft.wins+1;
                 game_nft.turn = GameNoOnePlay;
                 //agent_win,agent get reward
-                rewards(state,st_board,game_nft.board,100,GetPenalty);
+                rewards(state,st_board,game_nft.board,0,GetReward);
             } else {
                 // unknown who win
-                if (vms == NoPositionMove) {
+                if (vector::length(&allowed_moves(game_nft))==0) {
                     // game is tie
                     game_nft.state = GameTie;
                     game_nft.turn = GameNoOnePlay;
                     
                     //agent_win,agent get reward
-                    rewards(state,st_board,game_nft.board,0,GetReward);
+                    rewards(state,st_board,game_nft.board,50,GetReward);
                 } else {
                     // game is active
                     game_nft.state = GameActive;
@@ -568,7 +569,7 @@ module tictactoe::game {
                 };
             }
         };
-
+        // debug::print(game_nft);
         if (game_nft.turn == GameNoOnePlay){
             emit(Outcome {
                 game_id:game_nft.game_id,
@@ -585,7 +586,7 @@ module tictactoe::game {
             // new game init turn is agent  
             game_nft.turn = GameAgent;
             game_nft.board = vector[0,0,0,0,0,0,0,0,0];
-            let agent_move = agent_select_move(state,game_nft,100);
+            let agent_move = agent_select_move(state,game_nft,12);
             game_nft.board = fill_teranry(agent_move,9u64);
             game_nft.turn = GamePlayer;
             object::delete(id);
@@ -608,14 +609,20 @@ module tictactoe::game {
         let next_board_value = *vector::borrow(&mut state.state_score,ternary_to_decimal(next_board));
         let st_value = vector::borrow_mut(&mut state.state_score,st_idx);
       
-        debug::print(st_value);
+        debug::print(&(*st_value));
+        debug::print(&next_board_value);
+        debug::print(&reward);
         // Q(St,At)<-Q(St,At)+a*(Rt+Q(S_t+1,A_t+1)-Q(St,At))
         if (get_flag==GetReward){
-            *st_value = *st_value+(reward+next_board_value-*st_value)/2;
-            debug::print(st_value)
+            if ((reward+next_board_value)<*st_value){
+                *st_value = 0;
+            }else{
+                *st_value = *st_value+(reward+next_board_value-*st_value)/2;
+            }
         }else if (get_flag==GetPenalty){
             *st_value = *st_value+(next_board_value-*st_value-reward)/2;
-        }
+        };
+        debug::print(&(*st_value));
     }
     #[test]
     public fun test_rewards(){
@@ -629,7 +636,7 @@ module tictactoe::game {
         state_score_init(&mut game_state_obj);
         let st_board = vector[0,0,0,0,0,0,0,0,0];
         let next_board = vector[1,0,0,0,0,0,0,0,0];
-        let reward = 100;
+        let reward = 50;
         rewards(&mut game_state_obj,st_board,next_board,reward,GetReward);
         // debug::print(&game_state_obj.state_score);
 
@@ -654,10 +661,10 @@ module tictactoe::game {
         // agent move
         if (game_nft.turn == GameAgent) {
             //player move pass,and not win
-            rewards(state,st_board,game_nft.board,0,GetReward);
+            rewards(state,st_board,game_nft.board,50,GetReward);
 
             // agent play
-            let agent_move = agent_select_move(state,game_nft,100);
+            let agent_move = agent_select_move(state,game_nft,12);
             emit(GameView {
                 game_id: game_nft.game_id,
                 round: game_nft.round,
@@ -694,6 +701,43 @@ module tictactoe::game {
         transfer::transfer(game_data, dummy_address);
         transfer::transfer(game_state_obj, dummy_address);
     }
+
+    #[test]
+    public fun test_many_play() {
+        use std::debug;
+        // Create a dummy TxContext and address for testing
+        let ctx = tx_context::dummy();
+        // Create a State
+        let state = TicTacToeState {
+            id: object::new(&mut ctx),
+            count: 0,
+            state_score:vector[],
+        };
+        state_score_init(&mut state);
+
+        let game_nft = createNewGameNFT(state.count, &mut ctx);
+        game_nft.round = game_nft.round+1;
+        game_nft.turn = GameAgent;
+        let agent_move = agent_select_move(&state,&game_nft,0u8);
+        game_nft.board = fill_teranry(agent_move,9u64);
+        game_nft.turn = GamePlayer;
+
+        let i = 3500;
+        while (i>0){
+            debug::print(&i);
+            debug::print(&i);
+            debug::print(&i);
+            let player_move = agent_select_move(&state,&game_nft,127u8);
+            debug::print(&player_move);
+            play(&mut state,&mut game_nft,player_move,&mut ctx);
+            debug::print(&game_nft.wins);
+            i=i-1;
+        };
+        let dummy_address = @0xCAFE;
+        transfer::transfer(game_nft, dummy_address);
+        transfer::transfer(state, dummy_address);
+    }
+
 
     /// Only ternary sequences can be received
     /// let ternary = vector[2,2,2,2,2,2,2,2,2];
@@ -744,7 +788,7 @@ module tictactoe::game {
         let length = vector::length(&teranry);
         assert!(length <= fill,FillTeranryError);
         let num = fill-length;
-        debug::print(&num);
+        // debug::print(&num);
         while (length>0 && num > 0) {
             vector::insert(&mut teranry, 0,0);
             num = num -1;
