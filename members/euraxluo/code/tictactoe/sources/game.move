@@ -7,16 +7,10 @@ module tictactoe::game {
     use sui::package;
     use std::string::utf8;
     use sui::display;
-    use sui::balance::{Self, Balance};
-    use sui::sui::SUI;
     use sui::event::emit;
     use sui::hash::{blake2b256};
     use sui::bcs::{Self};
     use std::vector;
-    use sui::clock;
-
-    const GameAlreadyStarted: u64 = 0;
-    const GameAlreadyOver: u64 = 1;
 
     const GameNoOnePlay: u8 = 0u8;
     const GameAgent: u8 = 1u8;
@@ -59,6 +53,7 @@ module tictactoe::game {
     const SelectRandomScoreIndexs: u8 = 0u8;
     fun state_score_select(state:&TicTacToeState,select_score_flag:u8,scores_idxs:&vector<u64>):vector<u8>{
         use std::debug;
+        debug::print(&select_score_flag);
         let select_score = 0;
         let select_idxs:vector<u64> = vector[];
         // loop all scores_idxs
@@ -66,8 +61,8 @@ module tictactoe::game {
         while (i < vector::length(scores_idxs)) {
             // get index
             let idx = *vector::borrow(scores_idxs, i);
-            debug::print(&idx);
-            debug::print(&vector::length(&state.state_score));
+            // debug::print(&idx);
+            // debug::print(&vector::length(&state.state_score));
             // get score
             let score = *vector::borrow(&state.state_score, idx);
             // if score > select_score,update select_score and select_idxs
@@ -82,7 +77,7 @@ module tictactoe::game {
             };
             i = i + 1;
         };
-        debug::print(&select_idxs);
+        // debug::print(&select_idxs);
         let s:vector<u8> = vector[];
         vector::append(&mut s, bcs::to_bytes(state));
         vector::append(&mut s, bcs::to_bytes(scores_idxs));
@@ -115,7 +110,7 @@ module tictactoe::game {
     }
 
     /// get indexs with states form `game state score`
-    fun state_scores_idxs(game_state:&TicTacToeState,states:&vector<vector<u8>>):vector<u64>{
+    fun state_scores_idxs(states:&vector<vector<u8>>):vector<u64>{
         let i = 0;
         let idxs:vector<u64> = vector[];
         while (i < vector::length(states)) {
@@ -140,7 +135,7 @@ module tictactoe::game {
             vector[1,1,1,1,1,1,1,1,1],
             vector[2,2,2,2,2,2,2,2,2],
         ];
-        let idxs = state_scores_idxs(&game_state_obj,&states);
+        let idxs = state_scores_idxs(&states);
         debug::print(&idxs);
         
         let dummy_address = @0xCAFE;
@@ -206,7 +201,7 @@ module tictactoe::game {
         game_nft.round = game_nft.round+1;
 
         game_nft.turn = GameAgent;
-        let agent_move = agent_select_move(state,&game_nft);
+        let agent_move = agent_select_move(state,&game_nft,0u8);
         game_nft.board = fill_teranry(agent_move,9u64);
         game_nft.turn = GamePlayer;
 
@@ -230,7 +225,7 @@ module tictactoe::game {
             wins:0, // wins game round
             image_url: std::ascii::string(b"https://avatars.githubusercontent.com/euraxluo"),
 
-            /// temp state
+            // temp state
             turn:GameNoOnePlay,// turn player
             state:GameActive, // game state,0:active,1:tie,2:win
             game_id:game_id,
@@ -373,11 +368,21 @@ module tictactoe::game {
     }
 
     /// agent select move that max score to win
-    fun agent_select_move(state:&TicTacToeState,game_nft:&GameNFT):vector<u8>{
+    fun agent_select_move(state:&TicTacToeState,game_nft:&GameNFT,epsilon:u8):vector<u8>{
         use std::debug;
         let can_moves = allowed_moves(game_nft);
-        let can_moves_idxs = state_scores_idxs(state,&can_moves);
-        let result = state_score_select(state,SelectMaxScoreIndexs,&can_moves_idxs);
+        let can_moves_idxs = state_scores_idxs(&can_moves);
+        // set epsilon
+        let s:vector<u8> = vector[];
+        vector::append(&mut s, bcs::to_bytes(state));
+        vector::append(&mut s, bcs::to_bytes(game_nft));
+        let random_value = ((hash(&s) % 127) as u8);
+        let result  = vector[];
+        if ( random_value < epsilon ) {
+            result = state_score_select(state,SelectRandomScoreIndexs,&can_moves_idxs);
+        }else{
+            result = state_score_select(state,SelectMaxScoreIndexs,&can_moves_idxs);
+        };
         debug::print(&result);
         let s = ternary_to_decimal(result);
         debug::print(&s);
@@ -399,7 +404,13 @@ module tictactoe::game {
         let game_data = createNewGameNFT(game_state_obj.count, &mut ctx);
         
         game_data.turn = GameAgent;
-        let result = agent_select_move(&game_state_obj,&game_data);
+        let result = agent_select_move(&game_state_obj,&game_data,100);
+        debug::print(&result);
+        let result = agent_select_move(&game_state_obj,&game_data,1);
+        debug::print(&result);
+        let result = agent_select_move(&game_state_obj,&game_data,100);
+        debug::print(&result);
+        let result = agent_select_move(&game_state_obj,&game_data,1);
         debug::print(&result);
 
         let dummy_address = @0xCAFE;
@@ -432,9 +443,9 @@ module tictactoe::game {
                 *vector::borrow(&board_state, *vector::borrow(&win_state_idx, 2)),
             ];
             if (win_state == vector[GameAgent,GameAgent,GameAgent]) {
-                return GameAgent;
+                return GameAgent
             } else if (win_state == vector[GamePlayer,GamePlayer,GamePlayer]) {
-                return GamePlayer;
+                return GamePlayer
             };
             i = i + 1;
         };
@@ -504,10 +515,10 @@ module tictactoe::game {
         use std::debug;
         let allowed_moves = allowed_moves(game_nft);
         if (vector::length(&allowed_moves) == 0) {
-            return NoPositionMove;
+            return NoPositionMove
         };
         if (vector::contains(&allowed_moves, &next_move_state)){
-            return CanMove;
+            return CanMove
         };
         CanNotMove
     }
@@ -566,7 +577,7 @@ module tictactoe::game {
             // new game init turn is agent  
             game_nft.turn = GameAgent;
             game_nft.board = vector[0,0,0,0,0,0,0,0,0];
-            let agent_move = agent_select_move(state,game_nft);
+            let agent_move = agent_select_move(state,game_nft,100);
             game_nft.board = fill_teranry(agent_move,9u64);
             game_nft.turn = GamePlayer;
             object::delete(id);
@@ -597,7 +608,7 @@ module tictactoe::game {
         // agent move
         if (game_nft.turn == GameAgent) {
             // agent play
-            let agent_move = agent_select_move(state,game_nft);
+            let agent_move = agent_select_move(state,game_nft,100);
             emit(GameView {
                 game_id: game_nft.game_id,
                 round: game_nft.round,
@@ -678,11 +689,11 @@ module tictactoe::game {
         result
     }
     
-    const FillTeranryError: u8 = 10u8;
+    const FillTeranryError: u64 = 10u64;
     fun fill_teranry(teranry:vector<u8>,fill:u64):vector<u8>{
         use std::debug;
         let length = vector::length(&teranry);
-        assert!(length<=fill,FillTeranryError)
+        assert!(length <= fill,FillTeranryError);
         let num = fill-length;
         debug::print(&num);
         while (length>0 && num > 0) {
@@ -717,7 +728,7 @@ module tictactoe::game {
     const QuickPowOverstepTheBound: u64 = 2049;
     fun  quickpow(base: u8, exp: u8): u256 {
         use std::debug;
-        assert(exp<=127, QuickPowOverstepTheBound);
+        assert!(exp<=127, QuickPowOverstepTheBound);
         let result = 1;
         let tBase = (base as u256);
         let texp = (exp as u256);
@@ -859,7 +870,9 @@ module tictactoe::game {
         vector::append(&mut y, b"1");
         vector::swap_remove(&mut y, 8);
         debug::print(&y);
+        
+        let  x = vector::borrow_mut(&mut y,8);
+        *x = *vector::borrow(&b"2",0);
+        debug::print(&y)
     }
-    
-
 }
