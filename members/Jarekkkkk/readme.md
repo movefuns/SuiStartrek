@@ -26,3 +26,11 @@ Roadmap 1
 - 项目源码:https://github.com/Jarekkkkk/SuiStarterk/tree/main/counter
 - 发布的 ERC20
   package1: 0xc9066eb6da55e74b768a0479cdebc8c409b531c48fc66b0be5c37d9df8bf40e1
+
+Roadmap 2
+
+- 项目源码:https://github.com/Jarekkkkk/SuiStarterk/tree/main/week_2
+- 发布的合約
+  - package: 0xed9feb0814c799fc87b4657ce2a2c16bc821de9ae142930895db5534d0682e31
+  - nft: 0x43d7fa894620849effe106f3e9b5b8feb732aa6dcf420a8d4f2f61e8a7e42c37
+  - 玩法記錄在**学习总结**
