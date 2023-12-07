@@ -1,0 +1,9 @@
+[package]
+name = "jeffierw_erc20_coin"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/devnet" }
+
+[addresses]
+jeffierw_erc20_coin = "0x0"
