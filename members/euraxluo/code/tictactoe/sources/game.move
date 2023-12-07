@@ -532,6 +532,7 @@ module tictactoe::game {
         let next_board_state = fill_teranry(next_move_state,9u64);
         let vms = valid_move(game_nft,next_board_state);
         if (vms==CanMove){
+            let st_board = game_nft.board;
             // can move to next_move_state
             game_nft.board = next_board_state;
 
@@ -539,16 +540,23 @@ module tictactoe::game {
             if (winner == GameAgent) {
                 game_nft.state = GamePlayerLose;
                 game_nft.turn = GameNoOnePlay;
+                //agent_win,agent get reward
+                rewards(state,st_board,game_nft.board,100,GetReward);
             } else if (winner == GamePlayer) {
                 game_nft.state = GamePlayerWin;
                 game_nft.wins=game_nft.wins+1;
                 game_nft.turn = GameNoOnePlay;
+                //agent_win,agent get reward
+                rewards(state,st_board,game_nft.board,100,GetPenalty);
             } else {
                 // unknown who win
                 if (vms == NoPositionMove) {
                     // game is tie
                     game_nft.state = GameTie;
                     game_nft.turn = GameNoOnePlay;
+                    
+                    //agent_win,agent get reward
+                    rewards(state,st_board,game_nft.board,0,GetReward);
                 } else {
                     // game is active
                     game_nft.state = GameActive;
@@ -591,6 +599,43 @@ module tictactoe::game {
         };
     }
     
+    // set rewards
+    const GetReward: u8 = 0u8;
+    const GetPenalty: u8 = 1u8;
+    public fun rewards(state:&mut TicTacToeState,st_board:vector<u8>,next_board:vector<u8>,reward:u8,get_flag:u8){
+        use std::debug;
+        let st_idx = ternary_to_decimal(st_board);
+        let next_board_value = *vector::borrow(&mut state.state_score,ternary_to_decimal(next_board));
+        let st_value = vector::borrow_mut(&mut state.state_score,st_idx);
+      
+        debug::print(st_value);
+        // Q(St,At)<-Q(St,At)+a*(Rt+Q(S_t+1,A_t+1)-Q(St,At))
+        if (get_flag==GetReward){
+            *st_value = *st_value+(reward+next_board_value-*st_value)/2;
+            debug::print(st_value)
+        }else if (get_flag==GetPenalty){
+            *st_value = *st_value+(next_board_value-*st_value-reward)/2;
+        }
+    }
+    #[test]
+    public fun test_rewards(){
+        use std::debug;
+        let ctx = tx_context::dummy();
+        let game_state_obj = TicTacToeState {
+            id: object::new(&mut ctx),
+            count: 0,
+            state_score:vector[],
+        };
+        state_score_init(&mut game_state_obj);
+        let st_board = vector[0,0,0,0,0,0,0,0,0];
+        let next_board = vector[1,0,0,0,0,0,0,0,0];
+        let reward = 100;
+        rewards(&mut game_state_obj,st_board,next_board,reward,GetReward);
+        // debug::print(&game_state_obj.state_score);
+
+        let dummy_address = @0xCAFE;
+        transfer::transfer(game_state_obj, dummy_address);
+    }
 
     // play tic-tac-toe game
     entry public fun play(state:&mut TicTacToeState,game_nft:&mut GameNFT,player_move:vector<u8>,ctx: &mut TxContext){
@@ -603,10 +648,14 @@ module tictactoe::game {
             board: player_move,
             turn: game_nft.turn,
         });
+        let st_board = game_nft.board;
         // player move
         make_move(state,game_nft,player_move,ctx);
         // agent move
         if (game_nft.turn == GameAgent) {
+            //player move pass,and not win
+            rewards(state,st_board,game_nft.board,0,GetReward);
+
             // agent play
             let agent_move = agent_select_move(state,game_nft,100);
             emit(GameView {
@@ -873,6 +922,11 @@ module tictactoe::game {
         
         let  x = vector::borrow_mut(&mut y,8);
         *x = *vector::borrow(&b"2",0);
-        debug::print(&y)
+        debug::print(&y);
+
+        let  z = vector::borrow_mut(&mut y,8);
+        *z = *vector::borrow(&b"3",0);
+        *z =*z+2;
+        debug::print(&y);
     }
 }
