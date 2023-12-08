@@ -592,5 +592,123 @@ Published Objects:
  │ Amount: -12440280
  └──
 
-Code/sui/mycoin via 🅒 base took 4.8s 
 ```
+
+## 第二周 NFT_GAME
+
+### 完成一个主网NFT的发布合约 ,并mint一个名称为自己githubid 名称或者微信名称名字的nft  图片用自己的github头像或者微信头像
+
+```shell
+Code/sui/sui-my-nft via 🅒 base took 4.1s 
+➜ sui move build
+
+Code/sui/sui-my-nft via 🅒 base 
+➜ sui client gas 
+
+Code/sui/sui-my-nft via 🅒 base took 2.3s 
+➜ sui client publish --gas-budget 100000000 --skip-fetch-latest-git-deps
+
+Code/sui/sui-my-nft via 🅒 base took 2.7s 
+➜ sui client call --package 0xb17a753df48c8adda735401b549a4e189ffa675a8f98eeacf252e51392d8a988 --module nft --function mint --args 0x0c3a41d94a0bf4eb3708f1845787e3930122d4731c2ea68f7e3b5d7865f49770 --gas-budget 10000000
+
+Code/sui/sui-my-nft via 🅒 base took 5.7s 
+➜ sui client call --package 0xa1baf38255c569cfadf54250b6686ff3051933e79bef330b5526fee281541bb0 --module nft --function mint --args 0x9a7103488d62554a6221400cde3b1cbd81e8a29522cb644dce0453a36cd7f03b --gas-budget 10000000
+```
+
+- <https://suiexplorer.com/object/0x685c3019d1c7c4c2e3b254ca659aa29e38ab68c1c8bf7f506247d27086e7cf80?network=testnet>
+- <https://suiexplorer.com/object/0x85611c9f3250eab8208bb1cf4939f5c8ccda71092421aa7945e56e66d43bb8d6?network=testnet>
+
+![Alt text](imgs/sui_my_nft.png)
+
+### 完成一个简单小游戏 ，并且能通过命令行调用或者网页端调用和合约比大小 ，石头剪刀布等都可以 不追求完全正确，但是要可玩
+
+```shell
+sui move new Rock-Scissors-Paper
+cd Rock-Scissors-Paper/
+c
+sui move build
+```
+
+- 编译报错
+
+```shell
+Code/sui/Rock-Scissors-Paper via 🅒 base took 3.1s 
+➜ sui move build
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING Rock-Scissors-Paper
+error[Sui E01001]: invalid object construction
+   ┌─ /Users/qiaopengjun/.move/https___github_com_MystenLabs_sui_git_framework__testnet/crates/sui-framework/packages/sui-framework/sources/random.move:53:20
+   │  
+53 │           let self = Random {
+   │ ╭────────────────────^
+54 │ │             id: object::randomness_state(),
+   │ │             --  -------------------------- Non fresh UID from this position
+   │ │             │    
+   │ │             The UID must come directly from sui::object::new. Or for tests, it can come from sui::test_scenario::new_object
+55 │ │             inner: versioned::create(version, inner, ctx),
+56 │ │         };
+   │ ╰─────────^ Invalid object creation without a newly created UID.
+
+Total number of linter warnings suppressed: 2 (filtered categories: 1)
+Failed to build Move modules: Compilation error.
+```
+
+- 问题解决
+- <https://github.com/MystenLabs/sui/issues/15239>
+修改 toml 文件(实际操作不用修改)
+
+```shell
+Sui = { git = "https://github.com/MystenLabs/sui/tree/releases/sui-v1.15.0-release", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/mainnet" }
+```
+
+```shell
+cargo install --locked --git https://github.com/MystenLabs/sui.git sui
+
+Code/sui/Rock-Scissors-Paper via 🅒 base took 17.2s 
+➜ sui move build
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING Rock-Scissors-Paper
+Total number of linter warnings suppressed: 2 (filtered categories: 1)
+
+Code/sui/Rock-Scissors-Paper via 🅒 base took 4.5s 
+➜ sui client envs          
+╭─────────┬───────────────────────────────────────┬────────╮
+│ alias   │ url                                   │ active │
+├─────────┼───────────────────────────────────────┼────────┤
+│ devnet  │ https://fullnode.devnet.sui.io:443    │        │
+│ mainnet │ https://sui-mainnet.nodeinfra.com:443 │ *      │
+│ testnet │ https://fullnode.testnet.sui.io:443   │        │
+╰─────────┴───────────────────────────────────────┴────────╯
+
+Code/sui/Rock-Scissors-Paper via 🅒 base 
+➜ sui client switch --env testnet
+Active environment switched to [testnet]
+
+Code/sui/Rock-Scissors-Paper via 🅒 base 
+➜ sui move build                 
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING Rock-Scissors-Paper
+Total number of linter warnings suppressed: 2 (filtered categories: 1)
+
+```
+
+**执行 cargo install --locked --git <https://github.com/MystenLabs/sui.git> sui 命令后即可 ， 不用修改move.toml 文件**
+
+### Deploy contract
+
+```shell
+Code/sui/Rock-Scissors-Paper via 🅒 base took 18.3s 
+➜ sui client publish --gas-budget 100000000 --skip-fetch-latest-git-deps
+
+Code/sui/Rock-Scissors-Paper via 🅒 base took 6.3s 
+➜ sui client call --package 0x132b67a2e175b486f47a61a8566b8815b1086e634d1de72a240e4653a95000ab --module finger_guessing --function play --args 0xb59c5a296a44f2f14bbe69f759c7a7938f49676f30fc9a55e3ff7c9c11c8c8bb Scissors 0x3d1c101413a5668bfe8bdfcbfe871702e2198f0624b0d89d440aa9461943eb74 0x6 --gas-budget 10000000
+```
+
+- <https://suiexplorer.com/object/0x132b67a2e175b486f47a61a8566b8815b1086e634d1de72a240e4653a95000ab?network=testnet>
+![Alt text](imgs/Rock-Scissors-Paper.png)
