@@ -35,6 +35,7 @@ Roadmap 2
 
 * 项目源码:
   * <https://github.com/qiaopengjun5162/sui-my-nft>
+  * <https://github.com/qiaopengjun5162/Rock-Scissors-Paper>
 * 发布的nft
   * <https://suiexplorer.com/object/0x85611c9f3250eab8208bb1cf4939f5c8ccda71092421aa7945e56e66d43bb8d6?network=testnet>
   * 0x85611c9f3250eab8208bb1cf4939f5c8ccda71092421aa7945e56e66d43bb8d6
