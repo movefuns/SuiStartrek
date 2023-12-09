@@ -29,3 +29,8 @@
 `sui client call --function mint --module whitehare2023 --package <Package Address> --args <TreasuryCap Address> <Amount> <Receive Address > --gas-budget 100000000` 来获取你的代币到钱包，args需要的三个参数分别是TreasuryCap，数量，以及mint地址。
 8. 最后查看自己的钱包，可以发现代币已经到账。
 
+## 三，发行 NFT
+详细学习了 display 的规则，并发行了一个自己的 NFT。
+
+## 四，发布一个小游戏
+发布了一个剪刀石头布的小游戏。
