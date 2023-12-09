@@ -185,7 +185,7 @@ module tictactoe::game {
         id: UID,
         tokenId: u64, // id of the NFT
         round: u16, // Round
-        wins: u8, // win rate 
+        wins: u16, // win rate 
         image_url: std::ascii::String, // url of the NFT image
     
         /// temp state
@@ -279,7 +279,7 @@ module tictactoe::game {
     struct Outcome has copy, drop {
         game_id: ID,
         round: u16,
-        wins: u8,
+        wins: u16,
         state: u8, // 0:active,1:tie,2:win
         board: vector<u8>,
     }
@@ -609,9 +609,9 @@ module tictactoe::game {
         let next_board_value = *vector::borrow(&mut state.state_score,ternary_to_decimal(next_board));
         let st_value = vector::borrow_mut(&mut state.state_score,st_idx);
       
-        debug::print(&(*st_value));
-        debug::print(&next_board_value);
-        debug::print(&reward);
+        // debug::print(&(*st_value));
+        // debug::print(&next_board_value);
+        // debug::print(&reward);
         // Q(St,At)<-Q(St,At)+a*(Rt+Q(S_t+1,A_t+1)-Q(St,At))
         if (get_flag==GetReward){
             if ((reward+next_board_value)<*st_value){
@@ -622,7 +622,7 @@ module tictactoe::game {
         }else if (get_flag==GetPenalty){
             *st_value = *st_value+(next_board_value-*st_value-reward)/2;
         };
-        debug::print(&(*st_value));
+        // debug::print(&(*st_value));
     }
     #[test]
     public fun test_rewards(){
@@ -722,19 +722,45 @@ module tictactoe::game {
         game_nft.board = fill_teranry(agent_move,9u64);
         game_nft.turn = GamePlayer;
 
-        let i = 3500;
+        let i = 10000;
         while (i>0){
             debug::print(&i);
-            debug::print(&i);
-            debug::print(&i);
             let player_move = agent_select_move(&state,&game_nft,127u8);
-            debug::print(&player_move);
+            // debug::print(&player_move);
+            print_board(&game_nft);
             play(&mut state,&mut game_nft,player_move,&mut ctx);
             debug::print(&game_nft.wins);
+            debug::print(&game_nft.round);
             i=i-1;
         };
+
+
+        let game_nft2 = createNewGameNFT(state.count, &mut ctx);
+        game_nft2.round = game_nft2.round+1;
+        game_nft2.turn = GameAgent;
+        let agent_move = agent_select_move(&state,&game_nft2,0u8);
+        game_nft2.board = fill_teranry(agent_move,9u64);
+        game_nft2.turn = GamePlayer;
+        let i = 2000;
+        while (i>0){
+            let player_move = agent_select_move(&state,&game_nft2,127u8);
+            if (i < 20) {
+                print_board(&game_nft2);
+            };
+            debug::print(&player_move);
+            play(&mut state,&mut game_nft2,player_move,&mut ctx);
+            i=i-1;
+            if (i < 20) {
+                print_board(&game_nft2);
+            };
+            debug::print(&i);
+        };
+        debug::print(&game_nft2);
+        debug::print(&game_nft);
+        
         let dummy_address = @0xCAFE;
         transfer::transfer(game_nft, dummy_address);
+        transfer::transfer(game_nft2, dummy_address);
         transfer::transfer(state, dummy_address);
     }
 
