@@ -22,3 +22,8 @@
 - package：`https://suiexplorer.com/object/0x6a45ee1dbd7f8b56f2b09c99dc46e567832d3e7031939c241c7b60a90e3eb907?network=mainnet`
 - nft-object:`https://suiexplorer.com/object/0x6a45ee1dbd7f8b56f2b09c99dc46e567832d3e7031939c241c7b60a90e3eb907?network=mainnet`
 ![nftView](./doc/week02/image-2.png)
+
+4. tictactoe package
+- 源码：members/euraxluo/code/tictactoe
+- 部署事务：`https://suiexplorer.com/txblock/BCX7cumTFNsixui2tnGuLq4Bpk4KziNQJAzw3Bhj54mm?network=testnet`
+- package：`https://suiexplorer.com/object/0x1828137580fa60f0b6cec8a21965167759cbb00e3b373a58f624485e850bcfb0?network=testnet`

@@ -8,3 +8,7 @@ Week1:
 [3.dapp开发](./doc/week01/3.dapp开发.md)
 
 [4.coin开发](./doc/week01/4.coin开发.md)
+
+[5.NFT开发](./doc/week02/5.NFT开发.md)
+
+[6.TicTacToe](./doc/week02/6.TicTacToe.md)
