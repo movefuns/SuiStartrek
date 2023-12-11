@@ -16,10 +16,16 @@
 
 ### 学习成果
 
-Roadmap  1
+**Roadmap  1**
 
 - 项目源码: https://github.com/qingfengzs/sui-study/tree/main/02-fungible-token
 - 发布的ERC20
 
   - hellocoin 0x759b37a7e61e388776afc24f154203ff9881c608fba8e097efc87b82983778a8
   - worldcoin 0xf173be67416d20dbba8860821c49711c24515f802de3508ca80f0c37fc840146
+
+**Roadmap 3**
+
+添加intellij-move对sui的支持
+
+PR：https://github.com/movefuns/intellij-move/pull/2
