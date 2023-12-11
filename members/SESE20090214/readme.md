@@ -16,16 +16,16 @@
 ### 学习日志
 
 - [学习日志](journal.md)
-第一天
+
 - [学习总结](summary.md)
 
 ### 学习成果
 + 学习成果，存放在[个人Github](https://github.com/SESE20090214/Sui-learn)
 
 Roadmap  1  
-- 项目源码:填写自己的源码地址
+- 项目源码:https://github.com/SESE20090214/Sui-learn
 - 发布的ERC20
-package1: xx
+package1: 0xd04bb41d4c728ee6e3bcf3dd3ffa308cf6c8ddf622918b9c6793ab7cac047224
 package2: xx
 
 
