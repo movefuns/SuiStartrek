@@ -1,0 +1,35 @@
+# 星航计划加入申请表
+
+### 个人介绍
+
+* Github ID: [github](https://github.com/SESE20090214)
+
+* Telegram ID:
+
+* Discord ID: xx
+
+(首次如果没有，学习完毕钱包在填写)
+* Sui 账号地址: 0x2ecefb487655a467f7aa4fe428460b4bddf2897205ed7c6f5c1975dbee068434
+
+新手小白，在日本留学，喜欢流浪旅行，梦想是环游世界。专业是经济学
+
+### 学习日志
+
+- [学习日志](journal.md)
+第一天
+- [学习总结](summary.md)
+
+### 学习成果
++ 学习成果，存放在[个人Github](https://github.com/SESE20090214/Sui-learn)
+
+Roadmap  1  
+- 项目源码:填写自己的源码地址
+- 发布的ERC20
+package1: xx
+package2: xx
+
+
+2.
+
+
+3. 
