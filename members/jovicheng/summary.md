@@ -23,3 +23,17 @@
 ## 完成一个链上抢红包 dapp: Sui Red Packet
 - [Sui Red Packet](https://sui-red-packet.vercel.app/)
 - (待整理代码后开源)
+
+---
+
+## Phase Three
+
+### Sui Move 应用
+- [Flappy Suird](https://suird.app/) （Fully On Chain NFT）
+- [Sui Red Packet](https://sui-red-packet.vercel.app/) (链上抢红包应用)（后续会提交到 MoveFuns DAO Github Repo）
+- [Sui zkLogin demo](https://sui-zklogin.vercel.app/)
+
+### MystenLabs Sui Repo PR 贡献
+- [[frontend dapp-kit] add useSuiClientQueries hook](https://github.com/MystenLabs/sui/pull/14913)
+- [Sui zkLogin Demo](https://github.com/MystenLabs/sui/pull/15123)
+- [Sui Documentation - zkLogin Demo Docs](https://docs.sui.io/concepts/cryptography/zklogin/zklogin-example)
