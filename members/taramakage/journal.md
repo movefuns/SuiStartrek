@@ -1,20 +1,16 @@
-# 学习日志 
+# 学习日志
 
-## Week 1 (23.11.13 ~ 23.11.19)
+## Stage 1 (23.11.13 ~ 23.11.19)
 
 - [x] Set up Sui Wallet
 - [x] Set up Move Env
 - [x] Deploy an ERC-20 Contract
 
-## Week2 (23.11.20 ~ 23.11.26)
+## Stage 2 (23.11.20 ~ 23.12.16)
 
-- [ ] Deploy two ERC-20 Contracts
-- [ ] Deploy an ERC-721 Contract
-
-## Week3 (23.11.27 ~ 23.12.03)
-
-TODO    
-
+- [x] Deploy two ERC-20 Contracts
+- [x] Deploy an ERC-721 Contract
+- [ ] Deploy a simple On-chain game
 
 ## Reference
 
