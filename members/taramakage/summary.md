@@ -13,4 +13,6 @@
 
 ## Task3: deploy an on-chain game contract and explain how to play with it
 
-- Game 源码：[sui-mover/st003]()
+- `how-to-play`：见[学习记录](journal.md#stage2-game)
+- `Game 源码`：[sui-mover/st003](https://github.com/taramakage/sui-mover/tree/main/st003)
+- `Game package-id`: 0x79db1ef58c455db20236e6ee19daacd9c17f840b3b9617dc2ec3cf58df28cdfc
