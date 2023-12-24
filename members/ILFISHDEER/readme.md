@@ -2,7 +2,7 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/github)
+* Github ID: [github](https://github.com/ILFISHDEER)
 
 * Telegram ID: Aaron wang
 

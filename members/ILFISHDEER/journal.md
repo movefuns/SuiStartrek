@@ -132,3 +132,82 @@ $ ssh -T git@github.com
 git clone git@github.com:ILFISHDEER/SuiStartrek.git
 ~~~
 
+## 前端方向的 Hello world
+### 安装node js
+- 此处我遇到版本低，于是安装node js 花了一些时间，官网下载到本地
+[node js](https://nodejs.org/en)
+- 解压缩文件
+~~~
+$ tar -xvf node-v20.10.0-linux-x64.tar.xz
+~~~
+- 移动Node.js目录
+~~~
+$ sudo mv node-v20.10.0-linux-x64 /usr/local/
+~~~
+- 更新你的PATH环境变量
+~~~
+$ nano ~/.bashrc
+# 文件底部加
+$ export PATH=/usr/local/node-v20.10.0-linux-x64/bin:$PATH
+
+# 保存并关闭文件，然后运行以下命令使改变立即生效：
+source ~/.bashrc
+
+node -v
+~~~
+> 现在终于可以了
+- 安装 npmp
+~~~
+sudo npm install -g pnpm
+~~~
+
+### 开始实操
+- create a new dApp project.
+[create-dapp](https://sdk.mystenlabs.com/dapp-kit/create-dapp)
+~~~
+$ pnpm create @mysten/dapp
+~~~
+- 选择 e2e这个
+![Alt text](./picture/image.png)
+- 然后
+![Alt text](./picture/image2.png)
+
+- 建立好hello以后用vs打开，在hello下运行
+![Alt text](./picture/image3.png)
+- 参考 readme 的文件步骤，基本的操作我上面已经记录
+![Alt text](./picture/image4.png)
+- cd move 后运行如下代码，因为是把sui的代码库刷新一遍，所以很慢需要等待
+~~~
+$ sui client publish --gas-budget 100000000 counter
+~~~
+- 我的合约已经发布[sui区块链游览器](https://suiexplorer.com/)
+![Alt text](./picture/image5.png)
+- 复制交易记录已经可以看到这笔交易记录Transaction Digest: 2Jh1EgRVxjXLPFkn87mruS14PJ5J7kc34eHrftWDQ3fF
+![Alt text](./picture/image6.png)
+- 这就是刚才发布的合约
+![Alt text](./picture/image7.png)
+
+- 然后上链了需要前端代码交互，这里有教如何运行
+![Alt text](./picture/image8.png)
+
+- package id拿到，0x7511f371dcec74afd46418d87bcc1f8548dcf6611dc87af8836138313adf1446
+- 然后修改src文件夹的constants.ts
+![Alt text](./picture/image9.png)
+- 然后修改这部分export const DEVNET_COUNTER_PACKAGE_ID = "<YOUR_PACKAGE_ID>"
+![Alt text](./picture/image10.png)
+> 这样前端和合约关联了
+
+- 安装依赖
+~~~
+pnpm install
+~~~
+To start your dApp in development mode run
+```bash
+pnpm dev
+```
+- 连接成功
+![Alt text](./picture/image11.png)
+- ctrl+D结束
+
+
+
