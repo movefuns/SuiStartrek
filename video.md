@@ -4,7 +4,7 @@
 | Workshop | 什么是Move | UVD | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/VJweQrWJCxM?si=IaWbfetsZ7ZxkWPP) |
 | Workshop | Move object & 所有权 | UVD | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/jUiPV5UbiTA?si=hXU52a2RkbYymp1T) |
 | Workshop | ERC20合约实战 | UVD | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/HelbxKaEvk4?si=2yG6xxtrdkpDsHtX) |
-| Workshop | Office Hour 0x1 | Ethab | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/JM2PW0uAwN0?si=vIzrHAUADOkD-98v) |
+| Workshop | Office Hour 0x1 | Ethan | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/JM2PW0uAwN0?si=vIzrHAUADOkD-98v) |
 | Workshop | 第二阶段任务解读&实战 | Summer.XJ | Startrek | [点击观看](https://www.youtube.com/embed/iVlvx-On59w?si=tM1VJKBqd83Xc-G5) |
 | 从Sui入门Web3 | 钱包入门 | Bruski | Suiet | [点击观看](https://www.youtube.com/embed/ctXY4fzOWuw?si=GGexuFH_k9siWmmc) |
 | 从Sui入门NFT | 什么是 NFT | Ellen | LX DAO | [点击观看](https://www.youtube.com/embed/vMXreyBpQpE?si=mZ7PoYKHahRPjJ9G) |
