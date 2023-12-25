@@ -15,6 +15,9 @@
 
 - [第一个简单的move智能合约](journal.md)
 - [NFT开发](summary.md)
+- [学习中的杂碎知识点](learn_log.md)
+- [剪刀石头布](phase2.md)
+- [pr贡献](pr.md)
 
 ### 学习成果
 
