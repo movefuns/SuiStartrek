@@ -24,6 +24,9 @@ Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者
 | [🔧Tricks & Tools](https://github.com/movefuns/SuiStartrek/discussions/categories/tricks-tools) | 值得分享的小技巧/小工具<br /> |
 | [💡Ideas](https://github.com/movefuns/SuiStartrek/discussions/categories/ideas) | 课程结尾关于 星航计划 的一些 Amazing fancy ideas, 用来<br />1. 好的想法，寻找开发伙伴 <br />2. 参与下一期星航计划 <br />3. ... |
 
+## Workshop & video tutorial
+
+[视频资料](https://github.com/movefuns/SuiStartrek/blob/main/video.md)
 
 ## 学习方向
 
