@@ -26,8 +26,8 @@ Roadmap  1
 - 项目源码: https://github.com/ILFISHDEER/my-first-move-hello
 
 - 发布的ERC20
-package1: xx
-package2: xx
+package1: 0x099bccd19d2cb734b641c9092422c5c559a612c54aecb8809b72b442735ca50e
+package2: 0x7bf76557889920de2417550ef83a382b807f7a2f784d31e0dfc1ca675d6fe217
 
 
 2.

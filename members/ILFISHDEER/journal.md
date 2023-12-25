@@ -132,7 +132,7 @@ $ ssh -T git@github.com
 git clone git@github.com:ILFISHDEER/SuiStartrek.git
 ~~~
 
-## 前端方向的 Hello world
+## 5.前端方向的 Hello world
 ### 安装node js
 - 此处我遇到版本低，于是安装node js 花了一些时间，官网下载到本地
 [node js](https://nodejs.org/en)
@@ -209,5 +209,24 @@ pnpm dev
 ![Alt text](./picture/image11.png)
 - ctrl+D结束
 
+## 发布ERC20合约
+### 1. 新建Move项目
+~~~
+sui move new <PACKAGE NAME>
+sui move new my_first_coin
+~~~
+- 去到my_first_coin的文件夹 source下新建my_first_coin.move,
+> 注意 大小写
+[erc20 example](https://sui-book.com/framework/02.coin.html)
+![Alt text](./picture/image12.png)
+- 执行打包命令`sui move build`,注意move.toml 里的名称和move文件里的名称统一，不然可能报错
+- The Sui CLI command for deploying the package
+~~~
+$ sui client publish --gas-budget 100000000
+~~~
 
+### my first coin
+package ID :0x099bccd19d2cb734b641c9092422c5c559a612c54aecb8809b72b442735ca50e
 
+### my second coin
+package ID:0x7bf76557889920de2417550ef83a382b807f7a2f784d31e0dfc1ca675d6fe217
