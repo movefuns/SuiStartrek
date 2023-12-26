@@ -29,3 +29,7 @@ package1: 0x802c8ce75e897048b24cbbf73d669428b63015dafddc1d67b9ada532fcecc0de
 Roadmap  2
 - 学习到了NFT构建与发布，并根据NFT落地的应用场景独立设计一款Dapp，[sui_ai_nft_generator](https://github.com/phanker/sui_ai_nft_generator/)这是一个基于AI模型，并根据输入的描述信息生成你想要的NFT的DAPP
 - 学习到sui object，coin,blance的原理，以及Object拥有的ability。及运用这些原理实现和发布一个石头剪刀布的游戏
+
+Roadmap 3
+- 学习了oracle，zk-login的一些知识，更深入的了解到了move在sui中的语言特性
+- 根据所学习到的知识，独立完成了一款[全链游戏](https://black-disk-7038.on.fleek.co/)
