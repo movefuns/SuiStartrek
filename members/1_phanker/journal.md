@@ -202,3 +202,22 @@ Array [
 ### 石头、剪刀、布 的比手势游戏
 ### [源码&Instruction](https://github.com/phanker/sui-game-finger-guessing)
 
+
+
+# Roadmap 3
+
+## 2048游戏
+
+### [2048游戏合约源码](https://github.com/phanker/sui_game2048)
+### 合约PackageId:[0x122e8da7cfa22c01e6ada67ac95e88d517ba6e02a3a19f4f6526a3d301af2810](https://suiexplorer.com/object/0x961f6935bfcf21d62ce0acea4cd1fcef98aba455cd7f496d3861a1841c9b5495?network=mainnet)  
+
+### [2048游戏前端源码](https://github.com/phanker/game2048_frontend)
+
+### [2048游戏试玩链接](https://black-disk-7038.on.fleek.co/)
+
+## sui官方的PR贡献
+1.https://github.com/MystenLabs/sui/pull/14848  
+2.https://github.com/MystenLabs/sui/pull/15005  
+
+
+
