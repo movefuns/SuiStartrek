@@ -10,4 +10,8 @@
 
 [Counter Dapp](./docs/counter_dapp.md)
 
+[学习Object Model](https://docs.sui.io/concepts/object-model)
+
+[学习Display](https://docs.sui.io/standards/display)
+
 
