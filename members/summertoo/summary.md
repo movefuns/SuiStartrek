@@ -22,3 +22,29 @@ https://github.com/summertoo/SuiRoot/blob/main/card/etcard/sources/mycard.move
 
 
 ## Roadmap  3  
+
+星航计划链接笔记
+https://github.com/summertoo/SuiStartrek/blob/main/members/summertoo/journal.md
+
+文章
+学习过程中做的笔记
+https://github.com/summertoo/suibombman/blob/main/doc/Note.md
+
+代码参考集合
+学习和练习的工程汇总
+https://github.com/summertoo/SuiRoot
+
+vue添加sui钱包做的实验 demo 展示如何使用 vuiet库 (不用pr了,有更加好的版本)
+https://github.com/summertoo/vue-sui-dapp-kit.git
+
+视频
+星航视频 https://www.youtube.com/@movefunsdao
+简述我完成第二阶段的步骤
+https://www.youtube.com/watch?v=iVlvx-On59w
+
+零知识的入门教程一
+https://v.douyin.com/i8JgfJCA/
+
+卡牌游戏制作中:
+合约部分开发中
+前端部分开发中
