@@ -20,3 +20,5 @@ Mint Github 个人头像为[NFT](https://suiexplorer.com/object/0xb8bb580858e0fd
 [前端页面](https://tbe-sigma.vercel.app/#/)
 
 [Github](https://github.com/Soonogo/tbe)
+
+[pr](https://github.com/MystenLabs/sui/pull/15225)
