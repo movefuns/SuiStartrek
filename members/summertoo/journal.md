@@ -29,11 +29,9 @@ https://docs.sui.io/concepts/cryptography/zklogin
 https://docs.google.com/presentation/d/1aQNNNqVT77B6WmIIBL1b5YzcC3KzJ7mTVxmh8fBkrQY
 最早的ppt在这里
 
-执行 hello world 的试验 
-1.
-https://github.com/movefuns/SuiStartrek/blob/main/roadmap/01.start.md
-2.
-https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp
+# 执行 hello world 的试验 
+1. https://github.com/movefuns/SuiStartrek/blob/main/roadmap/01.start.md
+2. https://sui-typescript-docs.vercel.app/dapp-kit/create-dapp
 
 windows 下安装 pnpm
 https://www.pnpm.cn/installation
@@ -97,11 +95,47 @@ rm -rf .sui
 然后重装
 cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devnet sui
 
-不过有个问题,每次重装后,sui地址就变了,无法固定
+不过有个问题,每次重装后,sui地址就变了,无法固定(解决方案 用sui keytool 导入原地址 sui keytool import 你的私钥地址 ed25519 #导入私钥)
 
 招聘讯息
 https://www.notion.so/modifidao-060d0b29ceeb4a86bdfc1ae23978666c
 
 mac代理
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+
+# NFT 发布主网过程记录
+* 目标: 完成一个主网NFT的发布合约 ,并mint一个名称为自己githubid 名称或者微信名称名字的nft 图片用自己的github头像或者微信头像
+* 实施: 
+    * 准备一个图片作为头像
+        * 用AI生成工具生成一个300x300的jpg图片格式文件,存到服务器上(没有服务器的可以考虑svg或base64)
+        http://IP地址/newhead.jpg
+    * 编写涉及NFT的智能合约
+        * 建立新的一个结构体 HeadIconNFT 用来存储 githubid和图片路径
+        * 完善move代码并本地进行必要的编译和测试
+            * sui move build --skip-fetch-latest-git-deps
+        * 发布代码
+            * sui client publish --skip-fetch-latest-git-deps --gas-budget 100000000
+        * 发布后直接在线上进行execute mint操作获得NFT
+            https://suiexplorer.com/
+            找到package 并执行mint 参数填入shareobject的地址
+        * 源码地址
+          https://github.com/summertoo/SuiRoot/tree/6be00ea8f17bc00f84e11cef5496a87b9dc33cb6/NTF/fd01
+
+
+# 小游戏项目 过程记录
+* 目标:完成一个简单小游戏 ，并且能通过命令行调用或者网页端调用和合约比大小 ，石头剪刀布等都可以 不追求完全正确，但是要可玩
+* 实施:
+    * 准备游戏逻辑 目前设计一个养成卡牌类小游戏
+    * 养成特点 获取经验值,然后提升等级
+    * 卡牌战斗 HP AT 影响血量
+    PackageID: 0x63e9eac43b4b5d2bb5d26afe02e5fbd8329969aef51cf89fb00fcc7536ac71b4
+    在suiexplorer上建立几个卡牌
+    调用 initCard接口 建立卡牌并给卡牌编号
+    卡牌1 0x813882f1d5c85e8d6aed928feb7bbfb35ae6247a7307911e7a2e42a865159a1c
+    卡牌2 0x1b1166d2b8387bc6c39e2d28ebaff815a5a015cbe6ab9d838dc397d96ffaf87b
+    调用 levelUp接口
+        卡牌2的xp增加 测试通过
+    调用战斗接口 fight
+        一次战斗后卡牌1和卡牌2的hp都是9说明战斗判断成功
+    
 
