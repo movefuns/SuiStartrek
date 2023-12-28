@@ -20,12 +20,12 @@
 
 ### 学习成果
 
-Roadmap  1  
+#### Roadmap  1  
 - learn Sui: https://docs.sui.io/references
 - 项目源码: https://github.com/lidashu/learn_sui
 - 发布的ERC20: 0x86fdfec8e82161d5331a86e671e2615d52577b4ea4ec482331718ce6d40d7e79
 
-Roadmap 2
+#### Roadmap 2
 
 主链发布的NFT
 
@@ -94,3 +94,12 @@ Roadmap 2
 
 - 解法： sui client call --gas-budget 5000000 --package 0xd04776f4e65a21e4763abc697f5349255a2d67476c562d00e91af9a790c8c482 --module "sokoban" --function "mint_to_winner" --args 0x9b0e1781e803f1a89528d9e60f253a0bb80e5491a8ae3e300af717d7a61b1d18 \[8,2,4,4,6,2,2,8,6,6\]
 成功后，会为玩家mint一个SokobanBadge
+
+#### Roadmap 3
+- 升级合约：增加一个share object levelpack来保存所有mint的level，方便应用读取
+- 开发应用前端
+  参考：1. levels & icon from https://github.com/shunyue1320/sokoban
+       2. frame from https://github.com/giulianoconti/sokoban-reactjs
+- 静态发布应用：
+  https://lidashu.github.io/sui-sokoban/
+
