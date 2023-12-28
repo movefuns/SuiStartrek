@@ -27,3 +27,7 @@
 - 源码：members/euraxluo/code/tictactoe
 - 部署事务：`https://suiexplorer.com/txblock/BCX7cumTFNsixui2tnGuLq4Bpk4KziNQJAzw3Bhj54mm?network=testnet`
 - package：`https://suiexplorer.com/object/0x1828137580fa60f0b6cec8a21965167759cbb00e3b373a58f624485e850bcfb0?network=testnet`
+
+5. tictactoe dapp
+- 源码：members/euraxluo/code/tictactoe-dapp
+- deploy:`https://sui-startrek-euraxluo.vercel.app/`
