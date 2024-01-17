@@ -2,7 +2,7 @@
 
 ### 个人介绍
 
-* Github ID: [github](https://github.com/baicaiyihao)
+* Github ID: [baicaiyihao](https://github.com/baicaiyihao)
 
 * Telegram ID: stom698
 
