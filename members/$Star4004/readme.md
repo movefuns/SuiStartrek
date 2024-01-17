@@ -2,14 +2,14 @@
 
 ### 个人介绍
 
-* Github ID: [birch](https://github.com/birchwork)
+* Github ID: [Star4004](https://github.com/Star4004)
 
-* Telegram ID: birchspace
+* Telegram ID: Star4004
 
-* Discord ID: birchrust
+* Discord ID: Star4004
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0xdd8f2631d94fb709ea71b2b65f7da8ac745dca7a354d79c26d915de398010260
+* Sui 账号地址: 0x4e0e23456c68091e05c7be9426d7df310867954517f54f2662cbcfb524c3774e
 
 自由职业者
 
