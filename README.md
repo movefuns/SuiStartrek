@@ -25,7 +25,7 @@ Move 语言作为最流行的编程语言之一，在资产的安全性和保护
 ## 电报群
 - Sui [Sui 中文](https://t.me/sui_dev_cn)
 - MoveFuns Dao [MoveFuns Dao](https://t.me/movefunsdao)
-- QQ群: 79489587
+- [QQ 群](https://qm.qq.com/q/ULBeaQ9ws0): 79489587
 
 ## [Github Discussion](https://github.com/movefuns/SuiStartrek/discussions) 使用方法
 
@@ -96,19 +96,19 @@ Move 语言作为最流行的编程语言之一，在资产的安全性和保护
 
 - 技术需要涉及 Move + (Web|Rust|Other Language).
 
-- 🥉 初级 `￥10`等值的SUI
+- 🥉 初级 `￥10`等值的 `SUI`
   - 完成第一个简单的Move智能合约
   - 成功部署到测试网络
   - 提交认证：
 
-- 🥈 高级 `￥100`等值的`SUI`
+- 🥈 高级 `￥100`等值的 `SUI`
   - 完成一个主网NFT的发布合约 ,并mint一个名称为自己githubid 名称或者微信名称名字的nft 图片用自己的github头像或者微信头像
   - 需要提交合约到仓库, 需要提交mint的nft id
   - 完成一个简单小游戏 ，并且能通过命令行调用或者网页端调用 和合约比大小 ，石头剪刀布等都可以 不追求完全正确，但是要可玩
   - 需要提交合约到仓库 学习记录要记录怎能从命令行调用
   - 提交认证：
 
-- 🏅 终级 `￥1000`等值的`SUI`
+- 🏅 终级 `￥1000`等值的 `SUI`
   - 发布 Move 相关的学习笔记[文章或者视频]
   - 成为 Maintainer，并主持至少一次 Office Hour [如何成为 Maintainer](https://www.notion.so/Maintainer-629b476e32d84f7da9faaeef40b3e259?pvs=21)
   - 以上两项需要满足一项
