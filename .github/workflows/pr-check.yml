@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set up Node.js to the latest version
+      uses: actions/setup-node@v2
+      with:
+        node-version: 'node'
+
     - name: Checkout
       uses: actions/checkout@v2
 
@@ -23,16 +28,12 @@ jobs:
                     "https://api.github.com/repos/$REPO/collaborators/$GITHUB_USER/permission" \
                     | jq -r '.permission')
         echo "User role: $ROLE"
-        if [[ "$ROLE" == "admin" || "$ROLE" == "write" ]]; then
-            echo "::set-output name=skip::true"
-        else
-            echo "::set-output name=skip::false"
-        fi
+        echo "ROLE=$ROLE" >> $GITHUB_ENV
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Check PR for Members
-      if: steps.check-role.outputs.skip == 'false'
+      if: env.ROLE != 'admin' && env.ROLE != 'write'
       run: |
         GITHUB_USER="${{ github.actor }}"
         MEMBER_DIR="./members/$GITHUB_USER"
