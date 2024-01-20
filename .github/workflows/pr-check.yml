@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Set up Node.js to the latest version
+    - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: 'node'
+        node-version: '18.x'
 
     - name: Checkout
       uses: actions/checkout@v2
