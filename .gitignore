@@ -27,21 +27,3 @@ yarn-error.log*
 sui.log.*
 .history
 
-.next
-.contentlayer
-
-# others
-.env*.local
-.vercel
-next-env.d.ts
-
-# generated content
-_map.ts
-.contentlayer
-
-# test & build
-/coverage
-/.next/
-/out/
-/build
-*.tsbuildinfo
