@@ -1,8 +1,6 @@
-#  Move Funs DAO 星航计划
-
+# Move Funs DAO 星航计划
 
 Move 语言作为最流行的编程语言之一，在资产的安全性和保护方面有着显著优势，被寄予引领 Web3 世界的全新叙事的厚望。
-
 
 随着 Sui 在今年五月主网上线，它为 Move 生态带来一股新的浪潮。上线以来，Sui 公链的开发活跃度持续数月位居榜首，无论是 Issues 和 Pull Requests 的数量，还是仓库的 Star 增长，都一直位于前列，这表明着 BuildOnSui 这股新浪潮已经袭来！
 
@@ -22,10 +20,7 @@ Move 语言作为最流行的编程语言之一，在资产的安全性和保护
 <br />
 <br />
 
-
 ### [Github Discussion](https://github.com/movefuns/SuiStartrek/discussions) 使用方法
-
-
 
 | Categories                                                   | description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -45,16 +40,9 @@ Move 语言作为最流行的编程语言之一，在资产的安全性和保护
 
 我们将在 5 周的时间里，了解如何使用 **Sui Move** 进行开发，包括四周的基础学习和一周的实战开发。
 
-
-
 每周的学习内容包括自学任务，视频课程和周作业三部分，第二，四周任务作为 Milestone 考核标准 完成并认证便可解锁 **现金奖励**
 
-
-
-
 课程期间，每周一次 **Office Hour** 环节，收集大家当周的问题，针对当周内容集中答疑和讨论，
-
-
 
 在共学结束，你可以选择项目开发、贡献开源代码（二选一），经认定后解锁终极奖励 333SUI 奖励
 <br />
@@ -67,29 +55,25 @@ Move 语言作为最流行的编程语言之一，在资产的安全性和保护
 ### Milestone & 奖励
 
 - 🥉 初级 `10SUI`
-    - 完成第一个简单的Move智能合约
-    - 成功部署到测试网络
-    - 提交认证：
+  - 完成第一个简单的Move智能合约
+  - 成功部署到测试网络
+  - 提交认证：
 - 🥈 高级 `20SUI`
-    - 完成 Sui Move 导论课程的学习
-    - 掌握钱包的使用和Sui 命令行的基本使用
-    - 理解Token的概念并发行两个ERC20 Token，上线主网或者测试网，需要提供交易hash
-    - 理解NFT概念并发行一个NFT,上线主网或者测试网，需要提供交易hash
-    - 提交认证：
+  - 完成 Sui Move 导论课程的学习
+  - 掌握钱包的使用和Sui 命令行的基本使用
+  - 理解Token的概念并发行两个ERC20 Token，上线主网或者测试网，需要提供交易hash
+  - 理解NFT概念并发行一个NFT,上线主网或者测试网，需要提供交易hash
+  - 提交认证：
 - 🏅 终级 `333SUI`
-    - 发布 Move 相关的学习笔记[文章或者视频]
-    - 成为 Maintainer，并主持至少一次 Office Hour [如何成为 Maintainer](https://www.notion.so/Maintainer-629b476e32d84f7da9faaeef40b3e259?pvs=21)
-    - 以上两项需要满足一项
-    
-    - 给生态贡献了新的独立的 Move modules
-    - 对 Move 生态项目 [Sui](https://github.com/MystenLabs/sui)（[move-language](https://github.com/move-language),[movefuns](https://github.com/movefuns)） 有 PR 贡献，mentor 会评估 PR 的复杂度
-    - 开发出具有创新性的Sui Move应用(团队或个人）
-    - 以上三项需要满足一项
-    - 提交认证：
+  - 发布 Move 相关的学习笔记[文章或者视频]
+  - 成为 Maintainer，并主持至少一次 Office Hour [如何成为 Maintainer](https://www.notion.so/Maintainer-629b476e32d84f7da9faaeef40b3e259?pvs=21)
+  - 以上两项需要满足一项
+
+  - 给生态贡献了新的独立的 Move modules
+  - 对 Move 生态项目 [Sui](https://github.com/MystenLabs/sui)（[move-language](https://github.com/move-language),[movefuns](https://github.com/movefuns)） 有 PR 贡献，mentor 会评估 PR 的复杂度
+  - 开发出具有创新性的Sui Move应用(团队或个人）
+  - 以上三项需要满足一项
+  - 提交认证：
 - ⛳ 生态建设奖励 `200SUI`
-    - 对 [MystenLabs](https://github.com/MystenLabs) 下的项目有重要的 PR 贡献：额外奖励 200SUI
-    - 提交认证
-
-
-
-
+  - 对 [MystenLabs](https://github.com/MystenLabs) 下的项目有重要的 PR 贡献：额外奖励 200SUI
+  - 提交认证
