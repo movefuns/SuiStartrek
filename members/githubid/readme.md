@@ -2,14 +2,14 @@
 
 ### 个人介绍
 
-* Github ID: [birch](https://github.com/birchwork)
+* Github ID: outye
 
-* Telegram ID: birchspace
+* Telegram ID: 1194001833
 
-* Discord ID: birchrust
+* Discord ID: mozhe_04371
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0xdd8f2631d94fb709ea71b2b65f7da8ac745dca7a354d79c26d915de398010260
+* Sui 账号地址: 0x8981adac14a4a2d07d186775cde52865aafcd07be38a70e1f4304ea97af80078
 
 自由职业者
 
