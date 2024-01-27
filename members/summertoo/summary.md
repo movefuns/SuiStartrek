@@ -48,3 +48,11 @@ https://v.douyin.com/i8JgfJCA/
 卡牌游戏制作中:
 合约部分开发中
 前端部分开发中
+
+教程开启 知乎 掘金
+
+星航计划 - DeTask找活网 0基础开发入门到精通 (1) - Summer.XJ的文章 - 知乎
+https://zhuanlan.zhihu.com/p/679459369
+
+掘金
+https://juejin.cn/post/7327353620231733298
