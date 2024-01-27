@@ -1,7 +1,7 @@
 <div align="center">
   <h1>StarTrek Move Bootcamp</h1>
 
- <p>Sui Web3 星航计划的目标是构建一个学习社区, 引导新入门或者未入门的Sui Move的小伙伴一起探索 Web3 宇宙。取名 StarTrek 既代表“星航计划”，同时也是向 <a href="https://en.wikipedia.org/wiki/Star_Trek">Star Trek<a> 致敬。</p>
+ <p> 星航计划的目标是构建一个学习社区, 引导新入门或者未入门的Move编程的小伙伴一起探索 Web3 宇宙。取名 StarTrek 既代表“星航计划”，同时也是向 <a href="https://en.wikipedia.org/wiki/Star_Trek">Star Trek<a> 致敬。</p>
 </div>
 
 [🚀 立即报名星航计划，开启你的 Sui Move 之旅！🚀](https://forms.gle/QPA4BbeiBtKhzLP38)
@@ -12,15 +12,11 @@
 
 ## 介绍
 
-Move 语言作为最流行的编程语言之一，在资产的安全性和保护方面有着显著优势，被寄予引领 Web3 世界的全新叙事的厚望。
+Move 语言作为最安全的编程语言之一，在资产的安全性和保护方面有着显著优势，被寄予引领编程语言世界的全新叙事的厚望。
 
-随着 Sui 于 2023年5月主网上线，它为 Move 生态带来一股新的浪潮。上线以来，Sui 公链的开发活跃度持续数月位居榜首，无论是 Issues 和 Pull Requests 的数量，还是仓库的 Star 增长，都一直位于前列，这表明着 BuildOnSui 这股新浪潮已经袭来！
 
-就在最近，Sui Chain 的 TVL 达到 $321.91 Million，在所有区块链排名中进入前15！Sui 基金会还提供了总数 1.57亿SUI 的资金池赋能开发者，推动的Sui生态系统的蓬勃发展。
 
-如果你希望以最快的速度进入 Sui Move 开发世界，那么欢迎加入星航计划！星航计划由 Move Funs Dao 发起，汇集了 Sui Move 领域内的专业导师，旨在帮助那些对 Sui Move 感兴趣但尚未入门的朋友们快速了解和应用 Move 语言。
-
-星航计划完全免费，并致力于帮助学习者"Learn To Earn"。我们为学习者设计了一条清晰的学习路线，并设立了多级的里程碑奖励计划 [ 最高奖励可达5000元 ]，旨在帮助新手了解 Move 语言的原理和应用。
+星航计划完全免费，并致力于帮助学习者"Learn To Earn"。我们为学习者设计了一条清晰的学习路线，并设立了多级的里程碑奖励计划 [ 最高奖励可达1000元 ]，旨在帮助新手了解 Move 语言的原理和应用。
 
 ## 电报群
 - Sui [Sui 中文](https://t.me/sui_dev_cn)
