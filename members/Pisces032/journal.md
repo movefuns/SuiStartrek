@@ -1,5 +1,20 @@
 # 学习日志
-<a name="qtOxy"></a>
+## 配置sui move环境
+Windows——使用Powershell脚本：
+`Invoke-Expression (Invoke-WebRequest -Uri "https://gist.githubusercontent.com/WGB5445/73b3b54f8293125d4ba74260ea5a39ce/raw" -UseBasicParsing).Content`
+
+Liunx Ubuntu——二进制自动化构建（要配置丝滑的代理）：
+`curl -fsSL https://raw.githubusercontent.com/ProbiusOfficial/Sui-DevSetup/main/sui-ubuntu-x86_64.sh | bash`
+
+## 安装Sui Wallet
+浏览器插件安装即可
+![w](p/w.png)
+
+## 区块链浏览器
+- https://suiexplorer.com/
+- https://suivision.xyz/
+
+# 语法学习：
 ## 快速创建一个 Sui package 框架
 `sui move new <PACKAGE NAME>`<br />这条指令创建了:
 
@@ -297,3 +312,8 @@ _泛型是具体类型或其他属性的抽象替代品_。
 - Coin ID
 
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/40787854/1705828603309-2802048e-c9e4-4141-8eaf-283be3a789bd.png#averageHue=%2390c390&clientId=u4e2f32aa-d03e-4&from=paste&height=561&id=ub9ba66e4&originHeight=842&originWidth=2100&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=164640&status=done&style=none&taskId=u160b6ff0-9665-4d5b-ae79-f89b1a803df&title=&width=1400)<br />实际代码 `sui client call --function burn --module managed --package 0x97a0b24e24d5103bbad0b47688356814c7e8e6b1f94b7907344a505459e677dc --args 0xb805040af4c66a770b9daa1c4646b5f8aac9f257fcd4535c7a45cd717ded29be 0x6ede12fb9c98d6bca757689bca94b8cf6a4aac8b0453e49e791fb9cc071890dc --gas-budget 10000000`<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/40787854/1705828827422-54d6f0a6-12b0-4a15-bb24-1c178c31c8c2.png#averageHue=%231f1e1e&clientId=u4e2f32aa-d03e-4&from=paste&height=348&id=ucb91bc2a&originHeight=522&originWidth=1914&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=82136&status=done&style=none&taskId=uf3201f56-1268-432d-b710-a9a54713148&title=&width=1276)<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/40787854/1705828856653-446de22c-ae4a-4c30-80b0-0dc689395618.png#averageHue=%23eee3c4&clientId=u4e2f32aa-d03e-4&from=paste&height=660&id=u0042a38a&originHeight=990&originWidth=2148&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=192911&status=done&style=none&taskId=uee1f07ce-5de3-4629-ae59-7239688fa09&title=&width=1432)
+
+## @mysten/create-dapp 工具
+### 模板
+- react-client-dapp ：一个简单的 React dApp，用于获取连接钱包拥有的对象列表
+- react-e2e-counter ：包含简单计数器应用的移动代码和 UI 的端到端示例
