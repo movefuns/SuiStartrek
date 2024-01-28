@@ -1,8 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 build
 .idea
+.vscode
 # dependencies
 **/node_modules
+.pnpm-store/
 /.pnp
 .pnp.js
 
@@ -24,3 +26,4 @@ yarn-debug.log*
 yarn-error.log*
 sui.log.*
 .history
+

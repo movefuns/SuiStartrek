@@ -1,0 +1,63 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.x'
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Check User Role
+      id: check-role
+      run: |
+        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USER="${{ github.actor }}"
+        REPO="${{ github.repository }}"
+        ROLE=$(curl -H "Authorization: token $GITHUB_TOKEN" \
+                    -H "Accept: application/vnd.github.v3+json" \
+                    "https://api.github.com/repos/$REPO/collaborators/$GITHUB_USER/permission" \
+                    | jq -r '.permission')
+        echo "User role: $ROLE"
+        echo "ROLE=$ROLE" >> $GITHUB_ENV
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Check PR for Members
+      if: env.ROLE != 'admin' && env.ROLE != 'write'
+      run: |
+        GITHUB_USER="${{ github.actor }}"
+        MEMBER_DIR="./members/$GITHUB_USER"
+
+        if [ -d "$MEMBER_DIR" ]; then
+            echo "Member directory exists."
+
+            MODIFIED_FILES=$(git diff --name-only origin/main...$GITHUB_SHA)
+            for FILE in $MODIFIED_FILES; do
+                if [[ $FILE != $MEMBER_DIR/* ]]; then
+                    echo "::error::You can only modify files in your own directory: $MEMBER_DIR"
+                    exit 1
+                fi
+            done
+        else
+            echo "Member directory does not exist."
+
+            if git diff --name-only origin/main...$GITHUB_SHA | grep -q "^$MEMBER_DIR/"; then
+                PR_TITLE=$(jq -r ".pull_request.title" "$GITHUB_EVENT_PATH")
+                if [ "$PR_TITLE" != "Hello, Star Trek!" ]; then
+                    echo "::error::For new member, the PR title must be 'Hello, Star Trek!'"
+                    exit 1
+                fi
+            else
+                echo "::error::You must add a new directory with your username."
+                exit 1
+            fi
