@@ -4,7 +4,7 @@
  <p> 星航计划的目标是构建一个学习社区, 引导新入门或者未入门的Move编程的小伙伴一起探索 Web3 宇宙。取名 StarTrek 既代表“星航计划”，同时也是向 <a href="https://en.wikipedia.org/wiki/Star_Trek">Star Trek<a> 致敬。</p>
 </div>
 
-[🚀 立即报名星航计划，开启你的 Sui Move 之旅！🚀](https://forms.gle/QPA4BbeiBtKhzLP38)
+
 
 ![starterk_web3](https://raw.githubusercontent.com/movefuns/web3startrek/main/cover/starterk_web3.png)
 
