@@ -10,7 +10,10 @@
 
 * QQ ID:326562410
 
-* Sui 账号地址: 0xd5e2b2c4c8b60900dff35a92ff3c9bcd390287d5a3efd3941be5ec1f9804380f
+* Sui 账号地址: 0x3c54103db151f05f698705b76427cc03f80f1b3a092353bc84c2fd88a6b56c85
+
+* 微信公众号：move学习
+
 
 长期从事渗透测试和安全开发，2024 年进入区块链领域，学习区块链基础，智能合约开发。  
 常用语言 Python, Java, JS。对区块链系统研发以及智能合约编程方向感兴趣。
@@ -24,11 +27,9 @@
 
 Roadmap  
 1  
-- 项目源码:填写自己的源码地址
-- 发布的ERC20
-package1: xx
-package2: xx
-
+- 项目源码:https://github.com/baicaiyihao/hello_sui
+- 发布的hello_sui实现前端交互项目
+（testnet）packageid:0x2ddc2bd1445a8046487b645cb4626764ea812f62bdaef8253182719a96c81426
 
 2.
 
