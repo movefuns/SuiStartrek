@@ -37,7 +37,7 @@ subdir = "aptos-move/framework/aptos-framework"
 ## Sui Move.toml
 
 * 优势：无须配置钱包 Address
-* 劣势：针对三种网络(mainnet,devnet,testnet)可执行文件，需分别用对应版本编译和部署，意味着不能用 mainnet 编译完，再部署到 devnet 网络）
+* 劣势：针对三种网络(mainnet,devnet,testnet)可执行文件，需分别用对应版本编译和部署，意味着不能用 mainnet 编译完，再部署到 devnet 网络
 
 ```toml
 [package]
