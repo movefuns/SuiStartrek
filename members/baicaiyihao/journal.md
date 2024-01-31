@@ -22,3 +22,8 @@ TESTNET_COUNTER_PACKAGE_ID = "0xef7e9f18db243cd1391eb735c84e7293257682db11888b72
 https://github.com/baicaiyihao/counter  
 将学习过程总结，并将内容发至微信公众号。  
 https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483732&idx=1&sn=72a022c8f2a148c7afd84d6680d5defb&chksm=c266ad17f5112401deb769f32fc7081cf0d7f17f6b7eecde2b3134527edc655d43b239e4ceb3&token=263657721&lang=zh_CN#rd  
+
+day5  
+学习sui object相关知识  
+将学习过程总结，并将内容发至微信公众号。 
+https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483755&idx=1&sn=fb9c26076ec9a8029ee6f90d79553349&chksm=c266ad28f511243e16656e89b8eb7bacb7a6d91badb742f56d5b9a594c5e3cbeaa7cb4d46c72&mpshare=1&scene=23&srcid=0131SceMUlLf5ShsHwTFnFl2&sharer_shareinfo=12a6f00e5e95354a03f538b690a1a891&sharer_shareinfo_first=12a6f00e5e95354a03f538b690a1a891#rd  
