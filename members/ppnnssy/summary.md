@@ -2,4 +2,4 @@
 
 ## Roadmap 1
 
-- [ERC20](https://suiexplorer.com/object/0x27ba1a4ae8c94b7d1f5109b40580868550811c030d3987773d0f00cd9ff7d30b?network=devnet)
+- [ERC20](https://suiexplorer.com/object/0x850a567eba32cbcf2f0f28c2afc516d3cafc78dde5f6ffaadd1dedcca2489ebd?network=testnet)
