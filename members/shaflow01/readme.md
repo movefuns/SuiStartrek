@@ -20,10 +20,13 @@
 - [学习总结](summary.md)
 
 ### 学习成果
-文章输出：  
-[Sui Cli及常用命令](https://learnblockchain.cn/article/7350)  
-[利用Remix进行Sui Move开发](https://learnblockchain.cn/article/7351)  
-[基于coin创建的同质化代币(1)](https://learnblockchain.cn/article/7357)  
+#### 文章输出：  
+* [Sui Cli及常用命令](https://learnblockchain.cn/article/7350)  
+  
+* [利用Remix进行Sui Move开发](https://learnblockchain.cn/article/7351)  
+  
+* [基于coin创建的同质化代币(1)](https://learnblockchain.cn/article/7357)  
+  
 
 ## Roadmap
 
