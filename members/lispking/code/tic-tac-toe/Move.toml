@@ -1,0 +1,10 @@
+[package]
+name = "tictactoe"
+version = "0.0.1"
+
+[dependencies]
+# 换成加速源
+Sui = { git = "https://gitlab.com/blockchain-labx/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "devnet" }
+
+[addresses]
+tictactoe = "0x0"
