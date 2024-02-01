@@ -45,11 +45,12 @@ https://www.youtube.com/watch?v=iVlvx-On59w
 零知识的入门教程一
 https://v.douyin.com/i8JgfJCA/
 
-卡牌游戏制作中:
-合约部分开发中
-前端部分开发中
+## Roadmap  4  
+### 卡牌游戏制作中
+* 合约部分开发中
+* 前端部分开发中
 
-教程开启 知乎 掘金 登链
+## 教程开启 知乎 掘金 登链
 
 星航计划 - DeTask找活网 0基础开发入门到精通 (1) - Summer.XJ的文章
 知乎
@@ -61,3 +62,12 @@ https://juejin.cn/post/7327353620231733298
 登链
 https://learnblockchain.cn/article/7327
 
+
+知乎 更新到第6章
+登链 更新到第2章
+掘金 更新到第2章
+
+# Plans
+
+## 猜拳游戏&教程制作
+## IDO&教程制作
