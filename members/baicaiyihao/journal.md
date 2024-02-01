@@ -25,5 +25,20 @@ https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483732&idx=1&sn=72a022
 
 day5  
 学习sui object相关知识  
-将学习过程总结，并将内容发至微信公众号。 
+将学习过程总结，并将内容发至微信公众号。   
 https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483755&idx=1&sn=fb9c26076ec9a8029ee6f90d79553349&chksm=c266ad28f511243e16656e89b8eb7bacb7a6d91badb742f56d5b9a594c5e3cbeaa7cb4d46c72&mpshare=1&scene=23&srcid=0131SceMUlLf5ShsHwTFnFl2&sharer_shareinfo=12a6f00e5e95354a03f538b690a1a891&sharer_shareinfo_first=12a6f00e5e95354a03f538b690a1a891#rd  
+
+day6  
+学习发布coin合约相关知识并发布合约  
+1、发布STOMCOIN coin合约  
+pakeage：0x33b47e6048ab066bc17bc444b5593e93e423e685bc17a6576f49aa98948d176f  
+获取coin代币交易  
+Transaction Digest: EXMiYy4E4W7sgEes79vbo2HjfpicTsqnzFs9U9W22CYK  
+2、发布STOMLOCKCOIN coin合约  
+pakeage：0x61bb5e5be66748013c6b65f1096329cbcaa29c537cbe12b1fa28d2dcb9e2c3c2  
+获取coin代币交易  
+Transaction Digest: 9U3LLiR6U7CMrwPS54iLaRwaaKAVsdKMyHBb7j1FPciv  
+将学习过程总结，并将内容发至微信公众号。  
+https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483770&idx=1&sn=b6d70fecaca699132f4c07c2c25c7878&chksm=c266ad39f511242fcd173d1a75e00649ef2fb07b176098c2297ec14133f3792c77cd639bb236&token=1356681770&lang=zh_CN#rd
+
+day7
