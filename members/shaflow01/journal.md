@@ -13,8 +13,8 @@
   
 * 阅读动态字段源码
 * 总结之前所学，输出文章
-
-* 发布coin 
+  
+* 发布coin
 * 发布并铸造nft
 * 发布counter
 * 部署counter-client
