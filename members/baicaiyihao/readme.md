@@ -47,3 +47,10 @@ Transaction Digest: EXMiYy4E4W7sgEes79vbo2HjfpicTsqnzFs9U9W22CYK
 - 发布STOMLOCKCOIN coin合约  
 （testnet）packageid:0x61bb5e5be66748013c6b65f1096329cbcaa29c537cbe12b1fa28d2dcb9e2c3c2  
 Transaction Digest: 9U3LLiR6U7CMrwPS54iLaRwaaKAVsdKMyHBb7j1FPciv  
+
+5.  
+- 项目源码:https://github.com/baicaiyihao/sui_program/tree/main/stomnft  
+- 发布STOMNFT合约  
+（testnet）packageid:0x2ab3a7d840fd2b13573e1d9cad4826b3300b355b990905d4df2c1dd9e876492b  
+NFT objectid: 0x2058f902e71baa1e69167b395773e5ba61dea383b2edc048a7ed494da8bd7e91  
+Transaction Digest: AWdv2dAUBhwfvodeyPkTJjp1vjHEH3gsQZ5BNw9nB3kw  
