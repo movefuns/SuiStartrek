@@ -2,16 +2,16 @@
 
 ### 个人介绍
 
-* Github ID: [birch](https://github.com/birchwork)
+* Github ID: [SlipyNinja](https://github.com/SlipyNinja)
 
-* Telegram ID: birchspace
+* Telegram ID: @ccshi7
 
-* Discord ID: birchrust
+* Discord ID: ccshi7
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 0xdd8f2631d94fb709ea71b2b65f7da8ac745dca7a354d79c26d915de398010260
+* Sui 账号地址: 
 
-自由职业者
+区块链合约安全研究者，对move合约安全及漏洞感兴趣。
 
 ### 学习日志
 
