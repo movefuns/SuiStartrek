@@ -5,7 +5,7 @@
 * Github ID: [cuiyuchain](https://github.com/cuiyuchain)
 
 (首次如果没有，学习完毕钱包在填写)
-* Sui 账号地址: 
+* Sui 账号地址: 0xa461868f537fdc1250202b0a71fee661d85d79d7148c379bb7cf2f38a1ccaa32 
 
 blockchain researcher
 
