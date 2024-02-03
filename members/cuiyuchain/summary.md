@@ -1,4 +1,7 @@
 # 学习成果
 
 ## Roadmap 1
-- 发布的Coin地址
+- 发布的Coin/NFT地址:
+0x29fa113cc98ae265540ec9eb2c1e3908890f33e34877ce7af2a99378ddaece2a
+
+0xa13935e8bc67b9c963ed5175b3956900dc193d73e8119c1f9fe112ecb73bf33a

@@ -4,7 +4,7 @@
 
 * Github ID: [cuiyuchain](https://github.com/cuiyuchain)
 
-* Sui 账号地址: 0xa461868f537fdc1250202b0a71fee661d85d79d7148c379bb7cf2f38a1ccaa32 
+* Sui 账号地址: 0xa461868f537fdc1250202b0a71fee661d85d77148c379bb7cf2f38a1ccaa32 
 
 blockchain researcher
 
@@ -14,16 +14,14 @@ blockchain researcher
 - [学习总结](summary.md)
 
 ### 学习成果
+- 项目源码:
+https://suiexplorer.com/txblock/9hqS7D8KwZLTecQQHZ5cbDUDMs3LDHYPq5ENdmQWdWW8?network=testnet
 
-Roadmap  1  
-- 项目源码:填写自己的源码地址
-- 发布的ERC20
-package1: xx
-package2: xx
-
-
-2.
-
-
-3. 
+https://suiexplorer.com/txblock/6K64Nw2vHrfX8vDTjy7tA99aATGJ5XpecpnNGu7k9h1W?network=testnet
+[图片]
+[图片]
+参考文献:
+https://docs.sui.io/guides/developer/sui-101/create-coin
+https://learnblockchain.cn/article/7350
+https://learnblockchain.cn/article/7357
 
