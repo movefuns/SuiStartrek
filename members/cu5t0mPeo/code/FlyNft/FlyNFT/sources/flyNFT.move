@@ -1,4 +1,4 @@
-module my_first_nft::devnet_nft {
+module flynft::devnet_nft {
     use sui::url::{Self, Url};
     use std::string;
     use sui::object::{Self, ID, UID};
