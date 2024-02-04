@@ -218,7 +218,8 @@ BUILDING counter
 ## 部署合约
 
 ```bash
-sui client publish --gas-budget 20000000UPDATING GIT DEPENDENCY https://gitlab.com/blockchain-labx/sui.git
+sui client publish --gas-budget 20000000
+UPDATING GIT DEPENDENCY https://gitlab.com/blockchain-labx/sui.git
 INCLUDING DEPENDENCY Sui
 INCLUDING DEPENDENCY MoveStdlib
 BUILDING counter
