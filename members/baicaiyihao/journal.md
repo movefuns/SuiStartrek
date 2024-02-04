@@ -48,3 +48,10 @@ PackageID: 0x2ab3a7d840fd2b13573e1d9cad4826b3300b355b990905d4df2c1dd9e876492b
 NFT objectid: 0x2058f902e71baa1e69167b395773e5ba61dea383b2edc048a7ed494da8bd7e91  
 将学习过程总结，并将内容发至微信公众号。  
 https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483776&idx=1&sn=35ca8ad746bbda2eed793b687a256ca2&chksm=c266adc3f51124d5c3e662249805453140dff4b9c60d79a73c50555f3a5e8e3c2aedb2da12ed&token=1356681770&lang=zh_CN#rd
+
+day8  
+发布sicbogame  
+testnet  
+PackageID: 0x4047ca9d7990e25abe3dea249e54eb5ed079212dd976f1ccc30700a96d01608f  
+将学习过程总结，并将内容发至微信公众号。  
+https://mp.weixin.qq.com/s?__biz=MzkzMTY0MjY2OA==&mid=2247483780&idx=1&sn=f304b50423229c52cd85a91e7e9db96b&chksm=c266adc7f51124d18f2fbbac838365b3802b267b5530afcb10e7e33930b4c6d434600e9efb43&token=309950882&lang=zh_CN#rd  

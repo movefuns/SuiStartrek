@@ -16,7 +16,7 @@
 
 
 长期从事渗透测试和安全开发，2024 年进入区块链领域，学习区块链基础，智能合约开发。  
-常用语言 Python, Java, JS。对区块链系统研发以及智能合约编程方向感兴趣。
+常用语言 Python, Java, JS等，对区块链系统研发以及智能合约编程方向感兴趣。
 
 ### 学习日志
 
@@ -48,9 +48,18 @@ Transaction Digest: EXMiYy4E4W7sgEes79vbo2HjfpicTsqnzFs9U9W22CYK
 （testnet）packageid:0x61bb5e5be66748013c6b65f1096329cbcaa29c537cbe12b1fa28d2dcb9e2c3c2  
 Transaction Digest: 9U3LLiR6U7CMrwPS54iLaRwaaKAVsdKMyHBb7j1FPciv  
 
-5.  
+## Roadmap 2
+
+1.  
 - 项目源码:https://github.com/baicaiyihao/sui_program/tree/main/stomnft  
 - 发布STOMNFT合约  
 （testnet）packageid:0x2ab3a7d840fd2b13573e1d9cad4826b3300b355b990905d4df2c1dd9e876492b  
 NFT objectid: 0x2058f902e71baa1e69167b395773e5ba61dea383b2edc048a7ed494da8bd7e91  
 Transaction Digest: AWdv2dAUBhwfvodeyPkTJjp1vjHEH3gsQZ5BNw9nB3kw  
+
+2.  
+- 项目源码:https://github.com/baicaiyihao/sui_program/blob/main/sicbogame  
+- 发布sicbogame合约  
+（testnet）PackageID: 0x4047ca9d7990e25abe3dea249e54eb5ed079212dd976f1ccc30700a96d01608f  
+Transaction Digest: CT4xf89srjuUz2exEkuwDMXHzFibT6DX3V7XYshGPD4F  
+Transaction Digest: B2L7t4HibAmE1ZeLqpEv3Hvovr2tQqJomdwD8QnEPDVV  
