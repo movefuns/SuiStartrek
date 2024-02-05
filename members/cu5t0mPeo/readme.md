@@ -21,6 +21,6 @@
 ### 学习成果
 
 Roadmap  1  
-- 获取了第一个sui钱包(suiet)
-- 跟着sui文档，完成了nft代码，但还未发布
+- 项目源码：https://github.com/cu5t0mPeo/SuiStartrek/tree/main/members/cu5t0mPeo/code/FlyNft/FlyNFT
+- 发布简单合约：https://suiscan.xyz/devnet/object/0xcc7ade1fcdc20abd9953eeb6013eaa7e86c8ce4d6d666e4b4e9c001f5cb587fd
 
