@@ -22,7 +22,6 @@ module ezgame::account{
     public fun createEzAccount(accounts: &mut Table<address, Account>, ctx: &mut TxContext) {
         assert!(existAccount(tx_context::sender(ctx), accounts) == true, AccountExist);
         table::add(accounts, tx_context::sender(ctx), Account{id: object::new(ctx), ez_coin: 0})
-
     }
 
     public fun existAccount(account: address, accounts: &mut Table<address, Account>): bool {
