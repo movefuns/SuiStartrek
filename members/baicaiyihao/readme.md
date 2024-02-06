@@ -63,3 +63,12 @@ Transaction Digest: AWdv2dAUBhwfvodeyPkTJjp1vjHEH3gsQZ5BNw9nB3kw
 （testnet）PackageID: 0x4047ca9d7990e25abe3dea249e54eb5ed079212dd976f1ccc30700a96d01608f  
 Transaction Digest: CT4xf89srjuUz2exEkuwDMXHzFibT6DX3V7XYshGPD4F  
 Transaction Digest: B2L7t4HibAmE1ZeLqpEv3Hvovr2tQqJomdwD8QnEPDVV  
+
+
+## Roadmap 3
+
+1.发布各阶段的学习文章到```move学习```公众号
+![wx.jpg](img/wx.jpg)
+
+2.sui官方的PR贡献
+https://github.com/MystenLabs/sui/pull/16082
