@@ -65,10 +65,10 @@ Transaction Digest: CT4xf89srjuUz2exEkuwDMXHzFibT6DX3V7XYshGPD4F
 Transaction Digest: B2L7t4HibAmE1ZeLqpEv3Hvovr2tQqJomdwD8QnEPDVV  
 
 
-## Roadmap 3
+## Roadmap 3  
 
-1.发布各阶段的学习文章到```move学习```公众号
-![wx.jpg](img/wx.jpg)
+1.发布各阶段的学习文章到```move学习```公众号  
+![wx.jpg](img/wx.jpg)  
 
-2.sui官方的PR贡献
-https://github.com/MystenLabs/sui/pull/16082
+2.sui官方的PR贡献  
+https://github.com/MystenLabs/sui/pull/16082  
