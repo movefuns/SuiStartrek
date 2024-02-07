@@ -6,7 +6,7 @@
 
 * Discord ID: Mulander#3620(.mulander)
 
-* Sui 账号地址: 0x2956a048faced734ef05699c0aa492bb52c7e40fc029ec38895bda5c7c7f47a3
+* Sui 账号地址: 0x1cb157ae28ed774d8ca49f1eb38cf849712aee1e7fa0243cc4fe59e81a5ae979
 
 一句话介绍: Base上海,前端开发,2年web2+3年Web3;闲来无事学些新技术
 

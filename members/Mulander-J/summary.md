@@ -9,8 +9,8 @@
 |Forum|[forum.aptoslabs](https://forum.aptoslabs.com/)|[forums.sui](https://forums.sui.io/)|
 |Dev Doc|[aptos.dev](https://aptos.dev/)|[docs.sui](https://docs.sui.io)|
 |Tutorials|['Your first' 7](https://aptos.dev/tutorials)|[Magic Guides](https://docs.sui.io/guides/developer)|
-|Explorer|[explorer.aptoslabs](https://explorer.aptoslabs.com/)|[suiexplorer](https://suiexplorer.com/)|
-|Primary Wallet|[petra](https://petra.app/)|[sui wallet](https://chromewebstore.google.com/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil)|
+|Explorer|[explorer.aptoslabs](https://explorer.aptoslabs.com/)|[suiexplorer](https://suiexplorer.com/), [suivision](https://suivision.xyz/)|
+|Top Wallets|[petra](https://petra.app/)|[Sui Wallet](https://chrome.google.com/webstore/detail/opcgpfmipidbgpenhmajoajpbobppdil), [Suiet Wallet](https://chrome.google.com/webstore/detail/suiet-sui-wallet/khpkpbbcccdmmclmpigdgddabeilkdpd), [surf](https://surf.tech), [Ethos Wallet](https://ethoswallet.xyz/)|
 ---
 |Key|Aptos|Sui|
 |---|---|---|
