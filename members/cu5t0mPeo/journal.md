@@ -8,6 +8,4 @@
 
 使用SUI Client CLI部署了合约FLY NFT.
 
-交易信息：https://suiscan.xyz/devnet/tx/CNPDUUEhncXmcfDZed23gj4z6FiGfNtAHpAtvmh2iVD
-
-部署地址：https://suiscan.xyz/devnet/object/0xcc7ade1fcdc20abd9953eeb6013eaa7e86c8ce4d6d666e4b4e9c001f5cb587fd
+部署地址：https://suiscan.xyz/devnet/object/0xbb8b0d43790be349b198a2d61d75a9d7201b9621fdafcd11feeef183ff41c7a8

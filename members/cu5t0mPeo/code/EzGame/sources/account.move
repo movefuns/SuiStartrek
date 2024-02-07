@@ -7,6 +7,7 @@ module ezgame::account{
     /*          Define Struct       */
     struct Account has key, store {
         id: UID,
+        owner: address,
         ez_coin: u256,
     }
 
@@ -14,17 +15,16 @@ module ezgame::account{
     const AccountExist: u64 = 33;
     
     /*         Define function      */
+    /*
     fun init(ctx: &mut TxContext) {
         let accounts = table::new<address, Account>(ctx);
         transfer::public_share_object(accounts);
     }
+    */
 
-    public fun createEzAccount(accounts: &mut Table<address, Account>, ctx: &mut TxContext) {
-        assert!(existAccount(tx_context::sender(ctx), accounts) == true, AccountExist);
-        table::add(accounts, tx_context::sender(ctx), Account{id: object::new(ctx), ez_coin: 0})
-    }
-
-    public fun existAccount(account: address, accounts: &mut Table<address, Account>): bool {
-        return table::contains(accounts, account)
+    public fun createEzAccount(ctx: &mut TxContext): Account{
+        // assert!(existAccount(tx_context::sender(ctx), accounts) == true, AccountExist);
+        // table::add(accounts, tx_context::sender(ctx), Account{id: object::new(ctx), ez_coin: 0})
+        return Account{id: object::new(ctx), owner: tx_context::sender(ctx), ez_coin:0}
     }
 }

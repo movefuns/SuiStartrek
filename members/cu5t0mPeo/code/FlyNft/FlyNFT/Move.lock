@@ -20,8 +20,3 @@ source = { git = "https://github.com/MystenLabs/sui.git", rev = "framework/testn
 dependencies = [
   { name = "MoveStdlib" },
 ]
-
-[move.toolchain-version]
-compiler-version = "1.17.3"
-edition = "legacy"
-flavor = "sui"
