@@ -1,6 +1,6 @@
-module flynft::devnet_nft {
+module flynft::flynft {
     use sui::url::{Self, Url};
-    use std::string;
+    use std::string::{utf8, Self};
     use sui::object::{Self, ID, UID};
     use sui::event;
     use sui::transfer;
@@ -32,17 +32,17 @@ module flynft::devnet_nft {
     }
 
     public fun mint_to_sender(
-        name: vector<u8>,
-        description: vector<u8>,
-        url: vector<u8>,
         ctx: &mut TxContext
     ) {
+        let url = url::new_unsafe_from_bytes(b"https://avatars.githubusercontent.com/u/144767381?v=4");
+        let name = utf8(b"CU5T0MPEONFT");
+        let description = utf8(b"github:cu5t0mpeo");
         let sender = tx_context::sender(ctx);
         let nft = FlyNFT {
             id: object::new(ctx),
-            name: string::utf8(name),
-            description: string::utf8(description),
-            url: url::new_unsafe_from_bytes(url)
+            name: name,
+            description: description,
+            url: url,
         };
 
         event::emit(FlyMinted {
