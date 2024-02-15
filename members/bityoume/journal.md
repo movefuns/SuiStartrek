@@ -27,17 +27,24 @@ https://learnblockchain.cn/article/7174
 
 
 
-## 创建专栏持续做教程输出
+## 专栏《SUI Move官方示例合约实践》
+
+https://learnblockchain.cn/column/42
 
 ![image-20240203220925201](assets/image-20240203220925201.png)
 
-![image-20240203220905277](assets/image-20240203220905277.png)
+- [SUI Move官方示例合约实践——DeFi类：闪电贷（flash_lender）](https://learnblockchain.cn/article/7395)                                                                                             
+- [SUI Move官方示例合约实践——DeFi类：第三方托管（escrow）](https://learnblockchain.cn/article/7393)
+- [SUI Move官方示例合约实践——DeFi类：共享托管（shared_escrow）](https://learnblockchain.cn/article/7325)
+- [SUI Move官方示例合约实践——FT类：资产金库锁（treasury_lock）](https://learnblockchain.cn/article/7339)
+- [SUI Move官方示例合约实践——FT类：篮子代币（basket）](https://learnblockchain.cn/article/7345)
+- [SUI Move官方示例合约实践——FT类：监管币（regulated_coin）](https://learnblockchain.cn/article/7355)
+- [SUI Move官方示例合约实践——游戏类：英雄游戏（hero）](https://learnblockchain.cn/article/7365)
+- [SUI Move官方示例合约实践——游戏类：海洋英雄游戏（sea hero）](https://learnblockchain.cn/article/7369)
+- [SUI Move官方示例合约实践——游戏类：剪刀石头布游戏（rock_paper_scissors）](https://learnblockchain.cn/article/7371)
+- [SUI Move官方示例合约实践——游戏类：井字游戏（tic_tac_toe）](https://learnblockchain.cn/article/7375)
+- [SUI Move官方示例合约实践——游戏类：共享对象版井字游戏（shared_tic_tac_toe）](https://learnblockchain.cn/article/7378)
+- [SUI Move官方示例合约实践——游戏类：基于drand的抽奖游戏（drand_based_lottery）](https://learnblockchain.cn/article/7382)
+- [SUI Move官方示例合约实践——游戏类：基于drand随机数的刮刮卡游戏（drand_based_scratch_card）](https://learnblockchain.cn/article/7398)
 
-- [SUI Move官方共享托管合约实践（shared_escrow）](https://learnblockchain.cn/article/7325)
-- [SUI Move官方资产金库锁合约实践（treasury_lock）](https://learnblockchain.cn/article/7339)
-- [SUI Move官方篮子代币合约实践（basket）](https://learnblockchain.cn/article/7345)
-- [SUI Move官方监管币合约实践（regulated_coin）](https://learnblockchain.cn/article/7355)
-- [SUI Move官方英雄游戏合约实践（hero）](https://learnblockchain.cn/article/7365)
-- [SUI Move官方海洋英雄游戏合约实践（sea hero） ](https://learnblockchain.cn/article/7369)
-- [SUI Move官方剪刀石头布游戏合约实践（rock_paper_scissors）](https://learnblockchain.cn/article/7371)
 
