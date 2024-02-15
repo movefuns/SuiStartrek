@@ -1,0 +1,10 @@
+# 学习成果
+
+## Roadmap 1
+- 发布的Coin/NFT地址:
+0x29fa113cc98ae265540ec9eb2c1e3908890f33e34877ce7af2a99378ddaece2a
+
+0xa13935e8bc67b9c963ed5175b3956900dc193d73e8119c1f9fe112ecb73bf33a
+
+- HelloWorld address:
+0x8cb27ff1d2425a48b3475b5fe83dcd29b9a2e214770ea45da824c95649c02ed0
