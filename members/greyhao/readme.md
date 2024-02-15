@@ -20,15 +20,14 @@
 
 ### 学习成果
 
-Roadmap  1  
-- 项目源码:填写自己的源码地址
-- 发布的ERC20
-package1: xx
-package2: xx
+#### 1. 第一个智能合约
+  * Object ID：`0x409794dbf13cdbb128cdb7e4f2bd95490eca51df0ce1c4fc0d7aa46537bd2074`
+
+  * 项目源码：`../code/hello_world/`
 
 
-2.
+#### 2. 发布的 NFT 合约
 
 
-3. 
+#### 3. 
 
