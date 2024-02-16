@@ -28,13 +28,13 @@ NFT Object ID：https://suiscan.xyz/devnet/object/0xdc52f039bfceaf15ece6ca70d34d
 
 ## 2.2 井字棋游戏(sui)
 
-按照官方的代码敲的，熟悉了一些语法，虽然敲的是非 share object版的，但是share object也学习了一下，对share object加深了理解。
+按照官方的代码敲的，熟悉了一些语法，虽然敲的是 share object版的，对share object加深了理解。
 
 share object：任何人都可以使用的对象，任何一个人都可以通过object id将这个object作为参数传入某个函数中。这就是share object，而一般的object 只有owner可以使用。
 
-熟悉了对象所有权
+另外普通版本也看了一下，熟悉了一下move的对象所有权。
 
-Package ID：0x1866d10541743a7b86475aee3fdccd38e0572bb650bac980acbf398954df5ef5
+Package ID：0xe5643f515e8e0e9004f62e9afcedb0db56081f01f654e0faf7ff3b1afd12afe2
 
 
 
