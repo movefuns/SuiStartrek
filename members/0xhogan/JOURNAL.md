@@ -222,6 +222,7 @@
      }
    }
    ```
+   * `sui move build` 编译合约
    * `sui client call --function mint --module mycoin --package <PACKAGE-ID> --args <TREASURY-CAP-ID> <COIN-AMOUNT> <RECIPIENT-ADDRESS> --gas-budget <GAS-AMOUNT>`
 
 
