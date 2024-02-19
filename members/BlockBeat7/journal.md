@@ -4,12 +4,12 @@ macOS环境
 用sui -verison检查
 
 vscode环境
-cargo install --git https://github.com/movebit/move --branch move-analyzer2-release move-analyzer
+```cargo install --git https://github.com/movebit/move --branch move-analyzer2-release move-analyzer```
 这里可能会连不上github，建议用微软自带的直接install
 
 sui编程，在vscode中进行
-md myFirstTask
-sui move new myFirstTask
+```md myFirstTask```
+```sui move new myFirstTask```
 
 智能合约部分
 // Copyright (c) 2022, Sui Foundation
@@ -49,8 +49,8 @@ Client/Server api version mismatch, client api version : 1.19.0, server api vers
 版本号问题
 
 编译并部署
-sui move build
-sui client publis --gas-budget 100000000
+```sui move build```
+```sui client publis --gas-budget 100000000```
 
 最终可以得到
 https://suiexplorer.com/txblock/3NM5pgZjvKWQWgTmmdxoW8eRj2dG1VBzhnpnoX9h859B?network=testnet
