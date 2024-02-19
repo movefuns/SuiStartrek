@@ -1,6 +1,6 @@
 配置sdk
 macOS环境
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 用sui -verison检查
 
 vscode环境
