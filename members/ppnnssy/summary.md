@@ -2,4 +2,4 @@
 
 ## Roadmap 1
 
-- [ERC20](https://suiexplorer.com/object/0x850a567eba32cbcf2f0f28c2afc516d3cafc78dde5f6ffaadd1dedcca2489ebd?network=testnet)
+- [发布的 helloworld 合约](https://suiexplorer.com/object/0x32bd94b98e4427ffe203eccb899efbc1553a3d82c6c50c5814ee5bdcb21f4b97?network=testnet)
