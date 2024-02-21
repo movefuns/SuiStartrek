@@ -14,6 +14,5 @@ PackageID: 0x6be5ae949644e92fb04cb1714fca6ffcbd830243827d3d60a229ff2badf3785e
 
 # 4. game
 
-回合制卡牌对战（开发中）
-
-tx: https://suiexplorer.com/txblock/Cerf6hYarncSXeiWY3Rv8288ChjBfPkUyW1brF3kJ1qo?network=testnet
+回合制卡牌对战（测试网 https://sui-card-battle.pages.dev）
+仓库地址：https://github.com/sycute/sui-card-battle
