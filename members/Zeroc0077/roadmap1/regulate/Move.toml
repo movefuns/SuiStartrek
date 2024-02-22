@@ -1,0 +1,9 @@
+[package]
+name = "regulate"
+version = "0.0.1"
+
+[dependencies]
+Sui = { local = "../sui-framework" }
+
+[addresses]
+regulate = "0x0"
