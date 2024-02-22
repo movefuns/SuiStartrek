@@ -114,7 +114,7 @@ active_address: "0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b29623634330339
 
   
 ### sui 领水     
-* 版本在1.18  一下
+* cli 版本在1.18 以下
 ```
 //postman 可用
 curl --location --request POST 'https://faucet.devnet.sui.io/gas' \ --header 'Content-Type: application/json' \ --data-raw '{"FixedAmountRequest":{"recipient":"0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a"}}'
@@ -124,7 +124,7 @@ curl --location --request POST 'https://faucet.devnet.sui.io/gas'  --header 'Con
 //测试领水 
 curl --location --request POST 'https://faucet.testnet.sui.io/v1/gas'  --header 'Content-Type: application/json'  --data-raw '{"FixedAmountRequest":{"recipient":"0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a"}}'
 ```
-* 1.18 以上 
+* cli 版本在1.18 以上 
 ```
 sui client faucet     //除了主网 其他网络都可以用
 ```
