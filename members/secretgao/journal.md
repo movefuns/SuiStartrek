@@ -53,43 +53,49 @@
    ```
    $ sui client addresses
    ╭─────────────────────┬────────────────────────────────────────────────────────────────────┬────────────────╮
-│ alias               │ address                                                            │ active address │
-├─────────────────────┼────────────────────────────────────────────────────────────────────┼────────────────┤
-│ wonderful-hiddenite │ 0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a │ *              │
-╰─────────────────────┴────────────────────────────────────────────────────────────────────┴────────────────╯
+   │ alias               │ address                                                            │ active address │
+   ├─────────────────────┼────────────────────────────────────────────────────────────────────┼────────────────┤
+   │ wonderful-hiddenite │ 0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a │ *              │
+   ╰─────────────────────┴────────────────────────────────────────────────────────────────────┴────────────────╯
    ```
 
-   * 查看地址和对应的私钥  
+
+* 查看地址和对应的私钥  
+
 ```
-    sui keytool list
+sui keytool list
 ```
-   * 用于获取到私钥的加密版本
-   ```
-    $ sui keytool convert 'private key base64 encoded' // 用于得到真正的私钥, 可以 import 到钱包里面
-   ```
 
-   * 查看和切换当前地址
+* 用于获取到私钥的加密版本
 
-   ```
-   $ sui client switch --address your_address // 切换到想要使用的 address
-   ```
+```
+ sui keytool convert 'private key base64 encoded' // 用于得到真正的私钥, 可以 import 到钱包里面
+```
 
-   * 配置和切换当前的网络 （ Sui 的 RPC 结点可以在该链接找到 https://github.com/movefuns/awesome-sui#mainnet-rpc）
+* 查看和切换当前地址
+
+```
+ sui client switch --address your_address // 切换到想要使用的 address
+```
+
+* 配置和切换当前的网络 （ Sui 的 RPC 结点可以在该链接找到 https://github.com/movefuns/awesome-sui#mainnet-rpc）
   
-   ```
-   $ sui client new-env --alias 'mainnet' --rpc 'https://sui-mainnet.nodeinfra.com:443'
-   $ sui client new-env --alias 'testnet' --rpc 'https://fullnode.testnet.sui.io:443'
-   $ sui client switch --envs testnet // 切换到测试网络
-   $ sui client envs // 查看所有可以切换的网络
-   ╭─────────┬───────────────────────────────────────┬────────╮
-   │ alias   │ url                                   │ active │
-   ├─────────┼───────────────────────────────────────┼────────┤
-   │ devnet  │ https://fullnode.devnet.sui.io:443    │        │
-   │ testnet │ https://fullnode.testnet.sui.io:443   │ *      │
-   │ mainnet │ https://sui-mainnet.nodeinfra.com:443 │        │
-   ╰─────────┴───────────────────────────────────────┴────────╯
-   ```
-   * 如果上述命令失败 可直接修改配置文件 (文件所在.sui/sui_config/client.yaml) 
+```
+$ sui client new-env --alias 'mainnet' --rpc 'https://sui-mainnet.nodeinfra.com:443'
+$ sui client new-env --alias 'testnet' --rpc 'https://fullnode.testnet.sui.io:443'
+$ sui client switch --envs testnet // 切换到测试网络
+$ sui client envs // 查看所有可以切换的网络
+╭─────────┬───────────────────────────────────────┬────────╮
+│ alias   │ url                                   │ active │
+├─────────┼───────────────────────────────────────┼────────┤
+│ devnet  │ https://fullnode.devnet.sui.io:443    │        │
+│ testnet │ https://fullnode.testnet.sui.io:443   │ *      │
+│ mainnet │ https://sui-mainnet.nodeinfra.com:443 │        │
+╰─────────┴───────────────────────────────────────┴────────╯
+```
+
+* 如果上述命令失败 可直接修改配置文件 (文件所在.sui/sui_config/client.yaml)
+
 ```
 cat .sui/sui_config/client.yaml
 ---
@@ -110,12 +116,12 @@ active_address: "0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b29623634330339
 ### sui 领水     
 * 版本在1.18  一下
 ```
-postman 可用
+//postman 可用
 curl --location --request POST 'https://faucet.devnet.sui.io/gas' \ --header 'Content-Type: application/json' \ --data-raw '{"FixedAmountRequest":{"recipient":"0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a"}}'
 
-cli 可用 开发领水
+//cli 可用 开发领水
 curl --location --request POST 'https://faucet.devnet.sui.io/gas'  --header 'Content-Type: application/json'  --data-raw '{"FixedAmountRequest":{"recipient":"0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a"}}'
-测试领水 
+//测试领水 
 curl --location --request POST 'https://faucet.testnet.sui.io/v1/gas'  --header 'Content-Type: application/json'  --data-raw '{"FixedAmountRequest":{"recipient":"0x7bb8f8b7bb38ad37de7cdd4d9897245c8c85b886aed673b2962363433033908a"}}'
 ```
 * 1.18 以上 
