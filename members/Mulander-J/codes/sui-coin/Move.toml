@@ -6,5 +6,3 @@ Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-fram
 
 [addresses]
 fungible_tokens = "0x0"
-sui =  "0x2"
-std =  "0x1"

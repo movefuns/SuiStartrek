@@ -1,4 +1,4 @@
-# 学习成果
+# 学习总结
 
 ## Meet Aptos & Sui!
 
@@ -27,4 +27,4 @@
 |SDK.Unity|✅[Aptos-Unity-SDK](https://github.com/aptos-labs/Aptos-Unity-SDK)|❌|
 
 ## Roadmap 1
-- 发布的Coin地址
+- 发布的Coin地址: redcoin(testnet)-[0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650](https://suiexplorer.com/object/0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650?network=testnet)
