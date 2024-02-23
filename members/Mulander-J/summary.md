@@ -27,4 +27,5 @@
 |SDK.Unity|✅[Aptos-Unity-SDK](https://github.com/aptos-labs/Aptos-Unity-SDK)|❌|
 
 ## Roadmap 1
+- 发布的Counter合约地址: (testnet)package:0x95719a0d9d0f5a39eb06166c813ebe53ecbe5429fcaba498de3bfa39d6be509e
 - 发布的Coin地址: redcoin(testnet)-[0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650](https://suiexplorer.com/object/0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650?network=testnet)
