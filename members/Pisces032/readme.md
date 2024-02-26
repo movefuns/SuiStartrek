@@ -22,6 +22,6 @@
 
 Roadmap  1  
 1. MoveCTF2024 checkin
-2. 
+2. Milestone 1： 完成简单的智能合约并成功部署到测试网络
 3.  
 
