@@ -1,0 +1,3 @@
+第一阶段任务，部署智能合约成果：https://suiexplorer.com/txblock/3NM5pgZjvKWQWgTmmdxoW8eRj2dG1VBzhnpnoX9h859B?network=testnet  
+第二阶段NFT：ObjectID: 0xf9071210aa73f66e42deaf8bd7825f0d5154d3fb4a9476b17af76e0fa1ebfe52  
+第二阶段小游戏：ObjectID: 0x79d85e5844cd125a42f076e2329d1aee43f06f5ed84aac3b4753ae71f89c76e2
