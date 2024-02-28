@@ -26,6 +26,31 @@
 |SDK.Typescript|✅[aptos-ts-sdk](https://github.com/aptos-labs/aptos-ts-sdk)|✅[typescript](https://sdk.mystenlabs.com/typescript)|
 |SDK.Unity|✅[Aptos-Unity-SDK](https://github.com/aptos-labs/Aptos-Unity-SDK)|❌|
 
-## Roadmap 1
-- 发布的Counter合约地址: (testnet)package:0x95719a0d9d0f5a39eb06166c813ebe53ecbe5429fcaba498de3bfa39d6be509e
-- 发布的Coin地址: redcoin(testnet)-[0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650](https://suiexplorer.com/object/0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650?network=testnet)
+## Dev Experiences
+
+APTOS CLI
+
+- ✅Support: Test, Compile, Publish, Faucet...
+- 🖍️Advice: 期望`aptos move init`生成的项目应该自带`.gitignore`
+- 😓控制台日志提示简洁, 但是个人觉得`{"Result": "Success"}`有点丑
+
+APTOS Packages: 
+
+`@aptos-labs/ts-sdk`, `@aptos-labs/wallet-adapter-react`...
+
+- ✅Support: SDK, Wallet Modal UI, Wallet Hooks, Wallet Provider Adapter...
+- ❓Question: Only React? Search for vue implementation.
+
+Sui CLI
+
+- ✅Support: Move, Client...
+- 🆙控制台日志风格更新，相对友好
+- 🆙账号地址逻辑简单
+- 🆙新增水龙头功能 [#15940](https://github.com/MystenLabs/sui/pull/15940): Added a new command sui client faucet to make it easier to get gas from devnet, testnet, or a local network.
+- ❗CLI版本尽量选mainnet, 其他版本包含迭代bug会影响开发。
+
+[Sui dapp-kit](https://github.com/MystenLabs/sui/tree/main/sdk/dapp-kit) : 相当于前端web3开发的瑞士军刀，集合了Hooks，Wallet-State，Wallet-Connectors...
+
+- 🆙sdk模块更集中
+- ❌教程指引比较简洁，可能对新手不友好
+- ❓React版本为主，期待vue实现

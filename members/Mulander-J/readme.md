@@ -19,17 +19,26 @@
 
 ### 学习成果
 
-**Roadmap**
+🥉 RoadMap1
 
-0. Sui/Move 环境搭建
-1. HelloDApp & ERC20
-- 项目源码：[codes](./codes/)
-    - sui-client-dapp 前端DApp查询实现
-    - sui-e2e-counter 全栈DApp计数器实现 | (testnet)package:0x95719a0d9d0f5a39eb06166c813ebe53ecbe5429fcaba498de3bfa39d6be509e
-    - sui-coin ERC20/Fungible Tokens/Coin 发布实现
-- 发布的ERC20：redcoin(testnet)-[0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650](https://suiexplorer.com/object/0x7e78128bf948d50bb14949fc8a5f42ef524a61dde50d7abf68a7effbd037f650?network=testnet)
+- [x] 完成开发环境的搭建
+- [x] 创建钱包，并生成相应的公钥和私钥
+- [x] 完成第一个合约的上链
+- [x] 完成第一个Dapp和合约的交互
 
-2. NFT & Game
+项目源码：[codes](./codes/)
+- sui-client-dapp 前端DApp查询实现
+- sui-e2e-counter 全栈DApp计数器实现 | (testnet)package:0x95719a0d9d0f5a39eb06166c813ebe53ecbe5429fcaba498de3bfa39d6be509e
 
-3.
+🥈Roadmap2
+
+- [x] 完成 Move 课程的学习
+- [x] 理解Token的概念并发行两个ERC20 Token，上线主网或者测试网，需要提供交易hash
+- [] 理解NFT概念并发行一个NFT,上线主网或者测试网，需要提供交易 hash
+- [] 完成一个小应用，比如猜拳小游戏，比大小游戏等
+
+项目源码：[codes](./codes/)
+- sui-coin ERC20/Fungible Tokens/Coin 发布实现
+    - redcoin(testnet)-[txhash](https://suiexplorer.com/txblock/22vdpFv3Q337iiD1nfcVVFKNXpgy7J1DUDzRqaKYmETx?network=testnet)
+    - bluecoin(testnet)-[txhash](https://suiexplorer.com/txblock/HokMeHw7hZUXfWhck2HbXcKpS9EsUxguckQ6vp7SrQyq?network=testnet)
 
