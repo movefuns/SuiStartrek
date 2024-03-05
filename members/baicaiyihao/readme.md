@@ -73,5 +73,6 @@ Transaction Digest: B2L7t4HibAmE1ZeLqpEv3Hvovr2tQqJomdwD8QnEPDVV
 [掘金](https://juejin.cn/column/7342067642881277986 "掘金")  
 [登链](https://learnblockchain.cn/column/45 "登链")  
 [知乎](https://www.zhihu.com/column/c_1747981678679928832 "知乎")  
+[CSDN](https://blog.csdn.net/baicai1hao/category_12594909.html "CSDN")  
 2.sui官方的PR贡献  
 https://github.com/MystenLabs/sui/pull/16082  
