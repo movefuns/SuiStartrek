@@ -8,12 +8,11 @@
 
 * Discord ID: chuanyue_
 
-(首次如果没有，学习完毕钱包在填写)
 * Sui 账号地址: 
 
   0xdd3042fccab7d05de7faf76afab3479f8264498a963eadc707a8cb593281f709
 
-自由职业者
+区块链专业学生，目前大三，有兴趣交流加V：CY_imp
 
 ### 学习日志
 
