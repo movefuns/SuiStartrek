@@ -57,11 +57,11 @@
 
 #### 创建项目
 
-sui move new hello_world
+```sui move new hello_world```
 
 #### 发布项目
 
-sui client publish --gas-budget 10000000
+```sui client publish --gas-budget 10000000```
 
 发布关键信息：
 
@@ -115,8 +115,43 @@ packageID：0x8b79c94da042350f128cc8071950409fa1e124de06db986fb1c3fc6fb22c0aac
 
 **游戏玩法:**
 
-```sui client call --function play --module guess_number_game  --package <package_id> --args <你的数字> --gas-budget <gas_budget>```
+```sui client call --function play --module guess_number_game  --package <package_id> --args <你的数字> 0x6 --gas-budget <gas_budget>```
 
 控制台会打印，你的数字，电脑数字，游戏结果
+
+[代码仓库](https://github.com/CHENkai8385/sui_study/blob/main/game_demo/sources/mygame.move)
+packageID：0x4a374a6fd8bc863a6f8bad0564e6935619f86a36fe980ed9d7a1ca83228c5c20 
+
+[链上记录](https://suiexplorer.com/txblock/AkocXKmkWKtk2BkJp4xUz7ydjZREjpfA9Mm71B6qU2J8?network=testnet)
+
+play命令：只需要把第一个参数2换为你想输入的数字即可
+
+```sui client call --function play --module mygame --package 0x4a374a6fd8bc863a6f8bad0564e6935619f86a36fe980ed9d7a1ca83228c5c20 --args 2 0x6 --gas-budget 10000000```
+
+游戏结果展示：
+
+``````
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Block Events                                                                             │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  ┌──                                                                                                 │
+│  │ EventID: 5TUrD2QhmzgfyQuiNWdaLqJPfUpfqvdjVeLkg4nJEKpJ:0                                           │
+│  │ PackageID: 0x4a374a6fd8bc863a6f8bad0564e6935619f86a36fe980ed9d7a1ca83228c5c20                     │
+│  │ Transaction Module: mygame                                                                        │
+│  │ Sender: 0xba64eccae040d94e77f478f26bb0bbc868afd673757116ee52a7901c9686e465                        │
+│  │ EventType: 0x4a374a6fd8bc863a6f8bad0564e6935619f86a36fe980ed9d7a1ca83228c5c20::mygame::GameResult │
+│  │ ParsedJSON:                                                                                       │
+│  │   ┌─────────────────┬─────────┐                                                                   │
+│  │   │ computer_number │ 3       │                                                                   │
+│  │   ├─────────────────┼─────────┤                                                                   │
+│  │   │ result          │ you win │                                                                   │
+│  │   ├─────────────────┼─────────┤                                                                   │
+│  │   │ your_number     │ 9       │                                                                   │
+│  │   └─────────────────┴─────────┘                                                                   │
+│  └──                                                                                                 │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────╯╭
+``````
+
+
 
  
