@@ -2,11 +2,11 @@
 
 ### 个人介绍
 
-* Github ID: [birch](https://github.com/birchwork)
+* Github ID: [LYK0r4](https://github.com/LYKore)
 
-* Telegram ID: birchspace
+* Telegram ID: LYK0r4
 
-* Discord ID: birchrust
+* Discord ID: lykore.
 
 
 * Sui 账号地址: 0xbd40820df8a71183bb6540922eb7a32a6a3f5d626439967d3eb31eb057ce3852
