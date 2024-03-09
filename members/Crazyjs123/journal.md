@@ -394,7 +394,7 @@ package:0x99be912de69d49965a7eecd42b63692c7e482aa40af7f022f334807ea5029ac1
   sui client obejct 0x3f2759f0b88e7d50b85e5909834dcdc21b19dfb606a475ae87acb197b7e30f72
   ```
 
-  ![](C:\Users\wamp\www\SuiStartrek\members\Crazyjs123\imgs\playerAGesture.png)
+  ![](imgs\playerAGesture.png)
 
 - 玩家B出剪刀，调用player_turn生成手势给裁判
 
@@ -404,7 +404,7 @@ package:0x99be912de69d49965a7eecd42b63692c7e482aa40af7f022f334807ea5029ac1
 
   查看游戏对象，可以看到B出的是剪刀
 
-  ![](C:\Users\wamp\www\SuiStartrek\members\Crazyjs123\imgs\playerBGesture.png)
+  ![](imgs\playerBGesture.png)
 
 - 生成比赛结果
 
@@ -414,5 +414,5 @@ package:0x99be912de69d49965a7eecd42b63692c7e482aa40af7f022f334807ea5029ac1
 
   最后从生成的比赛结果看到，玩家A使用石头赢了出剪刀的玩家B
 
-  ![](C:\Users\wamp\www\SuiStartrek\members\Crazyjs123\imgs\gameResult.png)
+  ![](imgs\gameResult.png)
 
