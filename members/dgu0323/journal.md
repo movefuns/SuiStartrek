@@ -66,6 +66,7 @@ sui client envs
 ## 添加devnet 和 testnet 的 env
 sui client new-env --alias devnet --rpc https://fullnode.devnet.sui.io:443
 sui client new-env --alias testnet --rpc https://fullnode.testnet.sui.io:443
+sui client new-env --alias mainnet --rpc https://fullnode.mainnet.sui.io:443
 ## 生成配置文件 ~/.sui/sui_config/client.yaml
 ## 切换devnet
 sui client switch --env devnet
