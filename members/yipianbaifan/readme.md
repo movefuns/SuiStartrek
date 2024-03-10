@@ -8,11 +8,9 @@
 
 - Discord ID:
 
-(首次如果没有，学习完毕钱包在填写)
+- Sui 账号地址: 0x86944ccd589beaccff82e90baa10945f695e19e6e5f04a7a8915ee75a33de6f7
 
-- Sui 账号地址: 0xd0cc4d467e0dc8bb6d45a853b4d7b8f79ae7e29eb52ae1d1e1c130dfbe75d1c5
-
-自由职业者
+企业软件工程师
 
 ### 学习日志
 
@@ -23,10 +21,10 @@
 
 Roadmap 1
 
-- 项目源码:填写自己的源码地址
-- 发布的 ERC20
-  package1: xx
-  package2: xx
+1. hello world
+
+- 项目源码: projects/helloworld
+- testnet 发布合约：0x12546e7f435f877fee6a5158de77bdc1b034b3056392f1b5cbd2508f3bb78551
 
 2.
 
