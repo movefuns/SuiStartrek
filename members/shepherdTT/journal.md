@@ -38,4 +38,38 @@
             curl --location --request POST 'https://faucet.testnet.sui.io/v1/gas'  --header 'Content-Type: application/json'  --data-raw '{"FixedAmountRequest":{"recipient":"0x0d525301e8e3f8db86f06758866e22c2b899262df03afde38a1f0de576e2019e"}}'
         4.mint时记得钱包切网络，浏览器-钱包-设置里改。
 
-        
+二、第二个任务
+在主网发布nft，分为两部分
+· 智能合约
+· 编译，发布，mint，查看    
+1.智能合约
+· 步骤
+    step1 sui move new xxx
+    step2 智能合约，参考youtube视频 https://www.youtube.com/embed/xb25omoO_aA?si=5UAQLgx-5Sc8AbsF
+    学习display的用法，可以做普通nft也可以做带有特殊属性的
+    step3 填入nft的name,description,url（github头像的nft直接复制图像链接就行）
+2.编译，发布，mint
+· 步骤
+    step1 编译 sui move build
+    step2 转sui 注意这个任务是在主网发布，sui client active-address找到当前地址，从钱包里转一些sui到当前地址（0.5个sui绰绰有余）
+    step3 切网络 sui client switch --env mainnet
+    step4 查看网络 sui client envs，看带*的是否在mainnet
+    step5 发布 sui client publish --gas-budget 100000000 （--skip-dependency-verification 如果有依赖报错）
+    step6 mint sui client call --package <packageID> --module <module name> --function mint --args <objectID> --gas-budget 10000000
+    step7 复制objectid sui explore主网查看
+三、发布游戏
+分为两个部分
+· 智能合约
+· 编译发布调用查看
+1.智能合约
+· 步骤
+    step1 在sui move new创建的sources里先创建一个random合约，用于生成随机数，无论是比大小还是石头剪刀布都可以调用随机数，随机数合约如下https://github.com/chrisyy2003/ctf-writeup/blob/main/MoveCTF/simple_game/sources/random.move
+    step2 写游戏逻辑部分智能合约
+2.编译，发布，调用
+· 步骤
+    （其他步骤同前几项，如果在测试网，记得领水）
+    step1 调用 sui client call --package packageid  --module <module name> --function <function name> --args <player_choice> --gas-budget 10000000
+    step2 复制objectid，sui explore查看，可以在transaction blocks里看到调用的几次历史的游戏结果
+
+
+
