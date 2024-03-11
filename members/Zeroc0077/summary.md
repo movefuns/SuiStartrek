@@ -1,0 +1,10 @@
+# 学习成果
+
+## Roadmap 1
+- 发布的Coin地址
+coin1: 0xe7080723299751a97aa6b65689248bed09891475a3747cba5c3bcc8fd3d63144
+coin2: 0xbdec755c4e9f00867a0f3ae9db814ebb152dd15e15dbe825d3b31d4488870875
+
+## Roadmap 2
+- mint的NFT地址: [0x796fc038c73cf5ab76c3ac4f8cab5553124681dcac9792f360c8480d2f7ae64c](https://suiexplorer.com/object/0x796fc038c73cf5ab76c3ac4f8cab5553124681dcac9792f360c8480d2f7ae64c?network=testnet)
+- game package: [0x6931ef6ceaa4f78a0596e3dd64a8fc846233162d4794da17593730649b27680d](https://suiexplorer.com/object/0x6931ef6ceaa4f78a0596e3dd64a8fc846233162d4794da17593730649b27680d?network=testnet)
