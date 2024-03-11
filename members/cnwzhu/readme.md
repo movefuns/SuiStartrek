@@ -2,7 +2,7 @@
 
 ### 个人介绍
 
-* Github ID: [birch](https://github.com/cnwzhu)
+* Github ID: [cnwzhu](https://github.com/cnwzhu)
 
 
 (首次如果没有，学习完毕钱包在填写)
