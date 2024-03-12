@@ -2,7 +2,7 @@
 
 ### 个人介绍
 
-- Github ID: [CHENkai8385](https://github.com/John-jin)
+- Github ID: [John-jin](https://github.com/John-jin)
 
 - Telegram ID: ning
 
