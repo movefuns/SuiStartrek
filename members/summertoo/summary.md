@@ -50,24 +50,34 @@ https://v.douyin.com/i8JgfJCA/
 * 合约部分开发中
 * 前端部分开发中
 
+# Plans
+## 猜拳游戏&教程制作
+* 合约部分开发中
+* 前端部分开发中
+
+## IDO&教程制作
+* 合约部分开发中
+* 前端部分开发中
+
+
 ## 教程开启 知乎 掘金 登链
-
-星航计划 - DeTask找活网 0基础开发入门到精通 (1) - Summer.XJ的文章
+DeTask找活网 0基础开发入门到精通更新到第9章
 知乎
-https://zhuanlan.zhihu.com/p/679459369
-
-掘金
-https://juejin.cn/post/7327353620231733298
+https://zhuanlan.zhihu.com/p/687096541
 
 登链
-https://learnblockchain.cn/article/7327
+https://learnblockchain.cn/article/7620
+
+掘金
+https://juejin.cn/spost/7346221215742918656
+
+知乎 更新到第9章
+登链 更新到第9章
+掘金 更新到第9章
 
 
-知乎 更新到第6章
-登链 更新到第2章
-掘金 更新到第2章
+### 星航计划第一阶段完成攻略 (知乎/掘金/登链)
+https://zhuanlan.zhihu.com/p/681443475
+https://juejin.cn/post/7333019950954725411
+https://learnblockchain.cn/article/7389
 
-# Plans
-
-## 猜拳游戏&教程制作
-## IDO&教程制作
