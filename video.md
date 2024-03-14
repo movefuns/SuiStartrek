@@ -7,10 +7,10 @@
 | Workshop | Office Hour 0x1 | Ethan | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/JM2PW0uAwN0?si=vIzrHAUADOkD-98v) |
 | Workshop | 第二阶段任务解读&实战 | Summer.XJ | Startrek | [点击观看](https://www.youtube.com/embed/iVlvx-On59w?si=tM1VJKBqd83Xc-G5) |
 | 从Sui入门Web3 | 钱包入门 | Bruski | Suiet | [点击观看](https://www.youtube.com/embed/ctXY4fzOWuw?si=GGexuFH_k9siWmmc) |
-| 从Sui入门NFT | 什么是 NFT | Ellen | LX DAO | [点击观看](https://www.youtube.com/embed/vMXreyBpQpE?si=mZ7PoYKHahRPjJ9G) |
-| 从Sui入门NFT | Sui NFT 标准 Display | Ellen | LX DAO | [点击观看](https://www.youtube.com/embed/-EwEFM-LaBs?si=A5gWBqIFP8-X38CY) |
-| 从Sui入门NFT | 介绍 Publisher | Ellen | LX DAO | [点击观看](https://www.youtube.com/embed/FcWKFxnrhdQ?si=TxL1aWBoy_CQOPOF) |
-| 从Sui入门NFT | 实战发行 NFT | Ellen | LX DAO | [点击观看](https://www.youtube.com/embed/xb25omoO_aA?si=5UAQLgx-5Sc8AbsF) |
+| 从Sui入门NFT | 什么是 NFT | Ellen | MoveFuns DAO| [点击观看](https://www.youtube.com/embed/vMXreyBpQpE?si=mZ7PoYKHahRPjJ9G) |
+| 从Sui入门NFT | Sui NFT 标准 Display | Ellen | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/-EwEFM-LaBs?si=A5gWBqIFP8-X38CY) |
+| 从Sui入门NFT | 介绍 Publisher | Ellen | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/FcWKFxnrhdQ?si=TxL1aWBoy_CQOPOF) |
+| 从Sui入门NFT | 实战发行 NFT | Ellen | MoveFuns DAO | [点击观看](https://www.youtube.com/embed/xb25omoO_aA?si=5UAQLgx-5Sc8AbsF) |
 | 从Sui入门游戏开发 | 什么是区块链游戏？ | Henry | Obelisk | [点击观看](https://www.youtube.com/embed/hp5PPm1rQGE?si=Jy_yfdwyfpsoDO2x) |
 | 从Sui入门游戏开发 | 介绍全链游戏引擎 Obelisk Engine | Henry | Obelisk | [点击观看](https://www.youtube.com/embed/JA_oV9YfZ8c?si=K6esSZxnGQzbDMVc) |
 | 从Sui入门游戏开发 | 游戏 Modifidao 的全链游戏货币化 | 诺尔 | Obelisk | [点击观看](https://www.youtube.com/embed/lMx4TeI26FM?si=sXP752wNS6ltWzyq) |

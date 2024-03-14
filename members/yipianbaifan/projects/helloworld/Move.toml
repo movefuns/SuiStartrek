@@ -1,0 +1,12 @@
+[package]
+name = "hello_world"
+version = '0.0.1'
+
+# testnet
+# addr: 0x43dada7b9221ac7de545d79005eb3b5086c26ff1251c495e3db0b4e8fbe4a3f1
+# contract: 0x12546e7f435f877fee6a5158de77bdc1b034b3056392f1b5cbd2508f3bb78551
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+hello_world = "0x0"

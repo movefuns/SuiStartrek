@@ -1,0 +1,8 @@
+个人介绍
+
+数字游民，之前一直做的solidity开发，但是局限性很多，比如tps等等问题
+
+sui开拓了web3的新格局，很高兴接触sui和move语言
+
+sui地址：0x8cb1595ac9e6f5f5f752fe37472188d22eff8c6a3535188029a0c15dd973d86c
+
