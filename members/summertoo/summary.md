@@ -61,19 +61,19 @@ https://v.douyin.com/i8JgfJCA/
 
 
 ## 教程开启 知乎 掘金 登链
-DeTask找活网 0基础开发入门到精通更新到第9章
+DeTask找活网 0基础开发入门到精通更新到第10章
 知乎
-https://zhuanlan.zhihu.com/p/687096541
+https://zhuanlan.zhihu.com/p/687505695
 
 登链
-https://learnblockchain.cn/article/7620
+https://learnblockchain.cn/article/7644
 
 掘金
-https://juejin.cn/spost/7346221215742918656
+https://juejin.cn/post/7346919387352514594
 
-知乎 更新到第9章
-登链 更新到第9章
-掘金 更新到第9章
+知乎 更新到第10章
+登链 更新到第10章
+掘金 更新到第10章
 
 
 ### 星航计划第一阶段完成攻略 (知乎/掘金/登链)
