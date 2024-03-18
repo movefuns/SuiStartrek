@@ -11,4 +11,4 @@
 ## 学习日志
 
 - [学习日志](journal.md)
-- [登链文章](https://learnblockchain.cn/people/18893)
+- [学习记录文章](https://juejin.cn/column/7347616740853022770)

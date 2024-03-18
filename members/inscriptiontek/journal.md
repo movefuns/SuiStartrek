@@ -83,6 +83,6 @@ PackageID: https://suiexplorer.com/txblock/7hMVAFti5A5DY6f6s2QibbdLdhjEB4tbJrtKp
 
 tx: https://suiexplorer.com/txblock/Cerf6hYarncSXeiWY3Rv8288ChjBfPkUyW1brF3kJ1qo?network=testnet
 
-## 5. Sui 系列文章
+## 5. 学习记录文章
 
-[发表在登链](https://learnblockchain.cn/people/18893)
+[发表在掘金](https://juejin.cn/column/7347616740853022770)
