@@ -106,7 +106,7 @@ object id: 0xd89225d6f559836c2103d298bc4d7221ff2b93e013e419beab072cc7b5a0e007
 
 ![1710772690699](image/journal/1710772690699.png)
 
-## 2 B Coin
+## 2 B 币
 
 合约代码：[https://github.com/Linyuqiz/sui-move/blob/main/move/bcoin/sources/bcoin.move](https://github.com/Linyuqiz/sui-move/blob/main/move/bcoin/sources/bcoin.move)
 
@@ -118,7 +118,7 @@ object id: 0x35a93b7c67db08cbb11ec112abe5b9424f03aec7ac464bdce274d328a65a0564
 
 ![1710773105697](image/journal/1710773105697.png)
 
-## 3 avatar
+## 3 头像
 
 合约代码：[https://github.com/Linyuqiz/sui-move/blob/main/move/avatar/sources/avatar.move](https://github.com/Linyuqiz/sui-move/blob/main/move/avatar/sources/avatar.move)
 
@@ -130,7 +130,7 @@ object id: 0x72c66641557d0cb28110e3de3b947d3a4dc68825dedbba2a76093df7c41fc065
 
 ![1710773773559](image/journal/1710773773559.png)
 
-## 4 guess number
+## 4 猜数字
 
 合约地址： [https://github.com/Linyuqiz/sui-move/blob/main/move/guess/sources/guess.move](https://github.com/Linyuqiz/sui-move/blob/main/move/guess/sources/guess.move)
 
