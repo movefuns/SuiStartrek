@@ -35,3 +35,65 @@
 
 * 客户端代码：[1](https://github.com/shaflow01/coin-flip-client)  
 * 客户端网址：[2](https://whimsical-travesseiro-12a954.netlify.app/)  
+
+## 第三阶段：
+### 文章/笔记
+#### 专栏
+**move sui-framework**
+1. 明晰Sui Move中的易混概念：UID、ID、Address 的区别
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136384269](https://blog.csdn.net/2301_79429515/article/details/136384269)  
+登链：[https://learnblockchain.cn/article/7478](https://learnblockchain.cn/article/7478)  
+2. Sui move 动态字段
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136408669](https://blog.csdn.net/2301_79429515/article/details/136408669)  
+登链：[https://learnblockchain.cn/article/7484](https://learnblockchain.cn/article/7484)  
+3. 基于coin创建的同质化代币
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136429708](https://blog.csdn.net/2301_79429515/article/details/136429708)  
+登链：[https://learnblockchain.cn/article/7357](https://learnblockchain.cn/article/7357)  
+4. sui move table 和 bag
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136432333](https://blog.csdn.net/2301_79429515/article/details/136432333)  
+登链：[https://learnblockchain.cn/article/7490](https://learnblockchain.cn/article/7490)  
+5. sui move table_vec、vec_set
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136475278](https://blog.csdn.net/2301_79429515/article/details/136475278)  
+登链：[https://learnblockchain.cn/article/7503](https://learnblockchain.cn/article/7503)  
+6. sui move deny_list
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136502122](https://blog.csdn.net/2301_79429515/article/details/136502122)  
+登链：[https://learnblockchain.cn/article/7518](https://learnblockchain.cn/article/7518)  
+7. sui move clock
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136574777](https://blog.csdn.net/2301_79429515/article/details/136574777)  
+8. deny_list在coin中的应用
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136536856](https://blog.csdn.net/2301_79429515/article/details/136536856)  
+登链：[https://learnblockchain.cn/article/7533](https://learnblockchain.cn/article/7533)  
+**sui move development**
+1. Sui Cli及常用命令
+登链： [https://learnblockchain.cn/article/7350](https://learnblockchain.cn/article/7350)
+2. 利用Remix进行Sui Move开发
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136384212](https://blog.csdn.net/2301_79429515/article/details/136384212)  
+登链：[https://learnblockchain.cn/article/7351](https://learnblockchain.cn/article/7351)  
+3. sui move中flashloan的实现（flash lender）
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136384241](https://blog.csdn.net/2301_79429515/article/details/136384241)  
+登链：[https://learnblockchain.cn/article/7468](https://learnblockchain.cn/article/7468)  
+4. sui move 动态字段练习(1)
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136604547](https://blog.csdn.net/2301_79429515/article/details/136604547)  
+登链：[https://learnblockchain.cn/article/7554](https://learnblockchain.cn/article/7554)  
+5. sui move 动态字段练习（2）
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136635544](https://blog.csdn.net/2301_79429515/article/details/136635544)  
+登链：[https://learnblockchain.cn/article/7569](https://learnblockchain.cn/article/7569)  
+6. sui move 动态字段练习（3）
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136652187](https://blog.csdn.net/2301_79429515/article/details/136652187)  
+登链：[https://learnblockchain.cn/article/7580](https://learnblockchain.cn/article/7580)  
+7. sui move 动态字段练习（4）
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136725286](https://blog.csdn.net/2301_79429515/article/details/136725286)  
+登链：[https://learnblockchain.cn/article/7621](https://learnblockchain.cn/article/7621)  
+8. sui move 动态字段练习（5）- 总结与思考
+csdn： [https://blog.csdn.net/2301_79429515/article/details/136750669](https://blog.csdn.net/2301_79429515/article/details/136750669)  
+登链：[https://learnblockchain.cn/article/7629](https://learnblockchain.cn/article/7629)  
+9. sui move开发实战-dao(1)
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136784101](https://blog.csdn.net/2301_79429515/article/details/136784101)  
+登链：[https://learnblockchain.cn/article/7640](https://learnblockchain.cn/article/7640)  
+10. sui move开发实战-dao(2)
+csdn: [https://blog.csdn.net/2301_79429515/article/details/136785545](https://blog.csdn.net/2301_79429515/article/details/136785545)  
+登链：[https://learnblockchain.cn/article/7642](https://learnblockchain.cn/article/7642)  
+
+### 项目代码  
+1. dao：[https://github.com/shaflow01/dao-demo-on-sui](https://github.com/shaflow01/dao-demo-on-sui)  
+2. 动态字段练习：[https://github.com/shaflow01/Dynamic-Fields-Exercise](https://github.com/shaflow01/Dynamic-Fields-Exercise)  
