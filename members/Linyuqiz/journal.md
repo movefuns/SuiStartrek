@@ -94,6 +94,8 @@ sui client publish --gas-budget 100000000 counter
 
 # 三 第二阶段
 
+**三个项目目前是基于测试网部署调用**
+
 ## 1 个人介绍
 
 合约代码： [https://github.com/Linyuqiz/sui-move/blob/main/move/intro/sources/intro.move](https://github.com/Linyuqiz/sui-move/blob/main/move/intro/sources/intro.move)
