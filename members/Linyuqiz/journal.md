@@ -92,6 +92,58 @@ sui client publish --gas-budget 100000000 counter
 
 ![1710255016947](image/journal/1710255016947.png)
 
+# 三 第二阶段
+
+**三个项目目前是基于测试网部署调用**
+
+## 1 个人介绍
+
+合约代码： [https://github.com/Linyuqiz/sui-move/blob/main/move/intro/sources/intro.move](https://github.com/Linyuqiz/sui-move/blob/main/move/intro/sources/intro.move)
+
+package id：0x5d548368abfe7848d698327719bd2f0f2af3588babda95eee30ba7ba89d7024a
+
+client call：sui client call --package 0x5d548368abfe7848d698327719bd2f0f2af3588babda95eee30ba7ba89d7024a --module intro --function mint --args 'Are you ok?' --gas-budget 10000000
+
+object id: 0xd89225d6f559836c2103d298bc4d7221ff2b93e013e419beab072cc7b5a0e007
+
+![1710772690699](image/journal/1710772690699.png)
+
+## 2 B 币
+
+合约代码：[https://github.com/Linyuqiz/sui-move/blob/main/move/bcoin/sources/bcoin.move](https://github.com/Linyuqiz/sui-move/blob/main/move/bcoin/sources/bcoin.move)
+
+package id: 0xae98197926eb129ada01de7585ef521ef438ff67d79ee6fa12e0c4187130fad2
+
+client call: sui client call --package 0xae98197926eb129ada01de7585ef521ef438ff67d79ee6fa12e0c4187130fad2 --module bcoin --function mint --args 0x795600a2202d64e050a5d1105153cc1d9d3f2adaa6a746fe7af2d310a383961e 1 0x1ba76837ca197c5cbf34fc832120be52bbbc361fac9244a59c31c3c1337efe82 --gas-budget 10000000
+
+object id: 0x35a93b7c67db08cbb11ec112abe5b9424f03aec7ac464bdce274d328a65a0564
+
+![1710773105697](image/journal/1710773105697.png)
+
+## 3 头像
+
+合约代码：[https://github.com/Linyuqiz/sui-move/blob/main/move/avatar/sources/avatar.move](https://github.com/Linyuqiz/sui-move/blob/main/move/avatar/sources/avatar.move)
+
+package id: 0x6eb11d8c8e45b8fc4bdbf525c96a871fe9d5792f349228c591c5f759ff139ee3
+
+client call: sui client call --package 0x6eb11d8c8e45b8fc4bdbf525c96a871fe9d5792f349228c591c5f759ff139ee3 --module avatar --function mint --args 0xed815c1fd94deadf4314d2d47230520c81360051078ed6c5aad472282c178fdd Linyuqiz --gas-budget 10000000
+
+object id: 0x72c66641557d0cb28110e3de3b947d3a4dc68825dedbba2a76093df7c41fc065
+
+![1710773773559](image/journal/1710773773559.png)
+
+## 4 猜数字
+
+合约地址： [https://github.com/Linyuqiz/sui-move/blob/main/move/guess/sources/guess.move](https://github.com/Linyuqiz/sui-move/blob/main/move/guess/sources/guess.move)
+
+package id: 0xfa61612878d8348eca4fc0229f902ca8c44cf290eec8995227a188afca47d09f
+
+sui client call --package 0xfa61612878d8348eca4fc0229f902ca8c44cf290eec8995227a188afca47d09f --module guess --function play --args 7 0x6 --gas-budget 10000000
+
+object id: 0x1dcf6a171572006ed0fc81157b5e659c0cb012fdfc7c9c12a488c5b5d077a854
+
+![1710774287081](image/journal/1710774287081.png)
+
 # 问题总结
 
 ## 问题一：开发网发布的合约交易为什么有时候查不到？
