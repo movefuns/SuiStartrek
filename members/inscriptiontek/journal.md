@@ -74,7 +74,7 @@ burn 操作: https://suiexplorer.com/txblock/8zFbb2F5FRzSnq1LtqwsPsskMqZ5XCMqw7e
 tx: https://suiexplorer.com/txblock/7hMVAFti5A5DY6f6s2QibbdLdhjEB4tbJrtKpxA8eQTA?network=testnet
 PackageID: https://suiexplorer.com/txblock/7hMVAFti5A5DY6f6s2QibbdLdhjEB4tbJrtKpxA8eQTA?network=testnet
 
-## 4. 回合制卡牌对战游戏（开发中）
+## 4. 回合制卡牌对战游戏
 
 - 玩家创建卡牌（随机生成攻击力和防御）
 - 玩家创建房间/加入房间
@@ -82,3 +82,13 @@ PackageID: https://suiexplorer.com/txblock/7hMVAFti5A5DY6f6s2QibbdLdhjEB4tbJrtKp
   一方血量归零，游戏结束。
 
 tx: https://suiexplorer.com/txblock/Cerf6hYarncSXeiWY3Rv8288ChjBfPkUyW1brF3kJ1qo?network=testnet
+
+回合制卡牌对战页面试玩（测试网 https://sui-card-battle.pages.dev）
+
+## 5. 学习记录文章
+
+[配置环境](https://learnblockchain.cn/article/7663)
+[NFT合约](https://learnblockchain.cn/article/7666)
+[卡牌对战游戏](https://learnblockchain.cn/article/7665)
+
+[同步发表在掘金](https://juejin.cn/column/7347616740853022770)
