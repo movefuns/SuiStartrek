@@ -83,6 +83,12 @@ PackageID: https://suiexplorer.com/txblock/7hMVAFti5A5DY6f6s2QibbdLdhjEB4tbJrtKp
 
 tx: https://suiexplorer.com/txblock/Cerf6hYarncSXeiWY3Rv8288ChjBfPkUyW1brF3kJ1qo?network=testnet
 
+回合制卡牌对战页面试玩（测试网 https://sui-card-battle.pages.dev）
+
 ## 5. 学习记录文章
 
-[发表在掘金](https://juejin.cn/column/7347616740853022770)
+[配置环境](https://learnblockchain.cn/article/7663)
+[NFT合约](https://learnblockchain.cn/article/7666)
+[卡牌对战游戏](https://learnblockchain.cn/article/7665)
+
+[同步发表在掘金](https://juejin.cn/column/7347616740853022770)
