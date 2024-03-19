@@ -1,0 +1,4 @@
+# 学习日志
+
+在devnet网络部署的hello_world合约地址：`0x2d6e4f723c38711441a758ea1f024a3502e291f9188c522e4ad848cd1067f84c`
+调用该合约生成的对象id：`0x28cdf56a03986d06e9304cba2d07bcea104a9ffebe9eb27cfc3846b1432716d6`
